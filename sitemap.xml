@@ -2,7 +2,7 @@
 <!-- 단일 페이지(클라이언트 JS i18n). 배포 시 [domain]을 실도메인으로 치환. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://half1126-byte.github.io/yido/</loc>
+    <loc>https://half1126-byte.github.io/</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

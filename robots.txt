@@ -13,4 +13,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://half1126-byte.github.io/yido/sitemap.xml
+Sitemap: https://half1126-byte.github.io/sitemap.xml
