@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  서울이도치과 sitemap (초안)
+  현재는 원페이지 1개 URL. 도메인 확정 후 [domain]을 실제 주소로 교체하세요.
+  다국어 페이지(/en /ja /zh) 분리 시 각 <url>에 xhtml:link hreflang 대안을 추가합니다.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://[domain]/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://[domain]/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://[domain]/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://[domain]/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://[domain]/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[domain]/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

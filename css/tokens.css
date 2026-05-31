@@ -1,0 +1,108 @@
+/* ============================================================
+   서울이도치과 (YIDO) — Design Tokens · MONOCHROME MOOD
+   UI 톤: 잉크·그레이·본 아이보리(무채색 무드).
+   배경은 '그냥 검정'이 아니라 SVG 필름그레인으로 고급 명함 질감.
+   영상·이미지는 원래 색 그대로(grayscale 강제 안 함). 에디토리얼 구조 유지.
+   ============================================================ */
+
+:root {
+  /* ---- Ink (neutral near-black · MONOCHROME) ---- */
+  --black:    #0E0E10;   /* 다크 섹션/히어로 베이스 — 매트 블랙 카드 */
+  --ink-900:  #17171A;   /* 로고·헤드라인 */
+  --ink-700:  #2C2C30;   /* 본문 */
+  --ink-500:  #6C6C72;   /* 보조(뉴트럴 그레이) */
+  --ink-300:  #8C8C92;   /* 캡션·메타·큰 숫자 (대비 보강) */   /* 캡션·메타·큰 숫자 */
+  --ink-100:  #D4D4D8;
+
+  /* ---- Light base (warm-neutral bone, NOT bright white) ---- */
+  --paper:    #ECEAE5;   /* 페이지 기본 배경(본 아이보리) */
+  --paper-2:  #E3E0DA;   /* 교차 밴드(살짝 더 깊게) */
+  --paper-50: #F4F2EE;   /* 카드/surface(살짝 들어올림) */
+  --white:    #FFFFFF;
+
+  /* ---- Neutral grey (placeholder/그라데이션) ---- */
+  --wood-300: #CAC8C3;
+  --wood-500: #9C9A95;
+
+  /* ---- Accent — MONOCHROME(잉크). 다크 컨텍스트에선 화이트로 자동 전환 ---- */
+  --accent-600: #1A1A1D;
+  --accent-500: #45454B;
+  --accent-soft: #DDDAD3;
+
+  /* ---- Lines / overlays (neutral) ---- */
+  --line:        rgba(14,14,16,.10);
+  --line-strong: rgba(14,14,16,.20);
+  --on-dark:     rgba(255,255,255,.90);
+  --on-dark-dim: rgba(255,255,255,.60);
+  --on-dark-line:rgba(255,255,255,.16);
+
+  --scrim: linear-gradient(180deg, rgba(8,8,9,.30) 0%, rgba(8,8,9,.54) 55%, rgba(8,8,9,.76) 100%);
+
+  --focus-ring: #17171A;
+  --focus-ring-dark: #FFFFFF;
+
+  /* ---- Texture (고급 명함 질감 · SVG film grain, grayscale) ---- */
+  --tex-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  --tex-grain-coarse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
+
+  /* ---- Typography ---- */
+  --font-sans: "Pretendard", "Pretendard Variable", -apple-system, BlinkMacSystemFont,
+               "Apple SD Gothic Neo", "Noto Sans KR", system-ui, "Malgun Gothic", sans-serif;
+  --font-serif: "Cormorant Garamond", "Nanum Myeongjo", Georgia, "Apple SD Gothic Neo", serif;
+  --font-num: "Inter", var(--font-sans);
+
+  --fs-display: clamp(3.5rem, 8.5vw, 8.5rem);
+  --fs-h2:      clamp(2.375rem, 4.6vw, 4.25rem);
+  --fs-h3:      clamp(1.375rem, 2.4vw, 2rem);
+  --fs-lead:    clamp(1.1875rem, 1.7vw, 1.4375rem);
+  --fs-body:    1.0625rem;
+  --fs-small:   0.9375rem;
+  --fs-eyebrow: 0.6875rem;
+  --fs-bignum:  clamp(3rem, 7vw, 6rem);
+
+  --lh-tight: 1.12;
+  --lh-display: 1.1;
+  --lh-snug: 1.3;
+  --lh-body: 1.68;
+
+  --tracking-display: -0.035em;
+  --tracking-tight: -0.018em;
+  --tracking-wide: 0.36em;
+  --tracking-eyebrow: 0.2em;
+  --tracking-serif: 0.005em;
+
+  --w-reg: 400; --w-med: 500; --w-semi: 600; --w-bold: 700; --w-black: 800;
+
+  /* ---- Spacing ---- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --space-9: 96px; --space-10: 128px; --space-11: 180px;
+
+  /* ---- Layout ---- */
+  --section-pad-y: clamp(104px, 13vw, 200px);
+  --container: 1280px;
+  --container-narrow: 760px;
+  --gutter: clamp(20px, 5vw, 72px);
+  --nav-h: 72px;
+
+  /* ---- Radius ---- */
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 14px; --radius-pill: 999px;
+
+  /* ---- Shadow (neutral, layered) ---- */
+  --shadow-sm:   0 1px 1px rgba(10,10,12,.05), 0 2px 6px -2px rgba(10,10,12,.10);
+  --shadow-card: 0 1px 2px rgba(10,10,12,.06), 0 4px 12px -6px rgba(10,10,12,.12), 0 24px 48px -28px rgba(10,10,12,.32);
+  --shadow-lift: 0 2px 4px rgba(10,10,12,.07), 0 10px 22px -10px rgba(10,10,12,.18), 0 40px 70px -34px rgba(10,10,12,.34);
+  --hairline-top: inset 0 1px 0 rgba(255,255,255,.55);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(.16,.84,.44,1);
+  --ease-out: cubic-bezier(.22,1,.36,1);
+  --ease-emph: cubic-bezier(.2,.8,.2,1);
+  --ease-spring: cubic-bezier(.34,1.4,.5,1);
+  --dur-fast: 180ms; --dur: 380ms; --dur-slow: 820ms; --dur-xslow: 1100ms;
+
+  /* ---- Video treatment (원래 색 + 미세 그레이딩) ---- */
+  --video-filter: saturate(1.02) contrast(1.03);
+
+  --z-nav: 100; --z-langmenu: 110; --z-drawer: 120; --z-skip: 200;
+}

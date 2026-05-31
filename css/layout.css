@@ -1,0 +1,207 @@
+/* ============================================================
+   서울이도치과 (YIDO) — Layout · MONOCHROME EDITORIAL
+   Breakpoints: 768 / 1024 / 1280
+   ============================================================ */
+
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.container--narrow { max-width: var(--container-narrow); }
+
+/* ---- Section ---- */
+.section { padding-block: var(--section-pad-y); scroll-margin-top: calc(var(--draft-h, 0px) + var(--nav-h)); }
+.section--band { background: var(--paper-2); }
+.section--paper50 { background: var(--paper-50); }
+.section--dark { background: var(--black); color: var(--on-dark); }
+.section--dark h2, .section--dark h3 { color: var(--white); }
+/* 밴드 경계 미세 음영 — 색 전환을 의도적으로 */
+.section--band, .section--paper50 { box-shadow: inset 0 1px 0 rgba(255,255,255,.4), inset 0 -1px 0 rgba(14,14,16,.05); }
+.section--dark { box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+
+/* Editorial section header: number + eyebrow + title */
+.section__head {
+  display: grid; gap: var(--space-4);
+  padding-top: var(--space-6);
+  border-top: 0;
+  background-image: linear-gradient(90deg, var(--line-strong), var(--line) 40%, transparent);
+  background-size: 100% 1px; background-repeat: no-repeat; background-position: 0 0;
+  margin-bottom: var(--space-9);
+}
+.section--dark .section__head { background-image: linear-gradient(90deg, rgba(255,255,255,.28), var(--on-dark-line) 40%, transparent); }
+.section__num {
+  font-family: var(--font-serif);
+  font-size: var(--fs-bignum);
+  line-height: 1; font-weight: var(--w-med);
+  color: var(--ink-300);
+}
+.section--dark .section__num { color: var(--on-dark-dim); }
+.section__eyebrow {
+  font-size: var(--fs-eyebrow); font-weight: var(--w-semi);
+  letter-spacing: var(--tracking-eyebrow); text-transform: uppercase;
+  color: var(--ink-500);
+}
+.section--dark .section__eyebrow { color: var(--on-dark-dim); }
+.section__title { margin: 0; }
+.section__lead {
+  font-size: var(--fs-lead); color: var(--ink-500);
+  max-width: 58ch; margin-top: var(--space-5); line-height: 1.62;
+}
+.section--dark .section__lead { color: var(--on-dark-dim); }
+
+@media (min-width: 1024px) {
+  .section__head { grid-template-columns: auto 1fr; align-items: end; gap: var(--space-8); }
+  .section__head .section__title { grid-column: 1 / -1; }
+}
+
+/* ============================================================
+   HEADER / NAV  (투명→솔리드 전환)
+   ============================================================ */
+.site-header {
+  position: fixed; top: var(--draft-h, 0px); left: 0; right: 0; height: var(--nav-h); z-index: var(--z-nav);
+  display: flex; align-items: center;
+  color: var(--white);
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.site-header.is-scrolled {
+  background: rgba(236,234,229,.82);
+  -webkit-backdrop-filter: saturate(150%) blur(18px);
+  backdrop-filter: saturate(150%) blur(18px);
+  color: var(--ink-900);
+  box-shadow: 0 1px 0 var(--line), 0 6px 20px -16px rgba(14,14,16,.5);
+}
+.site-header .container { display: flex; align-items: center; justify-content: space-between; gap: var(--space-5); }
+
+.wordmark {
+  font-family: var(--font-serif); font-weight: var(--w-bold);
+  font-size: 1.625rem; letter-spacing: 0.01em; line-height: 1;
+  color: inherit; display: inline-flex; align-items: baseline; gap: 1px;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+.wordmark .dot { color: currentColor; opacity: 1; display: inline-block; transition: transform var(--dur) var(--ease-spring); }
+.wordmark:hover .dot { transform: translateY(-2px); }
+.wordmark .kr {
+  font-family: var(--font-sans); font-size: 0.7rem; font-weight: var(--w-med);
+  letter-spacing: 0.06em; margin-left: var(--space-3); opacity: .7; white-space: nowrap;
+}
+
+.nav-primary { display: none; }
+.nav-primary ul { display: flex; flex-wrap: nowrap; gap: clamp(10px, 1.2vw, 22px); list-style: none; padding: 0; margin: 0; }
+.nav-primary li { margin: 0; }
+.nav-primary a {
+  position: relative; color: inherit; opacity: .82; white-space: nowrap;
+  font-size: 0.875rem; font-weight: var(--w-med); padding-block: var(--space-2);
+  letter-spacing: -0.01em;
+}
+.nav-primary a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1.5px;
+  background: currentColor; transform: scaleX(0); transform-origin: right;
+  transition: transform var(--dur) var(--ease-emph), opacity var(--dur-fast) var(--ease);
+}
+.nav-primary a:hover { opacity: 1; }
+.nav-primary a:hover::after { transform: scaleX(1); transform-origin: left; }
+.nav-primary a[aria-current="true"] { opacity: 1; }
+.nav-primary a[aria-current="true"]::after { transform: scaleX(1); }
+
+.nav-actions { display: flex; align-items: center; gap: var(--space-3); }
+
+.nav-toggle {
+  display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
+  width: 44px; height: 44px; padding: 10px; background: none; border: none; cursor: pointer;
+}
+.nav-toggle span { display: block; height: 1.5px; width: 100%; background: currentColor; transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease); }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Mobile drawer */
+.nav-drawer {
+  position: fixed; inset: calc(var(--draft-h, 0px) + var(--nav-h)) 0 0 0; z-index: var(--z-drawer);
+  background: var(--black); color: var(--on-dark);
+  padding: var(--space-8) var(--gutter);
+  transform: translateX(100%); transition: transform var(--dur) var(--ease);
+  overflow-y: auto; visibility: hidden;
+}
+.nav-drawer.is-open { transform: translateX(0); visibility: visible; }
+.nav-drawer ul { list-style: none; padding: 0; margin: 0; }
+.nav-drawer li { margin: 0; border-bottom: 1px solid var(--on-dark-line); }
+.nav-drawer a { display: block; padding: var(--space-5) 0; font-size: 1.5rem; font-weight: var(--w-med); color: var(--white); }
+.nav-drawer a:hover { opacity: .6; }
+.nav-drawer .lang-switcher { margin-top: var(--space-8); }
+body.nav-open { overflow: hidden; }
+
+/* Scroll progress (monochrome) — difference 블렌드로 밝기와 무관하게 항상 보임 */
+.scroll-progress {
+  position: fixed; top: var(--draft-h, 0px); left: 0; height: 2px; width: 0;
+  background: #FFFFFF; mix-blend-mode: difference;
+  z-index: calc(var(--z-nav) + 1);
+  transition: width 120ms var(--ease-out);
+}
+@media (prefers-reduced-motion: reduce) { .scroll-progress { display: none; } }
+
+@media (min-width: 1200px) {
+  .nav-primary { display: block; }
+  .nav-toggle { display: none; }
+  .nav-drawer { display: none; }
+}
+
+/* ============================================================
+   GRID
+   ============================================================ */
+.grid { display: grid; gap: var(--space-5); }
+.grid--services { grid-template-columns: 1fr; }
+.grid--doctors  { grid-template-columns: 1fr; }
+.split { display: grid; gap: var(--space-8); grid-template-columns: 1fr; align-items: center; }
+
+@media (min-width: 768px) {
+  .grid--services { grid-template-columns: repeat(2, 1fr); gap: 1px; }
+  .grid--doctors  { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr 1fr; }
+  .split--wide-left { grid-template-columns: 1.15fr .85fr; }
+}
+@media (min-width: 1200px) { /* nav 분기점과 통일 — ~1100px의 데스크톱그리드+햄버거 혼재 제거 */
+  .grid--services { grid-template-columns: repeat(3, 1fr); }
+  .grid--doctors  { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer { background: var(--black); color: var(--on-dark); padding-block: var(--space-10) var(--space-6); }
+.site-footer a { color: var(--on-dark); transition: opacity var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease); }
+.site-footer a:hover { opacity: 1; color: var(--white); }
+.footer-grid {
+  display: grid; gap: var(--space-7); grid-template-columns: 1fr;
+  padding-bottom: var(--space-7); border-bottom: 1px solid var(--on-dark-line);
+}
+.footer-brand .wordmark { color: var(--white); }
+.footer-info { font-size: var(--fs-small); color: var(--on-dark-dim); }
+.footer-info p + p { margin-top: var(--space-2); }
+.footer-nav ul { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: var(--space-6); }
+.footer-nav li { margin-bottom: var(--space-3); }
+.footer-nav a { font-size: var(--fs-small); opacity: .82; background-image: linear-gradient(var(--accent-600), var(--accent-600)); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size var(--dur) var(--ease-emph), opacity var(--dur-fast) var(--ease); padding-bottom: 2px; }
+.footer-nav a:hover { opacity: 1; background-size: 100% 1px; }
+.footer-bottom {
+  display: flex; flex-wrap: wrap; gap: var(--space-4);
+  justify-content: space-between; align-items: center;
+  padding-top: var(--space-6); font-size: var(--fs-small); color: var(--on-dark-dim);
+}
+.footer-disclaimer { max-width: 64ch; }
+
+@media (min-width: 768px) { .footer-grid { grid-template-columns: 1.6fr 1fr 1fr; } }
+
+/* ============================================================
+   다크 컨텍스트 (MONOCHROME)
+   ① 액센트를 화이트로 자동 전환 — 검정 위에서 잉크 액센트가 사라지는 문제 방지
+   ② 매트 블랙 '명함 카드' 텍스처: soft-light 그레인 2겹 + 상단 미세 시인
+   ============================================================ */
+.section--dark, .site-footer, .nav-drawer, .hero, .scrubfilm, .filmband {
+  --accent-600: #FFFFFF;
+  --accent-500: rgba(255,255,255,.72);
+}
+.section--dark, .site-footer {
+  background-color: var(--black);
+  background-image:
+    var(--tex-grain),
+    var(--tex-grain-coarse),
+    radial-gradient(140% 100% at 50% -15%, rgba(255,255,255,.06), transparent 62%);
+  background-size: 190px 190px, 320px 320px, auto;
+  background-blend-mode: soft-light, soft-light, normal;
+}
