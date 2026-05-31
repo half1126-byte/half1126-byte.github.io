@@ -174,15 +174,24 @@ video { filter: var(--video-filter); }
   .grid--services { background: var(--line); border: 1px solid var(--line); }
 }
 
-/* ---- Care journey stepper ---- */
+/* ---- Care journey stepper (이미지-상단 영상 카드) ---- */
 .care-steps { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line);
   grid-template-columns: 1fr; margin-top: var(--space-7); }
-.care-step { position: relative; background: var(--paper); padding: var(--space-7) var(--space-5) var(--space-6); }
-.care-step__num { font-family: var(--font-serif); font-size: 1.5rem; font-weight: var(--w-med);
-  color: var(--ink-300); display: block; margin-bottom: var(--space-4); }
+.care-step { position: relative; background: var(--paper); padding: 0; overflow: hidden;
+  display: flex; flex-direction: column; }
+.care-step__img { position: relative; aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
+.care-step__img video { width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
+.care-step:hover .care-step__img video { transform: scale(1.05); }
+.care-step__num { position: absolute; top: var(--space-4); left: var(--space-4); z-index: 2;
+  font-family: var(--font-num); font-size: var(--fs-small); letter-spacing: 0.14em; color: #fff;
+  background: rgba(0,0,0,.42); padding: 3px 9px; border-radius: 100px;
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+.care-step__body { padding: var(--space-6) var(--space-5); flex: 1; }
 .care-step h4 { font-size: 1.0625rem; margin-bottom: var(--space-2); color: var(--ink-900); font-weight: var(--w-semi); }
 .care-step p { font-size: var(--fs-small); color: var(--ink-500); line-height: 1.62; }
 .care-disclaimer { margin-top: var(--space-5); font-size: var(--fs-small); color: var(--ink-300); }
+@media (prefers-reduced-motion: reduce) { .care-step:hover .care-step__img video { transform: none; } }
 @media (min-width: 768px) { .care-steps { grid-template-columns: repeat(5, 1fr); } }
 
 /* ---- Experience: sub-heading ---- */
