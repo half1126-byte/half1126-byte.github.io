@@ -133,7 +133,7 @@ window.YIDO_I18N.en = {
   "mcta.dir": "Directions", "mcta.book": "Book · enquire",
   "visit.eyebrow": "BEFORE YOUR VISIT",
   "visit.title": "Visiting for the first time?",
-  "visit.lead": "To make your first visit comfortable, here's a guide from booking to arrival and waiting.",
+  "visit.lead": "To make your first visit comfortable, here's a quick guide to booking and what to prepare.",
   "visit.1t": "Booking & enquiry", "visit.1d": "Book easily by phone, Naver booking or KakaoTalk.",
   "visit.2t": "What to bring", "visit.2d": "An ID, and any previous treatment records, help with diagnosis if you have them.",
   "visit.3t": "Arrival & welcome", "visit.3d": "On arrival we check your oral condition together and guide you through the visit.",

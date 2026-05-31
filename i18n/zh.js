@@ -133,7 +133,7 @@ window.YIDO_I18N.zh = {
   "mcta.dir": "交通指引", "mcta.book": "预约·咨询",
   "visit.eyebrow": "BEFORE YOUR VISIT",
   "visit.title": "初次来访吗？",
-  "visit.lead": "为让您的首次来访更安心，我们提前就预约、到达与等候为您指引。",
+  "visit.lead": "为让您的首次来访更安心，我们提前就预约与准备事项为您指引。",
   "visit.1t": "预约·咨询", "visit.1d": "可通过电话·Naver预约·KakaoTalk轻松预约。",
   "visit.2t": "来访准备", "visit.2d": "携带身份证件，若有既往诊疗资料一并带来，有助于诊断。",
   "visit.3t": "到达·欢迎", "visit.3d": "到达后，我们一同确认口腔状况并为您指引诊疗流程。",
