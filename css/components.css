@@ -390,6 +390,7 @@ video { filter: var(--video-filter); }
 /* ============================================================
    Philosophy (진료 철학·정직 안내)
    ============================================================ */
+.phil-figure { margin-top: var(--space-8); border-radius: var(--radius-md); overflow: hidden; }
 .phil-grid { list-style: none; margin: var(--space-7) 0 0; padding: 0;
   display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); grid-template-columns: 1fr; }
 .phil-item { background: var(--paper); padding: var(--space-7) var(--space-6); }
