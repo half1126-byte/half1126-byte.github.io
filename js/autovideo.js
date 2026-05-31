@@ -12,13 +12,13 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   /* 모바일/데이터절약: 영상 재생 안 함 → 가벼운 webp poster만(렉 방지) */
   var conn = navigator.connection || {};
-  var lite = (window.matchMedia && window.matchMedia("(max-width: 768px)").matches) ||
-    conn.saveData === true || /(^|-)2g$/.test(conn.effectiveType || "");
+  /* 데이터 절약/2G에서만 재생 생략(포스터). 일반 모바일은 AV1(경량)으로 재생 — IO가 화면 밖은 일시정지 */
+  var saveData = conn.saveData === true || /(^|-)2g$/.test(conn.effectiveType || "");
 
   var vids = Array.prototype.slice.call(
     document.querySelectorAll("video[data-autovideo]")
   );
-  if (!vids.length || reduce || lite) return; // reduce/lite: poster 유지
+  if (!vids.length || reduce || saveData) return; // reduce/데이터절약: poster 유지
 
   function play(v) {
     if (v.preload === "none") v.preload = "auto"; // 첫 노출 시 로드 허용

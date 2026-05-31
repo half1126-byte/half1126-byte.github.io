@@ -6,10 +6,10 @@
 (function () {
   "use strict";
   var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  /* 모바일/데이터절약: 스크럽(시킹) 비활성 → poster 정적 표시(렉 방지) */
+  /* 데이터절약/2G: 스크럽·재생 모두 생략 → poster. 일반 모바일: 시킹 대신 자동재생 루프 */
   var _c = navigator.connection || {};
-  var LITE = matchMedia("(max-width: 768px)").matches ||
-    _c.saveData === true || /(^|-)2g$/.test(_c.effectiveType || "");
+  var saveData = _c.saveData === true || /(^|-)2g$/.test(_c.effectiveType || "");
+  var MOBILE = matchMedia("(max-width: 768px)").matches || matchMedia("(pointer: coarse)").matches;
   var sections = [].slice.call(document.querySelectorAll("[data-scrub-video]"));
   if (!sections.length) return;
 
@@ -36,7 +36,11 @@
       } catch (e) {}
     }
     if (reduce) { goStatic(); return; }
-    if (LITE) { sec.classList.add("is-static"); try { video.removeAttribute("loop"); video.pause(); } catch (e) {} return; } // poster 유지, 시킹 없음
+    if (saveData) { sec.classList.add("is-static"); try { video.removeAttribute("loop"); video.pause(); } catch (e) {} return; } // 데이터절약: poster
+    if (MOBILE) { // 모바일: 시킹 잼 회피 → 자동재생 루프로 움직임 제공
+      try { video.setAttribute("loop", ""); video.muted = true; var lp = video.play(); if (lp && lp.catch) lp.catch(function () {}); } catch (e) {}
+      return;
+    }
 
     var duration = 0, targetT = 0, currentT = 0, rafId = 0, running = false;
     var heroPaused = false;

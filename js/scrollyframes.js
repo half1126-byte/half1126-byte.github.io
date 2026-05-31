@@ -12,10 +12,9 @@
 
   var reduce = window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  /* 모바일/데이터절약: 저니 영상 재생 안 함 → poster만(크로스페이드는 유지) */
+  /* 데이터절약/2G만 영상 생략(poster). 일반 모바일은 활성 스텝 영상 재생 */
   var _c = navigator.connection || {};
-  var LITE = (window.matchMedia && window.matchMedia("(max-width: 768px)").matches) ||
-    _c.saveData === true || /(^|-)2g$/.test(_c.effectiveType || "");
+  var LITE = _c.saveData === true || /(^|-)2g$/.test(_c.effectiveType || "");
 
   function css(name, fallback) {
     var v = getComputedStyle(document.documentElement).getPropertyValue(name);
