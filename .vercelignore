@@ -1,0 +1,7 @@
+node_modules
+.git
+*.md
+assets/GENERATION_BRIEF.md
+video/옴니레퍼런스.jpg
+package.json
+package-lock.json

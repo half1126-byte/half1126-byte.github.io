@@ -148,19 +148,28 @@ video { filter: var(--video-filter); }
 .fac-grid .num-badge { font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-600); display: block; margin-bottom: var(--space-2); }
 /* 시설 카드: 이미지-상단 + 텍스트(이미지는 카드 라운드에 맞춰 클립) */
 .fac-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.fac-card__img { aspect-ratio: 3/2; overflow: hidden; }
-.fac-card__img img { width: 100%; height: 100%; object-fit: cover; display: block;
-  transition: transform var(--dur-xslow) var(--ease-out); }
-.fac-card:hover .fac-card__img img { transform: scale(1.05); }
+.fac-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
+.fac-card__img img, .fac-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
+.fac-card:hover .fac-card__img img, .fac-card:hover .fac-card__img video { transform: scale(1.05); }
 .fac-card__body { padding: var(--space-5) var(--space-6) var(--space-6); }
-@media (prefers-reduced-motion: reduce) { .fac-card:hover .fac-card__img img { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .fac-card:hover .fac-card__img img, .fac-card:hover .fac-card__img video { transform: none; } }
 .doctor-card__quote { font-size: var(--fs-small); color: var(--ink-700); font-family: var(--font-serif); font-style: italic; font-size: 1.0625rem; }
 
-/* Service card — hairline grid */
-.service-card { display: flex; flex-direction: column; gap: var(--space-5);
-  padding: var(--space-7) var(--space-6); border: 0; background: var(--paper); min-height: 240px; }
-.service-card .ico { width: 36px; height: 36px; stroke: var(--accent-600); stroke-width: 1.25; fill: none; }
-.service-card .sv-num { font-family: var(--font-num); font-size: var(--fs-small); color: var(--ink-300); letter-spacing: 0.14em; }
+/* Service card — image-top video card on hairline grid */
+.service-card { display: flex; flex-direction: column; padding: 0; border: 0;
+  background: var(--paper); overflow: hidden; }
+.service-card__img { position: relative; aspect-ratio: 3/2; overflow: hidden;
+  background: var(--ink-900, #0a0a0b); }
+.service-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
+.service-card:hover .service-card__img video { transform: scale(1.05); }
+.service-card__img .sv-num { position: absolute; top: var(--space-4); left: var(--space-4);
+  z-index: 2; font-family: var(--font-num); font-size: var(--fs-small); letter-spacing: 0.14em;
+  color: #fff; background: rgba(0,0,0,.42); padding: 3px 9px; border-radius: 100px;
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+.service-card__body { padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); }
+@media (prefers-reduced-motion: reduce) { .service-card:hover .service-card__img video { transform: none; } }
 @media (min-width: 768px) {
   .grid--services { background: var(--line); border: 1px solid var(--line); }
 }
