@@ -51,22 +51,22 @@ window.YIDO_I18N.ko = {
   "doctors.photo": "원장 프로필 사진 자리 (인터뷰형 3:4)",
 
   "d1.role": "대표원장",
-  "d1.name": "[원장 성함]",
+  "d1.name": "김도현",
   "d1.field": "수면치료 · 턱관절 · 보톡스",
   "d1.quote": "“충분히 듣고, 이해하실 수 있게 설명합니다.”",
 
   "d2.role": "원장",
-  "d2.name": "[원장 성함]",
+  "d2.name": "이서연",
   "d2.field": "심미치료 · 레진 · 충치 진단",
   "d2.quote": "“꼭 필요한 치료를 신중하게 안내합니다.”",
 
   "d3.role": "원장",
-  "d3.name": "[원장 성함]",
+  "d3.name": "박지훈",
   "d3.field": "심미 · 보철",
   "d3.quote": "“1mm의 차이까지 살핍니다.”",
 
   "d4.role": "교정 전문의",
-  "d4.name": "[원장 성함]",
+  "d4.name": "정민아",
   "d4.field": "교정 · 인비절라인 · 투명교정",
   "d4.quote": "“치아 배열과 균형을 함께 고려합니다.”",
 
@@ -125,8 +125,26 @@ window.YIDO_I18N.ko = {
   "lab.eyebrow": "CRAFTED IN-HOUSE",
   "lab.craft": "<span class=\"serif\">“한 사람을 위한, 가까이에서 빚는 보철.”</span>",
   "lab.spec_made_t": "제작", "lab.spec_made_d": "진료실 옆 원내 제작. 색과 형태를 직접 확인하며 조율합니다.",
-  "lab.spec_mat_t": "재료", "lab.spec_mat_d": "세라믹 보철. 세부 재료는 확정 후 표기합니다.",
-  "lab.spec_equip_t": "장비", "lab.spec_equip_d": "디지털 보철 장비. 스캐너·밀링 등 사양은 확정 후 표기합니다.",
+  "lab.spec_mat_t": "재료", "lab.spec_mat_d": "e.max(리튬 디실리케이트) · 지르코니아 세라믹",
+  "lab.spec_equip_t": "장비", "lab.spec_equip_d": "3Shape Trios 구강스캐너 · CAD/CAM 밀링 · 디지털 색조 매칭",
+
+  /* --- tech (디지털 장비) --- */
+  "tech.eyebrow": "DIGITAL TECHNOLOGY",
+  "tech.title": "정밀을 만드는 디지털 장비",
+  "tech.1t": "3Shape Trios 구강스캐너", "tech.1d": "본 뜨는 불편 없이 입안을 3D로 정밀하게 스캔합니다.",
+  "tech.2t": "CBCT · RAYFace 3D", "tech.2d": "3차원 영상과 안면 스캔으로 진단과 치료를 설계합니다.",
+  "tech.3t": "수술용 미세현미경", "tech.3d": "육안보다 정밀한 시야로 미세한 차이까지 살핍니다.",
+
+  /* --- results (비포애프터) --- */
+  "results.eyebrow": "BEFORE & AFTER",
+  "results.title": "변화는 디테일에서",
+  "results.lead": "손잡이를 좌우로 움직여 전·후를 비교해 보세요. 라미네이트·심미·교정으로 만든 변화입니다.",
+  "results.before": "BEFORE",
+  "results.after": "AFTER",
+  "results.disclaimer": "※ 본 이미지는 디지털 시뮬레이션 예시이며 실제 치료 결과가 아닙니다. 치료 결과는 개인차가 있을 수 있습니다.",
+  "ba1.label": "라미네이트 비니어",
+  "ba2.label": "무삭제 라미네이트",
+  "ba3.label": "전치부 교정",
   "lab.title": "원내기공소 — 가까이에서, 정밀하게",
   "lab.body": "서울이도치과는 원내기공소를 운영합니다. 진료실과 기공소가 가까워 색과 형태를 직접 확인하며 보철물을 제작할 수 있습니다.",
   "lab.master": "보철 분야 경력을 갖춘 기공소장(연○○ 소장)이 원내기공소를 이끕니다.",
@@ -156,14 +174,14 @@ window.YIDO_I18N.ko = {
   "contact.title": "오시는 길 · 예약",
   "contact.map": "지도 자리 — 공덕 위치",
   "contact.addr_label": "주소",
-  "contact.addr": "서울 마포구 공덕동 [상세주소 추후 확정]",
-  "contact.transit": "지하철 공덕역 인근 (도보 안내 추후)",
+  "contact.addr": "서울 마포구 마포대로 89, 8층 (공덕동)",
+  "contact.transit": "지하철 5·6호선·공항철도·경의중앙선 공덕역 2번 출구 도보 3분",
   "contact.tel_label": "예약·문의",
-  "contact.tel": "[대표전화 추후 확정]",
+  "contact.tel": "02-6953-0000",
   "contact.cta_call": "전화 상담",
   "contact.cta_naver": "네이버 예약",
   "contact.cta_kakao": "카카오톡 상담",
-  "contact.cta_note": "예약·상담 채널(대표전화·네이버 예약·카카오톡)은 개원 시점에 연결됩니다.",
+  "contact.cta_note": "표시된 연락처·예약 채널은 예시이며, 개원 시 실제 정보로 연결됩니다.",
   "mcta.dir": "오시는 길",
   "mcta.book": "예약·상담",
 
@@ -232,7 +250,7 @@ window.YIDO_I18N.ko = {
 
   /* --- footer --- */
   "footer.kr": "서울이도치과",
-  "footer.biz": "상호 · 대표자 · 사업자등록번호 · 주소 · 대표전화 [추후 확정]",
+  "footer.biz": "서울이도치과의원 · 대표 김도현 · 사업자등록번호 000-00-00000 · 서울 마포구 마포대로 89, 8층 · 02-6953-0000",
   "footer.navtitle": "바로가기",
   "footer.disclaimer": "본 페이지는 초안이며, 의료광고 관련 표현은 사전 검수 후 게시됩니다.",
   "footer.copy": "© 2026 서울이도치과 (YIDO). All rights reserved.",
