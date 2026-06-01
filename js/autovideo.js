@@ -1,16 +1,16 @@
 /* ============================================================
-   서울이도치과 (YIDO) — autovideo
-   [data-autovideo]: 뷰포트에 들어올 때만 재생, 나가면 일시정지(성능).
-   PNG poster + preload="none" → 화면 밖에선 로드·디코드 안 함(첫 노출 시 로드).
-   prefers-reduced-motion: 재생하지 않음 → poster 정지화면 유지.
-   (핀드 저니의 .pinscroll__img 영상은 scrollyframes.js가 따로 제어 → 여기서 제외)
+   서울이도치과 (YIDO) — autovideo (동시 재생 캡)
+   [data-autovideo]: 뷰포트에서 가장 잘 보이는 N개만 재생(모바일 2/데스크톱 4),
+   나머지는 일시정지 → 모바일 AV1 동시 디코딩 렉 방지. 모션은 유지.
+   poster + preload="none" → 화면 밖은 로드·디코드 안 함.
+   prefers-reduced-motion / 데이터절약 / 2G → 재생 안 함(poster 유지).
+   (핀드 저니의 .pinscroll__img 영상은 scrollyframes.js가 따로 1개씩 제어)
    ============================================================ */
 (function () {
   "use strict";
 
-  /* 인앱 브라우저(카톡 등)는 poster·자동재생을 렌더 안 해 빈 박스(까만/회색)만 보임.
-     → 영상 요소 자체 배경에 poster를 깔아, 영상이 안 떠도 '사진'은 항상 보이게.
-     재생 가능한 브라우저에선 불투명 영상 프레임이 배경 위를 덮음. (핀스크롤 다중영상 포함 전부 커버) */
+  /* 인앱 브라우저(카톡 등)는 poster·자동재생을 렌더 안 해 빈 박스만 보임.
+     → 영상 요소 자체 배경에 poster를 깔아, 영상이 안 떠도 '사진'은 항상 보이게. */
   Array.prototype.forEach.call(document.querySelectorAll("video[poster]"), function (v) {
     var p = v.getAttribute("poster");
     if (!p) return;
@@ -22,9 +22,7 @@
 
   var reduce = window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  /* 모바일/데이터절약: 영상 재생 안 함 → 가벼운 webp poster만(렉 방지) */
   var conn = navigator.connection || {};
-  /* 데이터 절약/2G에서만 재생 생략(포스터). 일반 모바일은 AV1(경량)으로 재생 — IO가 화면 밖은 일시정지 */
   var saveData = conn.saveData === true || /(^|-)2g$/.test(conn.effectiveType || "");
 
   var vids = Array.prototype.slice.call(
@@ -33,19 +31,55 @@
   if (!vids.length || reduce || saveData) return; // reduce/데이터절약: poster 유지
 
   function play(v) {
-    if (v.preload === "none") v.preload = "auto"; // 첫 노출 시 로드 허용
+    if (v.dataset.playing === "1") return;
+    if (v.preload === "none") v.preload = "auto"; // 첫 재생 시 로드
+    v.dataset.playing = "1";
     var p = v.play();
     if (p && p.catch) p.catch(function () {}); /* autoplay 거부 무시(poster 유지) */
   }
+  function pause(v) {
+    if (v.dataset.playing !== "1") return;
+    v.dataset.playing = "0";
+    try { v.pause(); } catch (e) {}
+  }
 
-  if (!("IntersectionObserver" in window)) { vids.forEach(play); return; }
+  if (!("IntersectionObserver" in window)) {
+    // 폴백: 동시 재생 캡 없이 전부(구형 브라우저는 비중 작음)
+    vids.forEach(play);
+    return;
+  }
+
+  /* 동시 재생 제한 */
+  var MOBILE = (window.matchMedia && window.matchMedia("(max-width: 768px)").matches) ||
+    (window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
+  var MAX = MOBILE ? 2 : 4;
+
+  var ratios = new Map();   // 현재 교차중인 영상 → intersectionRatio
+  var raf = 0;
+  function reconcile() {
+    if (raf) return;
+    raf = requestAnimationFrame(function () {
+      raf = 0;
+      var arr = [];
+      ratios.forEach(function (r, v) { arr.push([v, r]); });
+      arr.sort(function (a, b) { return b[1] - a[1]; }); // 가장 잘 보이는 순
+      for (var i = 0; i < arr.length; i++) {
+        if (i < MAX) play(arr[i][0]); else pause(arr[i][0]);
+      }
+    });
+  }
 
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
-      if (en.isIntersecting) play(en.target);
-      else { try { en.target.pause(); } catch (e) {} }
+      if (en.isIntersecting && en.intersectionRatio > 0) {
+        ratios.set(en.target, en.intersectionRatio);
+      } else {
+        ratios.delete(en.target);
+        pause(en.target);
+      }
     });
-  }, { rootMargin: "200px 0px", threshold: 0.1 });
+    reconcile();
+  }, { rootMargin: "0px 0px -10% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] });
 
   vids.forEach(function (v) { io.observe(v); });
 })();
