@@ -119,6 +119,6 @@
   });
   // 데스크톱 폭으로 리사이즈 시 드로어 정리
   window.addEventListener("resize", function () {
-    if (window.innerWidth >= 1024 && isOpen()) closeDrawer();
+    if (window.innerWidth >= 1200 && isOpen()) closeDrawer();
   });
 })();

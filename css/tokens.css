@@ -28,6 +28,8 @@
   --accent-600: #B86A39;
   --accent-500: #C8814F;
   --accent-soft: #ECDCCD;
+  --accent-cta: #A85A2E;          /* CTA 솔리드 버튼 전용 — 흰 글자 WCAG AA(>4.5:1) 충족 */
+  --accent-cta-hover: #95501F;
 
   /* ---- Lines / overlays (neutral) ---- */
   --line:        rgba(14,14,16,.10);

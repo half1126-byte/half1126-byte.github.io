@@ -22,9 +22,9 @@ video { filter: var(--video-filter); }
               transform var(--dur-fast) var(--ease-spring), box-shadow var(--dur) var(--ease);
 }
 .btn:hover { text-decoration: none; }
-.btn--solid  { background: var(--accent-600); color: var(--white); border-color: var(--accent-600);
+.btn--solid  { background: var(--accent-cta); color: var(--white); border-color: var(--accent-cta);
   box-shadow: var(--hairline-top), 0 8px 18px -10px rgba(10,10,12,.45); }
-.btn--solid:hover  { background: var(--accent-500); border-color: var(--accent-500); color: var(--white);
+.btn--solid:hover  { background: var(--accent-cta-hover); border-color: var(--accent-cta-hover); color: var(--white);
   transform: translateY(-2px); box-shadow: var(--hairline-top), 0 14px 28px -12px rgba(10,10,12,.5); }
 .btn--invert { background: var(--white); color: var(--black); border-color: var(--white); }
 .btn--invert:hover { background: transparent; color: var(--white); }
