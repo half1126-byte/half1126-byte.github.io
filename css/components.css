@@ -129,7 +129,7 @@ video { filter: var(--video-filter); }
 .fac-grid .num-badge { font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-600); display: block; margin-bottom: var(--space-2); }
 /* 시설 카드: 이미지-상단 + 텍스트(이미지는 카드 라운드에 맞춰 클립) */
 .fac-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.fac-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--black); }
+.fac-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
 .fac-card__img img, .fac-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .fac-card:hover .fac-card__img img, .fac-card:hover .fac-card__img video { transform: scale(1.05); }
@@ -141,7 +141,7 @@ video { filter: var(--video-filter); }
 .service-card { display: flex; flex-direction: column; padding: 0; border: 0;
   background: var(--paper); overflow: hidden; }
 .service-card__img { position: relative; aspect-ratio: 3/2; overflow: hidden;
-  background: var(--black); }
+  background: var(--ink-900, #0a0a0b); }
 .service-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .service-card:hover .service-card__img video { transform: scale(1.05); }
@@ -160,7 +160,7 @@ video { filter: var(--video-filter); }
   grid-template-columns: 1fr; margin-top: var(--space-7); }
 .care-step { position: relative; background: var(--paper); padding: 0; overflow: hidden;
   display: flex; flex-direction: column; }
-.care-step__img { position: relative; aspect-ratio: 3/2; overflow: hidden; background: var(--black); }
+.care-step__img { position: relative; aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
 .care-step__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .care-step:hover .care-step__img video { transform: scale(1.05); }
@@ -196,7 +196,7 @@ video { filter: var(--video-filter); }
 .exp-card p { font-size: var(--fs-small); color: var(--ink-500); line-height: 1.62; }
 @media (min-width: 600px) { .exp-details { grid-template-columns: repeat(2, 1fr); } }
 .exp-details .exp-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.exp-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--black); }
+.exp-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
 .exp-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .exp-details .exp-card:hover .exp-card__img video { transform: scale(1.05); }
@@ -238,7 +238,7 @@ video { filter: var(--video-filter); }
 .contact-info dd { font-size: var(--fs-body); color: var(--ink-900); margin: var(--space-1) 0 0; }
 
 /* ---- Reveal-on-scroll ---- */
-[data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity var(--dur-xslow) var(--ease-emph), transform var(--dur-xslow) var(--ease-emph); will-change: opacity, transform; }
+[data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity var(--dur-xslow) var(--ease-emph), transform var(--dur-xslow) var(--ease-emph); }
 [data-reveal].is-visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { [data-reveal] { opacity: 1 !important; transform: none !important; } }
 
@@ -423,8 +423,7 @@ video { filter: var(--video-filter); }
 .mobile-cta {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
   display: flex; gap: var(--space-3); padding: var(--space-3) var(--gutter);
-  background: rgba(16,16,20,.94);
-  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  background: rgba(236,234,229,.97);
   border-top: 1px solid var(--line);
 }
 .mobile-cta .btn { flex: 1; justify-content: center; padding-inline: var(--space-3); }
@@ -448,7 +447,7 @@ video { filter: var(--video-filter); }
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "room room room" "model mill craft"; }
 .lab-collage .lc-cell { position: relative; overflow: hidden; border-radius: var(--radius-md);
-  background: var(--black); box-shadow: var(--shadow-card); border: 1px solid rgba(255,255,255,.06); }
+  background: var(--ink-900, #0a0a0b); box-shadow: var(--shadow-card); border: 1px solid rgba(255,255,255,.06); }
 .lab-collage video { width: 100%; height: 100%; object-fit: cover; display: block; filter: var(--video-filter); }
 .lc-room { grid-area: room; aspect-ratio: 16/9; }
 .lc-model { grid-area: model; }
@@ -462,31 +461,15 @@ video { filter: var(--video-filter); }
 
 /* ---- Draft banner ---- */
 .draft-note { position: fixed; top: 0; left: 0; right: 0; z-index: calc(var(--z-nav) + 5);
-  background: var(--black); color: var(--on-dark); text-align: center;
+  background: var(--ink-900); color: var(--on-dark); text-align: center;
   font-size: var(--fs-small); line-height: 1.45; padding: var(--space-2) var(--gutter); }
 
 /* ============================================================
    질감 · 라이트 배경 표면 (배경에만 그레인. 영상·이미지는 위에 떠서 자연히 제외)
    ⚠️ 반드시 파일 끝: 각 표면의 background 단축속성보다 뒤여야 image가 유지됨
    ============================================================ */
-.section--band, .section--paper50, .trust,
-.card, .service-card, .care-step, .moment, .phil-item, .doctor-card, .mobile-cta {
-  background-image: var(--tex-grain), var(--tex-grain-coarse);
-  background-size: 200px 200px, 360px 360px;
-  background-blend-mode: soft-light, soft-light;
-}
-
-/* ── 키컬러 페인트인: 섹션 번호·제목이 스크롤 진입 시 주황으로 칠해짐(좌→우 와이프) ── */
-@supports ((-webkit-background-clip: text) or (background-clip: text)) {
-  .section__num, .section__title {
-    background-image: linear-gradient(90deg, var(--accent-600) 0 50%, currentColor 50% 100%);
-    background-size: 200% 100%; background-position: 100% 0; background-repeat: no-repeat;
-    -webkit-background-clip: text; background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: background-position 1s var(--ease-out);
-  }
-  .section__num.is-painted, .section__title.is-painted { background-position: 0 0; }
-  @media (prefers-reduced-motion: reduce) {
-    .section__num, .section__title { transition: none; background-position: 0 0; }
-  }
+.section--band, .section--paper50, .trust {
+  background-image: var(--tex-grain);
+  background-size: 200px 200px;
+  background-blend-mode: overlay;
 }

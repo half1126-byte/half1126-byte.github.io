@@ -6,41 +6,41 @@
    ============================================================ */
 
 :root {
-  /* ---- Ink → 풀 다크: 텍스트는 라이트(오프화이트·웜그레이) ---- */
-  --black:    #0A0A0C;   /* 가장 깊은 베이스(특별 다크 섹션) */
-  --ink-900:  #EDEAE3;   /* 로고·헤드라인 — 오프화이트 */
-  --ink-700:  #CFCBC3;   /* 본문 — 따뜻한 라이트 그레이 */
-  --ink-500:  #9A968D;   /* 보조 */
-  --ink-300:  #837F77;   /* 캡션·메타·큰 숫자 */
-  --ink-100:  #26262A;   /* 다크 표면 보조 */
+  /* ---- Ink (neutral near-black · MONOCHROME) ---- */
+  --black:    #0E0E10;   /* 다크 섹션/히어로 베이스 — 매트 블랙 카드 */
+  --ink-900:  #17171A;   /* 로고·헤드라인 */
+  --ink-700:  #2C2C30;   /* 본문 */
+  --ink-500:  #6C6C72;   /* 보조(뉴트럴 그레이) */
+  --ink-300:  #8C8C92;   /* 캡션·메타·큰 숫자 (대비 보강) */   /* 캡션·메타·큰 숫자 */
+  --ink-100:  #D4D4D8;
 
-  /* ---- Base → 전체 차콜 + 섹션별 톤 변주(rhythm) ---- */
-  --paper:    #16161A;   /* 페이지 기본 배경(차콜) */
-  --paper-2:  #121216;   /* 교차 밴드(더 깊게) */
-  --paper-50: #1F1F25;   /* 카드/surface(살짝 들어올림) */
+  /* ---- Light base (warm-neutral bone, NOT bright white) ---- */
+  --paper:    #ECEAE5;   /* 페이지 기본 배경(본 아이보리) */
+  --paper-2:  #E3E0DA;   /* 교차 밴드(살짝 더 깊게) */
+  --paper-50: #F4F2EE;   /* 카드/surface(살짝 들어올림) */
   --white:    #FFFFFF;
 
-  /* ---- Neutral grey (placeholder/그라데이션) — 다크 ---- */
-  --wood-300: #2C2C32;
-  --wood-500: #3A3A42;
+  /* ---- Neutral grey (placeholder/그라데이션) ---- */
+  --wood-300: #CAC8C3;
+  --wood-500: #9C9A95;
 
-  /* ---- Accent — 포인트 키컬러: 더스티 프리미엄 주황(다크 위에서 강하게) ---- */
-  --accent-600: #C9803F;
-  --accent-500: #D6925A;
-  --accent-soft: #4A3322;          /* 선택·배지 배경(딥 웜) */
-  --accent-cta: #A85A2E;          /* CTA 솔리드 버튼 — 흰 글자 WCAG AA(>4.5:1) */
+  /* ---- Accent — 포인트 키컬러: 더스티 프리미엄 주황(노션 브랜드 스펙). 차콜 베이스 + 핵심 포인트에만 ---- */
+  --accent-600: #B86A39;
+  --accent-500: #C8814F;
+  --accent-soft: #ECDCCD;
+  --accent-cta: #A85A2E;          /* CTA 솔리드 버튼 전용 — 흰 글자 WCAG AA(>4.5:1) 충족 */
   --accent-cta-hover: #95501F;
 
-  /* ---- Lines / overlays (다크 위 라이트 헤어라인) ---- */
-  --line:        rgba(255,255,255,.10);
-  --line-strong: rgba(255,255,255,.18);
+  /* ---- Lines / overlays (neutral) ---- */
+  --line:        rgba(14,14,16,.10);
+  --line-strong: rgba(14,14,16,.20);
   --on-dark:     rgba(255,255,255,.90);
   --on-dark-dim: rgba(255,255,255,.60);
   --on-dark-line:rgba(255,255,255,.16);
 
   --scrim: linear-gradient(180deg, rgba(8,8,9,.30) 0%, rgba(8,8,9,.54) 55%, rgba(8,8,9,.76) 100%);
 
-  --focus-ring: #EDEAE3;
+  --focus-ring: #17171A;
   --focus-ring-dark: #FFFFFF;
 
   /* ---- Texture (고급 명함 질감 · SVG film grain, grayscale) ---- */
@@ -94,7 +94,7 @@
   --shadow-sm:   0 1px 1px rgba(10,10,12,.05), 0 2px 6px -2px rgba(10,10,12,.10);
   --shadow-card: 0 1px 2px rgba(10,10,12,.06), 0 4px 12px -6px rgba(10,10,12,.12), 0 24px 48px -28px rgba(10,10,12,.32);
   --shadow-lift: 0 2px 4px rgba(10,10,12,.07), 0 10px 22px -10px rgba(10,10,12,.18), 0 40px 70px -34px rgba(10,10,12,.34);
-  --hairline-top: inset 0 1px 0 rgba(255,255,255,.08);
+  --hairline-top: inset 0 1px 0 rgba(255,255,255,.55);
 
   /* ---- Motion ---- */
   --ease: cubic-bezier(.16,.84,.44,1);
@@ -104,7 +104,7 @@
   --dur-fast: 180ms; --dur: 380ms; --dur-slow: 820ms; --dur-xslow: 1100ms;
 
   /* ---- Video treatment (원래 색 + 미세 그레이딩) ---- */
-  --video-filter: saturate(1.02) contrast(1.03);
+  --video-filter: none;
 
   --z-nav: 100; --z-langmenu: 110; --z-drawer: 120; --z-skip: 200;
 }
