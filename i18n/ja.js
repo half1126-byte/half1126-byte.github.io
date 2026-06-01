@@ -51,7 +51,7 @@ window.YIDO_I18N.ja = {
   "care.title": "来院のすべての瞬間を、体験に",
   "care.lead": "ソウルイドゥ歯科が最も大切にするのは患者さまの体験です。到着から診療、そしてアフターケアまで — すべての瞬間を丁寧に設計します。",
   "care.media": "映像 — ケアの過程",
-  "exp.journey_title": "来院の瞬間", "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
+  "exp.journey_title": "次元の違う診療体験", "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
   "exp.j1.t": "到着とお迎え", "exp.j1.d": "入った瞬間の空気と香り、スタッフのご案内まで — 第一印象を丁寧に整えます。",
   "exp.j2.t": "心地よい待ち時間", "exp.j2.d": "お待ちの時間が負担にならないよう、目安の時間をご案内し、快適な空間をご用意します。",
   "exp.j3.t": "ゆとりある相談", "exp.j3.d": "気になる点を気軽にお尋ねいただけるよう、十分にお聞きし、ご理解いただけるよう説明します。",

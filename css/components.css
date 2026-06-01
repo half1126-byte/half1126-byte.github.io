@@ -129,7 +129,7 @@ video { filter: var(--video-filter); }
 .fac-grid .num-badge { font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-600); display: block; margin-bottom: var(--space-2); }
 /* 시설 카드: 이미지-상단 + 텍스트(이미지는 카드 라운드에 맞춰 클립) */
 .fac-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.fac-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
+.fac-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--black); }
 .fac-card__img img, .fac-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .fac-card:hover .fac-card__img img, .fac-card:hover .fac-card__img video { transform: scale(1.05); }
@@ -141,7 +141,7 @@ video { filter: var(--video-filter); }
 .service-card { display: flex; flex-direction: column; padding: 0; border: 0;
   background: var(--paper); overflow: hidden; }
 .service-card__img { position: relative; aspect-ratio: 3/2; overflow: hidden;
-  background: var(--ink-900, #0a0a0b); }
+  background: var(--black); }
 .service-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .service-card:hover .service-card__img video { transform: scale(1.05); }
@@ -160,7 +160,7 @@ video { filter: var(--video-filter); }
   grid-template-columns: 1fr; margin-top: var(--space-7); }
 .care-step { position: relative; background: var(--paper); padding: 0; overflow: hidden;
   display: flex; flex-direction: column; }
-.care-step__img { position: relative; aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
+.care-step__img { position: relative; aspect-ratio: 3/2; overflow: hidden; background: var(--black); }
 .care-step__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .care-step:hover .care-step__img video { transform: scale(1.05); }
@@ -196,7 +196,7 @@ video { filter: var(--video-filter); }
 .exp-card p { font-size: var(--fs-small); color: var(--ink-500); line-height: 1.62; }
 @media (min-width: 600px) { .exp-details { grid-template-columns: repeat(2, 1fr); } }
 .exp-details .exp-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.exp-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
+.exp-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--black); }
 .exp-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
 .exp-details .exp-card:hover .exp-card__img video { transform: scale(1.05); }
@@ -423,7 +423,7 @@ video { filter: var(--video-filter); }
 .mobile-cta {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
   display: flex; gap: var(--space-3); padding: var(--space-3) var(--gutter);
-  background: rgba(236,234,229,.94);
+  background: rgba(16,16,20,.94);
   -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
   border-top: 1px solid var(--line);
 }
@@ -448,7 +448,7 @@ video { filter: var(--video-filter); }
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "room room room" "model mill craft"; }
 .lab-collage .lc-cell { position: relative; overflow: hidden; border-radius: var(--radius-md);
-  background: var(--ink-900, #0a0a0b); box-shadow: var(--shadow-card); border: 1px solid rgba(255,255,255,.06); }
+  background: var(--black); box-shadow: var(--shadow-card); border: 1px solid rgba(255,255,255,.06); }
 .lab-collage video { width: 100%; height: 100%; object-fit: cover; display: block; filter: var(--video-filter); }
 .lc-room { grid-area: room; aspect-ratio: 16/9; }
 .lc-model { grid-area: model; }
@@ -462,7 +462,7 @@ video { filter: var(--video-filter); }
 
 /* ---- Draft banner ---- */
 .draft-note { position: fixed; top: 0; left: 0; right: 0; z-index: calc(var(--z-nav) + 5);
-  background: var(--ink-900); color: var(--on-dark); text-align: center;
+  background: var(--black); color: var(--on-dark); text-align: center;
   font-size: var(--fs-small); line-height: 1.45; padding: var(--space-2) var(--gutter); }
 
 /* ============================================================
@@ -473,5 +473,5 @@ video { filter: var(--video-filter); }
 .card, .service-card, .care-step, .moment, .phil-item, .doctor-card, .mobile-cta {
   background-image: var(--tex-grain), var(--tex-grain-coarse);
   background-size: 200px 200px, 360px 360px;
-  background-blend-mode: overlay, soft-light;
+  background-blend-mode: soft-light, soft-light;
 }

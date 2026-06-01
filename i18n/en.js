@@ -51,7 +51,7 @@ window.YIDO_I18N.en = {
   "care.title": "Every moment of your visit, as an experience",
   "care.lead": "What matters most to Seoul YIDO Dental is your experience. From arrival to treatment and aftercare — we design every moment with care.",
   "care.media": "Video — the care process",
-  "exp.journey_title": "Moments of a visit", "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
+  "exp.journey_title": "A different level of care", "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
   "exp.j1.t": "Arrival & welcome", "exp.j1.d": "The air and scent as you step in, the staff's greeting — we prepare the first impression with care.",
   "exp.j2.t": "A calm wait", "exp.j2.d": "So waiting never feels like a burden, we share the expected time and offer a comfortable space.",
   "exp.j3.t": "An unhurried consultation", "exp.j3.d": "So you can ask anything with ease, we listen fully and explain in a way you can understand.",

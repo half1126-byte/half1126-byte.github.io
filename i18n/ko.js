@@ -76,7 +76,7 @@ window.YIDO_I18N.ko = {
   "care.lead": "서울이도치과가 가장 중요하게 생각하는 것은 환자분의 경험입니다. 도착부터 진료, 그리고 사후 관리까지 — 모든 순간을 정성껏 설계합니다.",
   "care.media": "영상 자리 — 케어 과정",
 
-  "exp.journey_title": "방문의 순간들",
+  "exp.journey_title": "다른 차원의 진료 경험",
   "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
   "exp.j1.t": "도착과 맞이", "exp.j1.d": "들어서는 순간의 공기와 향, 직원의 안내까지 — 첫인상을 정성껏 준비합니다.",
   "exp.j2.t": "편안한 대기", "exp.j2.d": "기다리는 시간이 부담이 되지 않도록 예상 시간을 안내하고, 편안한 공간을 마련합니다.",

@@ -51,7 +51,7 @@ window.YIDO_I18N.zh = {
   "care.title": "把每一个就诊瞬间，化为体验",
   "care.lead": "首尔以道齿科最重视的是您的体验。从到达、诊疗到后续护理 —— 我们用心设计每一个瞬间。",
   "care.media": "视频 — 护理过程",
-  "exp.journey_title": "就诊的瞬间", "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
+  "exp.journey_title": "不一样的诊疗体验", "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
   "exp.j1.t": "到达与迎接", "exp.j1.d": "踏入瞬间的空气与香气、员工的引导 —— 我们用心营造初见的印象。",
   "exp.j2.t": "舒适的等候", "exp.j2.d": "为了不让等候成为负担，我们告知预计时间，并准备舒适的空间。",
   "exp.j3.t": "充分的咨询", "exp.j3.d": "为了让您能轻松提问，我们充分倾听，并以您能理解的方式说明。",

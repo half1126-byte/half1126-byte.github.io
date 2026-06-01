@@ -115,5 +115,5 @@ img, picture, video, svg { display: block; max-width: 100%; height: auto; }
 body {
   background-image: var(--tex-grain), var(--tex-grain-coarse);
   background-size: 200px 200px, 360px 360px;
-  background-blend-mode: overlay, soft-light;
+  background-blend-mode: soft-light, soft-light;
 }
