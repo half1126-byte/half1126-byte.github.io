@@ -475,3 +475,18 @@ video { filter: var(--video-filter); }
   background-size: 200px 200px, 360px 360px;
   background-blend-mode: soft-light, soft-light;
 }
+
+/* ── 키컬러 페인트인: 섹션 번호·제목이 스크롤 진입 시 주황으로 칠해짐(좌→우 와이프) ── */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .section__num, .section__title {
+    background-image: linear-gradient(90deg, var(--accent-600) 0 50%, currentColor 50% 100%);
+    background-size: 200% 100%; background-position: 100% 0; background-repeat: no-repeat;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 1s var(--ease-out);
+  }
+  .section__num.is-painted, .section__title.is-painted { background-position: 0 0; }
+  @media (prefers-reduced-motion: reduce) {
+    .section__num, .section__title { transition: none; background-position: 0 0; }
+  }
+}
