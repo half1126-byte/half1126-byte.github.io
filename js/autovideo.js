@@ -8,6 +8,18 @@
 (function () {
   "use strict";
 
+  /* 인앱 브라우저(카톡 등)는 poster·자동재생을 렌더 안 해 빈 박스(까만/회색)만 보임.
+     → 영상 요소 자체 배경에 poster를 깔아, 영상이 안 떠도 '사진'은 항상 보이게.
+     재생 가능한 브라우저에선 불투명 영상 프레임이 배경 위를 덮음. (핀스크롤 다중영상 포함 전부 커버) */
+  Array.prototype.forEach.call(document.querySelectorAll("video[poster]"), function (v) {
+    var p = v.getAttribute("poster");
+    if (!p) return;
+    v.style.backgroundImage = 'url("' + p + '")';
+    v.style.backgroundSize = "cover";
+    v.style.backgroundPosition = "center";
+    v.style.backgroundRepeat = "no-repeat";
+  });
+
   var reduce = window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   /* 모바일/데이터절약: 영상 재생 안 함 → 가벼운 webp poster만(렉 방지) */
