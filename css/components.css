@@ -195,7 +195,12 @@ video { filter: var(--video-filter); }
 .exp-card h4 { font-size: 1.125rem; color: var(--ink-900); font-weight: var(--w-semi); margin-bottom: var(--space-2); }
 .exp-card p { font-size: var(--fs-small); color: var(--ink-500); line-height: 1.62; }
 @media (min-width: 600px) { .exp-details { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .exp-details { grid-template-columns: repeat(3, 1fr); } }
+.exp-details .exp-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.exp-card__img { aspect-ratio: 3/2; overflow: hidden; background: var(--ink-900, #0a0a0b); }
+.exp-card__img video { width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: var(--video-filter); transition: transform var(--dur-xslow) var(--ease-out); }
+.exp-details .exp-card:hover .exp-card__img video { transform: scale(1.05); }
+.exp-card__body { padding: var(--space-5) var(--space-6) var(--space-6); }
 
 /* ---- Step list ---- */
 .steplist { list-style: none; padding: 0; margin: var(--space-6) 0 0; counter-reset: step; }
@@ -345,7 +350,7 @@ video { filter: var(--video-filter); }
 .visit-grid { list-style: none; margin: var(--space-7) 0 0; padding: 0;
   display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); grid-template-columns: 1fr; }
 @media (min-width: 600px) { .visit-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .visit-grid { grid-template-columns: repeat(4, 1fr); } }
+.visit-figure { margin-top: var(--space-8); border-radius: var(--radius-md); overflow: hidden; }
 
 /* ============================================================
    Micro-interactions (hover/press) — 애플급 디테일
