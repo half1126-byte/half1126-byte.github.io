@@ -24,10 +24,10 @@
   --wood-300: #CAC8C3;
   --wood-500: #9C9A95;
 
-  /* ---- Accent — MONOCHROME(잉크). 다크 컨텍스트에선 화이트로 자동 전환 ---- */
-  --accent-600: #1A1A1D;
-  --accent-500: #45454B;
-  --accent-soft: #DDDAD3;
+  /* ---- Accent — 포인트 키컬러: 더스티 프리미엄 주황(노션 브랜드 스펙). 차콜 베이스 + 핵심 포인트에만 ---- */
+  --accent-600: #B86A39;
+  --accent-500: #C8814F;
+  --accent-soft: #ECDCCD;
 
   /* ---- Lines / overlays (neutral) ---- */
   --line:        rgba(14,14,16,.10);

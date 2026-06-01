@@ -193,8 +193,8 @@ body.nav-open { overflow: hidden; }
    ② 매트 블랙 '명함 카드' 텍스처: soft-light 그레인 2겹 + 상단 미세 시인
    ============================================================ */
 .section--dark, .site-footer, .nav-drawer, .hero, .scrubfilm, .filmband {
-  --accent-600: #FFFFFF;
-  --accent-500: rgba(255,255,255,.72);
+  --accent-600: #C9803F;
+  --accent-500: rgba(214,146,90,.85);
 }
 .section--dark, .site-footer {
   background-color: var(--black);

@@ -87,7 +87,7 @@ video { filter: var(--video-filter); }
   color: var(--on-dark-dim); margin-bottom: var(--space-5);
 }
 .hero h1 { color: var(--white); max-width: 18ch; }
-.hero h1 .accent { font-style: italic; font-family: var(--font-serif); font-weight: var(--w-med); }
+.hero h1 .accent { font-style: italic; font-family: var(--font-serif); font-weight: var(--w-med); color: var(--accent-600); }
 .hero__lead { color: var(--on-dark); font-size: var(--fs-lead); line-height: 1.5;
   max-width: 42ch; margin-top: var(--space-6); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; margin-top: var(--space-7); }
