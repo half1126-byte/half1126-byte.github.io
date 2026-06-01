@@ -192,7 +192,7 @@ body.nav-open { overflow: hidden; }
    ① 액센트를 화이트로 자동 전환 — 검정 위에서 잉크 액센트가 사라지는 문제 방지
    ② 매트 블랙 '명함 카드' 텍스처: soft-light 그레인 2겹 + 상단 미세 시인
    ============================================================ */
-.section--dark, .site-footer, .nav-drawer, .hero, .scrubfilm, .filmband {
+.section--dark, .site-footer, .nav-drawer, .hero {
   --accent-600: #C9803F;
   --accent-500: rgba(214,146,90,.85);
 }
