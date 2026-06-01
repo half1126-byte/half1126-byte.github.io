@@ -113,7 +113,7 @@ img, picture, video, svg { display: block; max-width: 100%; height: auto; }
    라이트 표면 그레인은 components.css의 유틸 블록 참고.
    ============================================================ */
 body {
-  background-image: var(--tex-grain);
-  background-size: 200px 200px;
-  background-blend-mode: soft-light;
+  background-image: var(--tex-grain), var(--tex-grain-coarse);
+  background-size: 200px 200px, 360px 360px;
+  background-blend-mode: overlay, soft-light;
 }

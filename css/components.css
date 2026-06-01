@@ -533,7 +533,7 @@ video { filter: var(--video-filter); }
    ============================================================ */
 .section--band, .section--paper50, .trust,
 .card, .service-card, .care-step, .moment, .phil-item, .doctor-card, .mobile-cta {
-  background-image: var(--tex-grain);
-  background-size: 200px 200px;
-  background-blend-mode: soft-light;
+  background-image: var(--tex-grain), var(--tex-grain-coarse);
+  background-size: 200px 200px, 360px 360px;
+  background-blend-mode: overlay, soft-light;
 }

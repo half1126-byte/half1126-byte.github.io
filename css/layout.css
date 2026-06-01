@@ -75,7 +75,7 @@
   color: inherit; display: inline-flex; align-items: baseline; gap: 1px;
   transition: opacity var(--dur-fast) var(--ease);
 }
-.wordmark .dot { color: currentColor; opacity: 1; display: inline-block; transition: transform var(--dur) var(--ease-spring); }
+.wordmark .dot { color: var(--accent-600); opacity: 1; display: inline-block; transition: transform var(--dur) var(--ease-spring); }
 .wordmark:hover .dot { transform: translateY(-2px); }
 .wordmark .kr {
   font-family: var(--font-sans); font-size: 0.7rem; font-weight: var(--w-med);
