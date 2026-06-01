@@ -437,30 +437,6 @@ video { filter: var(--video-filter); }
   overflow: hidden; margin-top: var(--space-8); box-shadow: var(--shadow-card); }
 .about-figure img, .about-figure video { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-/* 공간 갤러리 */
-.gallery-grid { display: grid; gap: var(--space-3); grid-template-columns: 1fr; margin-top: var(--space-8); }
-.gallery-item { position: relative; aspect-ratio: 3/2; border-radius: var(--radius-md);
-  overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid rgba(255,255,255,.06); }
-.gallery-item img, .gallery-item video { width: 100%; height: 100%; object-fit: cover; display: block;
-  transition: transform var(--dur-xslow) var(--ease-out); }
-.gallery-item:hover img, .gallery-item:hover video { transform: scale(1.04); }
-.gallery-cap { position: absolute; left: 0; right: 0; bottom: 0; padding: var(--space-5);
-  font-size: var(--fs-small); font-weight: var(--w-semi); color: var(--white); letter-spacing: -0.01em;
-  background: linear-gradient(180deg, transparent, rgba(8,8,9,.72)); }
-/* 비대칭 콜라주 (magazine montage) — 큰 좌상단 + 우측 세로 + 하단 2컷 */
-@media (min-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, minmax(180px, 27vh));
-    grid-template-areas: "a a b" "c d b";
-  }
-  .gallery-item { aspect-ratio: auto; }
-  .gallery-item:nth-child(1) { grid-area: a; }
-  .gallery-item:nth-child(2) { grid-area: b; }
-  .gallery-item:nth-child(3) { grid-area: c; }
-  .gallery-item:nth-child(4) { grid-area: d; }
-}
-@media (prefers-reduced-motion: reduce) { .gallery-item:hover img { transform: none; } }
 
 /* 원내기공소 콜라주 — 작업실 와이드 + 디테일 3컷(동적) */
 .lab-collage { display: grid; gap: var(--space-2);
