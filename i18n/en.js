@@ -12,7 +12,7 @@ window.YIDO_I18N.en = {
 
   "nav.about": "About", "nav.doctors": "Doctors", "nav.care": "Experience", "nav.services": "Treatments",
   "nav.lab": "Lab", "nav.hygiene": "Hygiene", "nav.intl": "Global", "nav.contact": "Visit",
-  "nav.menu": "Open menu", "nav.consult": "Booking",
+  "nav.menu": "Open menu", "nav.consult": "Booking", "nav.results": "Results",
 
   "hero.eyebrow": "SEOUL YIDO DENTAL",
   "hero.title": "Honest diagnosis and <span class=\"accent\">attentive care</span>,<br>Seoul YIDO Dental",

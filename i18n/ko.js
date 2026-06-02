@@ -22,6 +22,7 @@ window.YIDO_I18N.ko = {
   "nav.contact": "오시는 길",
   "nav.menu": "메뉴 열기",
   "nav.consult": "상담·예약 안내",
+  "nav.results": "변화",
 
   /* --- hero --- */
   "hero.eyebrow": "SEOUL YIDO DENTAL",

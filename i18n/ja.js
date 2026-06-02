@@ -12,7 +12,7 @@ window.YIDO_I18N.ja = {
 
   "nav.about": "医院紹介", "nav.doctors": "医師紹介", "nav.care": "患者体験", "nav.services": "診療科目",
   "nav.lab": "院内技工所", "nav.hygiene": "衛生・滅菌", "nav.intl": "外国人診療", "nav.contact": "アクセス",
-  "nav.menu": "メニューを開く", "nav.consult": "予約・相談",
+  "nav.menu": "メニューを開く", "nav.consult": "予約・相談", "nav.results": "変化",
 
   "hero.eyebrow": "SEOUL YIDO DENTAL",
   "hero.title": "正しい診断と<span class=\"accent\">繊細な体験</span>を、<br>ソウルイドゥ歯科",
