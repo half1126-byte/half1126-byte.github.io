@@ -34,7 +34,7 @@ window.YIDO_I18N.ko = {
 
   /* --- about --- */
   "about.eyebrow": "ABOUT",
-  "about.title": "이름에 담은 마음, 이도(YIDO)",
+  "about.title": "이름에 담은 마음,<br class=\"lb\">이도(YIDO)",
   "about.callout": "<span class=\"serif\">“바른 길을 걷는 진료.”</span>",
   "about.body": "이도는 ‘바른 길을 걷는다’는 뜻을 담은 이름입니다. 갈 之와 길 道를 더해, 진단과 진료에서 정도를 지키겠다는 다짐을 새겼습니다. 영문 YIDO는 ‘Your Ideal Dental Office’로도 읽힙니다.",
   "about.essence": "서울이도치과는 진료 기술과 공간, 응대와 관리 프로그램이 자연스럽게 이어지는 경험을 지향합니다. 스케일링이나 검진처럼 익숙한 진료에서도 ‘정성을 들이는구나’ 하고 느끼실 수 있도록 준비합니다.",
@@ -45,7 +45,7 @@ window.YIDO_I18N.ko = {
 
   /* --- doctors --- */
   "doctors.eyebrow": "OUR DOCTORS",
-  "doctors.title": "서울대학교 치과대학 출신 의료진",
+  "doctors.title": "서울대학교 치과대학 출신<br class=\"lb\">의료진",
   "doctors.lead": "각자의 전문 분야에서 바른 진단과 섬세한 진료를 지향하는 의료진이 함께합니다.",
   "doctors.note": "서울이도치과는 서울대학교 치과대학 출신 의료진으로 구성되어 있습니다.",
   "doctors.photo": "원장 프로필 사진 자리 (인터뷰형 3:4)",
@@ -77,11 +77,11 @@ window.YIDO_I18N.ko = {
 
   /* --- care / 환자 경험 (핵심) --- */
   "care.eyebrow": "PATIENT EXPERIENCE",
-  "care.title": "방문의 모든 순간을, 경험으로",
+  "care.title": "방문의 모든 순간을,<br class=\"lb\">경험으로",
   "care.lead": "서울이도치과가 가장 중요하게 생각하는 것은 환자분의 경험입니다. 도착부터 진료, 그리고 사후 관리까지 — 모든 순간을 정성껏 설계합니다.",
   "care.media": "영상 자리 — 케어 과정",
 
-  "exp.journey_title": "다른 차원의 진료 경험",
+  "exp.journey_title": "다른 차원의<br class=\"lb\">진료 경험",
   "exp.journey_eyebrow": "THE YIDO EXPERIENCE",
   "exp.j1.t": "도착과 맞이", "exp.j1.d": "들어서는 순간의 공기와 향, 직원의 안내까지 — 첫인상을 정성껏 준비합니다.",
   "exp.j2.t": "편안한 대기", "exp.j2.d": "기다리는 시간이 부담이 되지 않도록 예상 시간을 안내하고, 편안한 공간을 마련합니다.",
@@ -135,7 +135,7 @@ window.YIDO_I18N.ko = {
 
   /* --- tech (디지털 장비) --- */
   "tech.eyebrow": "DIGITAL TECHNOLOGY",
-  "tech.title": "정밀을 만드는 디지털 장비",
+  "tech.title": "정밀을 만드는<br class=\"lb\">디지털 장비",
   "tech.1t": "3Shape Trios 구강스캐너", "tech.1d": "본 뜨는 불편 없이 입안을 3D로 정밀하게 스캔합니다.",
   "tech.2t": "CBCT · RAYFace 3D", "tech.2d": "3차원 영상과 안면 스캔으로 진단과 치료를 설계합니다.",
   "tech.3t": "수술용 미세현미경", "tech.3d": "육안보다 정밀한 시야로 미세한 차이까지 살핍니다.",
@@ -150,7 +150,7 @@ window.YIDO_I18N.ko = {
   "ba1.label": "라미네이트 비니어",
   "ba2.label": "무삭제 라미네이트",
   "ba3.label": "전치부 교정",
-  "lab.title": "원내기공소 — 가까이에서, 정밀하게",
+  "lab.title": "원내기공소 —<br class=\"lb\">가까이에서, 정밀하게",
   "lab.body": "서울이도치과는 원내기공소를 운영합니다. 진료실과 기공소가 가까워 색과 형태를 직접 확인하며 보철물을 제작할 수 있습니다.",
   "lab.master": "보철 분야 경력을 갖춘 기공소장(연○○ 소장)이 원내기공소를 이끕니다.",
   "lab.why": "의료진과 기공소장이 직접 소통하며 세부 사항을 조율합니다.",
@@ -158,7 +158,7 @@ window.YIDO_I18N.ko = {
 
   /* --- hygiene --- */
   "hygiene.eyebrow": "HYGIENE & STERILIZATION",
-  "hygiene.title": "위생과 소독, 보이지 않는 곳까지",
+  "hygiene.title": "위생과 소독,<br class=\"lb\">보이지 않는 곳까지",
   "hygiene.lead": "환자 한 분 한 분께 안심을 드릴 수 있도록 정해진 소독 절차를 지킵니다.",
   "hy1": "노바케어 소독 시스템 운영",
   "hy2": "국제표준에 따른 감염관리 단계 준수",
@@ -199,7 +199,7 @@ window.YIDO_I18N.ko = {
   "visit.4t": "대기 안내", "visit.4d": "예상 대기 시간을 미리 안내하고, 편안하게 기다리실 수 있도록 돕습니다.",
 
   "phil.eyebrow": "OUR PHILOSOPHY",
-  "phil.title": "바른 진단에서 시작하는 진료",
+  "phil.title": "바른 진단에서<br class=\"lb\">시작하는 진료",
   "phil.lead": "필요한 치료를 정확히, 과하지 않게. 서울이도치과는 정직한 진단과 투명한 안내를 진료의 기준으로 삼습니다.",
   "phil.1t": "바른 진단", "phil.1d": "꼭 필요한 치료만 신중하게 권해 드립니다. 과잉진료를 지양합니다.",
   "phil.2t": "이해하는 진료", "phil.2d": "진단 결과와 진료 과정을 충분히 듣고 이해하실 수 있게 설명합니다.",

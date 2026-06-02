@@ -33,6 +33,10 @@ body {
 html[lang="ko"] body { word-break: keep-all; }
 html[lang="ja"] body, html[lang="zh"] body { line-break: strict; }
 
+/* 헤드라인 아트디렉션 줄바꿈 — 모바일은 자연 줄바꿈, 데스크톱(≥680px)에서만 의도된 위치에서 끊김 */
+.lb { display: none; }
+@media (min-width: 680px) { .lb { display: inline; } }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
