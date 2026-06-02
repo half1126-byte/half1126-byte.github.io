@@ -47,6 +47,11 @@ window.YIDO_I18N.zh = {
   "d4.role": "正畸专科医生", "d4.name": "郑敏雅", "d4.field": "正畸·隐适美·透明矫正",
   "d4.quote": "“同时兼顾牙齿排列与平衡。”",
 
+  "d1.career": "首尔大学齿医学院 毕业 · 大韩口腔颌面种植学会 正会员 · 睡眠·颞下颌关节诊疗",
+  "d2.career": "首尔大学齿医学院 毕业 · 大韩美学齿科学会 正会员 · 美学·保存诊疗",
+  "d3.career": "首尔大学齿医学院 毕业 · 大韩齿科修复学会 正会员 · 修复·美学诊疗",
+  "d4.career": "牙齿正畸科 专科医生 · 大韩牙齿正畸学会 认定医 · 首尔大学齿科医院 正畸科 进修",
+
   "care.eyebrow": "PATIENT EXPERIENCE",
   "care.title": "把每一个就诊瞬间，化为体验",
   "care.lead": "首尔以道齿科最重视的是您的体验。从到达、诊疗到后续护理 —— 我们用心设计每一个瞬间。",
@@ -177,10 +182,6 @@ window.YIDO_I18N.zh = {
   "hours.r3_day": "周六", "hours.r3_hours": "09:30 – 14:30", "hours.r3_lunch": "无午休",
   "hours.r4_day": "周日·节假日", "hours.r4_hours": "休诊", "hours.r4_lunch": "—",
 
-  "d1.career": "首尔大学齿医学院出身 · 专注睡眠·颞下颌关节诊疗",
-  "d2.career": "首尔大学齿医学院出身 · 美学·保存诊疗",
-  "d3.career": "首尔大学齿医学院出身 · 国际学术演讲经验",
-  "d4.career": "首尔大学齿科医院临床教授经历 · 正畸专科医生",
   "care.diff": "<span class=\"serif\">“洁牙，也如护理一般。”</span> 以GBT口腔水疗进行 —— 通过菌斑显示一同确认状况，并以Air-Flow护理。",
   "fac.eyebrow": "FACILITIES & EQUIPMENT",
   "fac.title": "空间与设备",

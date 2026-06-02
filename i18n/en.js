@@ -47,6 +47,11 @@ window.YIDO_I18N.en = {
   "d4.role": "Orthodontist", "d4.name": "Dr. Min-A Jung", "d4.field": "Orthodontics · Invisalign · Clear aligners",
   "d4.quote": "“We consider tooth alignment and balance together.”",
 
+  "d1.career": "Seoul National University, School of Dentistry · Member, Korean Academy of Oral & Maxillofacial Implantology · Sleep & TMJ care",
+  "d2.career": "Seoul National University, School of Dentistry · Member, Korean Academy of Esthetic Dentistry · Aesthetic & conservative care",
+  "d3.career": "Seoul National University, School of Dentistry · Member, Korean Academy of Prosthodontics · Prosthodontic & aesthetic care",
+  "d4.career": "Board-certified orthodontist · Certified, Korean Association of Orthodontists · Trained in Orthodontics, SNU Dental Hospital",
+
   "care.eyebrow": "PATIENT EXPERIENCE",
   "care.title": "Every moment of your visit, as an experience",
   "care.lead": "What matters most to Seoul YIDO Dental is your experience. From arrival to treatment and aftercare — we design every moment with care.",
@@ -177,10 +182,6 @@ window.YIDO_I18N.en = {
   "hours.r3_day": "Sat", "hours.r3_hours": "09:30 – 14:30", "hours.r3_lunch": "No lunch break",
   "hours.r4_day": "Sun · Holidays", "hours.r4_hours": "Closed", "hours.r4_lunch": "—",
 
-  "d1.career": "SNU School of Dentistry · dedicated to sleep & TMJ care",
-  "d2.career": "SNU School of Dentistry · aesthetic & conservative care",
-  "d3.career": "SNU School of Dentistry · international lecturing experience",
-  "d4.career": "Former clinical professor, SNU Dental Hospital · orthodontist",
   "care.diff": "<span class=\"serif\">“Even a scaling, like care.”</span> We run it as a GBT oral spa — checking the surfaces together with disclosing and cleaning with Air-Flow.",
   "fac.eyebrow": "FACILITIES & EQUIPMENT",
   "fac.title": "Spaces and equipment",
