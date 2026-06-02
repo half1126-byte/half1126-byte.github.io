@@ -36,7 +36,6 @@ window.YIDO_I18N.zh = {
   "doctors.title": "首尔大学齿医学院出身的<br class=\"lb\">医疗团队",
   "doctors.lead": "在各自的专业领域，追求正确诊断与细致诊疗的医疗团队为您服务。",
   "doctors.note": "首尔以道齿科由首尔大学齿医学院出身的医疗团队组成。",
-  "doctors.photo": "院长形象照位置（访谈式 3:4）",
 
   "d1.role": "代表院长", "d1.name": "金度贤", "d1.field": "睡眠治疗·颞下颌关节·肉毒",
   "d1.quote": "“充分倾听，并以您能理解的方式说明。”",
@@ -190,10 +189,6 @@ window.YIDO_I18N.zh = {
   "fac.2t": "手术室 2间", "fac.2d": "外科诊疗专用空间",
   "fac.3t": "恢复室 2间", "fac.3d": "术后静养空间",
   "fac.4t": "美学诊疗专属区", "fac.4d": "在独立空间细致护理",
-  "fac.5t": "院内技工所", "fac.5d": "精密修复在身边",
-  "fac.6t": "GBT口腔水疗", "fac.6d": "运用菌斑显示·Air-Flow",
-  "fac.7t": "Wolkin LDM", "fac.7d": "术后肿胀护理",
-  "fac.8t": "NovaCare消毒", "fac.8d": "国际标准感染管理流程",
 
   "faq.eyebrow": "FAQ",
   "faq.title": "常见问题",

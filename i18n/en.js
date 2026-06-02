@@ -36,7 +36,6 @@ window.YIDO_I18N.en = {
   "doctors.title": "Clinicians trained at Seoul National University,<br class=\"lb\">School of Dentistry",
   "doctors.lead": "Our clinicians work toward honest diagnosis and attentive treatment, each within their own field.",
   "doctors.note": "Seoul YIDO Dental is made up of clinicians trained at Seoul National University, School of Dentistry.",
-  "doctors.photo": "Doctor profile photo (interview style, 3:4)",
 
   "d1.role": "Director", "d1.name": "Dr. Do-Hyun Kim", "d1.field": "Sleep therapy · TMJ · Botox",
   "d1.quote": "“We listen fully, and explain so you understand.”",
@@ -190,10 +189,6 @@ window.YIDO_I18N.en = {
   "fac.2t": "2 operating rooms", "fac.2d": "Dedicated to surgical care",
   "fac.3t": "2 recovery rooms", "fac.3d": "For resting after a procedure",
   "fac.4t": "Dedicated aesthetic sector", "fac.4d": "Attentive care in a separate space",
-  "fac.5t": "In-house lab", "fac.5d": "Precise prosthetics, close by",
-  "fac.6t": "GBT oral spa", "fac.6d": "Using disclosing & Air-Flow",
-  "fac.7t": "Wolkin LDM", "fac.7d": "Post-procedure swelling care",
-  "fac.8t": "NovaCare sterilization", "fac.8d": "International-standard infection control",
 
   "faq.eyebrow": "FAQ",
   "faq.title": "Frequently asked questions",
