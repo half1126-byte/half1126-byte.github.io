@@ -7,7 +7,9 @@
 .container--narrow { max-width: var(--container-narrow); }
 
 /* ---- Section ---- */
-.section { padding-block: var(--section-pad-y); scroll-margin-top: calc(var(--draft-h, 0px) + var(--nav-h)); }
+.section { padding-block: var(--section-pad-y); scroll-margin-top: calc(var(--draft-h, 0px) + var(--nav-h));
+  /* 화면 밖 섹션은 렌더·레이아웃 스킵 → 긴 페이지 초기 렌더·스크롤 가벼움(auto=실측 크기 기억) */
+  content-visibility: auto; contain-intrinsic-size: auto 700px; }
 .section--band { background: var(--paper-2); }
 .section--paper50 { background: var(--paper-50); }
 .section--dark { background: var(--black); color: var(--on-dark); }
