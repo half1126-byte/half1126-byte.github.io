@@ -164,6 +164,15 @@ video { filter: var(--video-filter); }
 .ba figcaption { position: absolute; top: var(--space-3); left: var(--space-3); z-index: 3; font-size: var(--fs-small);
   color: #fff; background: rgba(0,0,0,.5); padding: 4px 10px; border-radius: 100px; pointer-events: none; }
 .ba-disclaimer { margin-top: var(--space-6); font-size: var(--fs-eyebrow); color: var(--ink-500); line-height: 1.5; }
+
+/* YIDO PASSION STANDARD 7 (다크 매니페스토) */
+.passion-grid { list-style: none; margin: var(--space-8) 0 0; padding: 0; display: grid; gap: var(--space-6); grid-template-columns: 1fr; }
+@media (min-width: 760px) { .passion-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-7) var(--space-8); } }
+.passion-item { margin: 0; padding-top: var(--space-5); border-top: 1px solid var(--on-dark-line); }
+.passion-item__idx { font-family: var(--font-serif); font-size: 1.125rem; color: var(--accent-600); letter-spacing: .04em; }
+.passion-item__key { font-family: var(--font-serif); font-size: clamp(1.5rem, 2.6vw, 2rem); color: var(--white);
+  margin: var(--space-2) 0 var(--space-3); font-weight: var(--w-med); letter-spacing: var(--tracking-tight); }
+.passion-item p { color: var(--on-dark-dim); font-size: var(--fs-body); line-height: 1.6; max-width: 42ch; }
 .fac-grid .num-badge { font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-600); display: block; margin-bottom: var(--space-2); }
 /* 시설 카드: 이미지-상단 + 텍스트(이미지는 카드 라운드에 맞춰 클립) */
 .fac-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }

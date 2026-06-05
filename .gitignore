@@ -1,8 +1,13 @@
 node_modules/
 package.json
 package-lock.json
-# 내부 문서(공개 금지): 미팅노트·브랜드가이드·README 등 루트 .md 전부
+# 내부 문서(공개 금지): 미팅노트·브랜드가이드·README 등 루트 .md/문서 전부
 /*.md
+/*.pdf
+/*.docx
+/*.pptx
+/*.hwp
+/*.hwpx
 assets/GENERATION_BRIEF.md
 video/옴니레퍼런스.jpg
 .DS_Store
