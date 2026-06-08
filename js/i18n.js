@@ -32,6 +32,13 @@
     return null; // 유지
   }
 
+  function setMeta(sel, val) {
+    if (val == null) return;
+    var el = document.querySelector(sel);
+    if (el) el.setAttribute("content", val);
+  }
+  function urlFor(lang) { return lang === "ko" ? "/" : "/" + lang + "/"; }
+
   function applyLang(lang) {
     if (SUPPORTED.indexOf(lang) === -1) lang = "ko";
     document.documentElement.setAttribute("lang", lang);
@@ -65,11 +72,34 @@
       btn.setAttribute("aria-current", active ? "true" : "false");
     });
 
+    // 메타·타이틀(파일:// 미리보기·JS스왑 시 반영. 프리렌더 페이지는 동일값 재적용 → 무해)
+    var t = resolve(lang, "meta.title"); if (t) document.title = t;
+    setMeta('meta[name="description"]', resolve(lang, "meta.desc"));
+    setMeta('meta[property="og:title"]', resolve(lang, "meta.ogtitle"));
+    setMeta('meta[property="og:description"]', resolve(lang, "meta.ogdesc"));
+    setMeta('meta[property="og:locale"]', resolve(lang, "meta.locale"));
+
     setStored(lang);
   }
 
+  /* 언어 전환: 배포(http/https)에선 언어별 정적 URL 로 실제 이동(색인 분리),
+     로컬 file:// 미리보기에선 JS 스왑. 단일 소스 → 생성 페이지로 다리 역할. */
+  function switchLang(lang) {
+    if (SUPPORTED.indexOf(lang) === -1) return;
+    var cur = document.documentElement.getAttribute("lang");
+    if (lang === cur) return;
+    if (location.protocol === "http:" || location.protocol === "https:") {
+      setStored(lang);
+      window.location.assign(urlFor(lang));
+    } else {
+      applyLang(lang);
+    }
+  }
+
   function init() {
-    var initial = getStored() || "ko";
+    // 프리렌더 페이지는 <html lang> 이 자기 언어 → 그대로 적용(딴 언어로 덮어쓰기 방지).
+    var htmlLang = document.documentElement.getAttribute("lang");
+    var initial = SUPPORTED.indexOf(htmlLang) !== -1 ? htmlLang : (getStored() || "ko");
     applyLang(initial);
 
     // 스위처 클릭 위임
@@ -77,7 +107,7 @@
       sw.addEventListener("click", function (e) {
         var btn = e.target.closest("button[data-lang]");
         if (!btn) return;
-        applyLang(btn.getAttribute("data-lang"));
+        switchLang(btn.getAttribute("data-lang"));
       });
     });
 

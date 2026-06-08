@@ -9,6 +9,11 @@ window.YIDO_I18N.ko = {
   /* --- global / a11y --- */
   "skip": "본문 바로가기",
   "totop.aria": "맨 위로",
+  "meta.title": "서울이도치과 (YIDO) | 바른 진단과 섬세한 경험",
+  "meta.desc": "서울이도치과(YIDO)는 서울대학교 치과대학 출신 의료진으로 구성된 치과입니다. 임플란트·심미·보철·교정·턱관절·예방 진료와 YIDO Total Care 환자경험을 안내합니다. 서울 공덕.",
+  "meta.ogtitle": "서울이도치과 (YIDO) | 바른 진단과 섬세한 경험",
+  "meta.ogdesc": "서울대학교 치과대학 출신 의료진으로 구성된 치과. YIDO Total Care 환자경험을 안내합니다.",
+  "meta.locale": "ko_KR",
   "draft.banner": "본 페이지는 디자인 초안입니다. 원장 성함·주소·사진 등은 확정 후 반영되며, 의료광고 표현은 사전 검수 후 게시됩니다.",
   "lang.aria": "언어 선택",
 

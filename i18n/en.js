@@ -8,6 +8,11 @@ window.YIDO_I18N = window.YIDO_I18N || {};
 window.YIDO_I18N.en = {
   "skip": "Skip to content",
   "totop.aria": "Back to top",
+  "meta.title": "YIDO Dental Clinic Seoul (Gongdeok) | Implants · Orthodontics · Aesthetic",
+  "meta.desc": "YIDO Dental Clinic in Gongdeok, Seoul. Specialists trained at Seoul National University, an in-house dental lab, and the YIDO Total Care patient experience. Care available in English, Japanese, Chinese and German.",
+  "meta.ogtitle": "YIDO Dental Clinic Seoul (Gongdeok)",
+  "meta.ogdesc": "Specialists trained at Seoul National University, an in-house lab, and the YIDO Total Care patient experience. English · Japanese · Chinese · German.",
+  "meta.locale": "en_US",
   "draft.banner": "This page is a design draft. Doctor names, address and photos will be finalized later, and all medical-advertising copy is published only after prior review.",
   "lang.aria": "Select language",
 

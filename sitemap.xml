@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 단일 페이지(클라이언트 JS i18n). 배포 시 [domain]을 실도메인으로 치환. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- 언어별 정적 페이지(scripts/gen-lang-pages.js 생성). 배포 시 도메인 변경되면 loc 일괄 치환. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://half1126-byte.github.io/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

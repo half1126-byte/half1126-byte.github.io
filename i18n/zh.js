@@ -8,6 +8,11 @@ window.YIDO_I18N = window.YIDO_I18N || {};
 window.YIDO_I18N.zh = {
   "skip": "跳到正文",
   "totop.aria": "回到顶部",
+  "meta.title": "首尔以道齿科（孔德）| 种植牙·正畸·美学修复",
+  "meta.desc": "位于首尔麻浦区孔德的以道齿科。由首尔大学齿医学院出身的专科医生与院内技工所组成，提供 YIDO Total Care 诊疗体验。支持英语·日语·中文·德语。",
+  "meta.ogtitle": "首尔以道齿科（孔德）",
+  "meta.ogdesc": "首尔大学齿医学院出身的专科医生与院内技工所，YIDO Total Care 诊疗体验。支持英语·日语·中文·德语。",
+  "meta.locale": "zh_CN",
   "draft.banner": "本页面为设计草案。院长姓名、地址、照片等将于确定后更新，医疗广告相关表述将在事先审核后发布。",
   "lang.aria": "选择语言",
 

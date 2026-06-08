@@ -12,7 +12,12 @@
   <meta name="geo.placename" content="서울 마포구 공덕" />
   <link rel="canonical" href="https://half1126-byte.github.io/" />
 
-  <!-- hreflang 미사용: 클라이언트 JS i18n 단일 페이지(언어별 URL 없음). 언어별 정적 페이지 도입 시 재추가. -->
+  <!-- 다국어: 언어별 정적 페이지(/en/ /ja/ /zh/)는 scripts/gen-lang-pages.js 가 생성. 아래 hreflang 은 전 페이지 공통. -->
+  <link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/" />
+  <link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
+  <link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
   <!-- ⚠️ 배포 전: [domain]을 실도메인으로 치환 (index.html·robots.txt·sitemap.xml·llms.txt 전부) -->
   <!-- ⚠️ 배포 전: JSON-LD 주소·전화·원장명·geo 좌표 [추후] 확정 반영 -->
   <!-- ✅ WebP 변환 완료(이미지 65MB→0.9MB) · 영상 poster·모바일 경량화 적용 · og-image.jpg(소셜) -->
@@ -64,6 +69,10 @@
     "inLanguage": ["ko", "en", "ja", "zh"],
     "telephone": "+82-2-6953-0000",
     "priceRange": "$$",
+    "logo": "https://half1126-byte.github.io/assets/favicon.svg",
+    "hasMap": "https://www.google.com/maps?q=Gongdeok+Station,+Mapo-gu,+Seoul",
+    "paymentAccepted": "Cash, Credit Card",
+    "currenciesAccepted": "KRW",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "마포대로 89, 8층",

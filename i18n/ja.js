@@ -8,6 +8,11 @@ window.YIDO_I18N = window.YIDO_I18N || {};
 window.YIDO_I18N.ja = {
   "skip": "本文へスキップ",
   "totop.aria": "トップへ戻る",
+  "meta.title": "ソウルYIDO歯科（孔徳）| インプラント・矯正・審美",
+  "meta.desc": "ソウル麻浦区・孔徳のYIDO歯科。ソウル大学歯学部出身の専門医と院内技工所、YIDO Total Careの診療体験をご案内します。英語・日本語・中国語・ドイツ語に対応。",
+  "meta.ogtitle": "ソウルYIDO歯科（孔徳）",
+  "meta.ogdesc": "ソウル大学歯学部出身の専門医と院内技工所、YIDO Total Careの診療体験。英語・日本語・中国語・ドイツ語対応。",
+  "meta.locale": "ja_JP",
   "draft.banner": "本ページはデザイン案です。院長名・住所・写真などは確定後に反映し、医療広告に関する表現は事前審査の上で掲載します。",
   "lang.aria": "言語を選択",
 
