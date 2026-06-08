@@ -95,6 +95,41 @@ video { filter: var(--video-filter); }
   text-transform: uppercase; color: var(--on-dark-dim);
 }
 
+/* ============================================================
+   도입부 시네마틱 — 첫 로딩 히어로 인트로 + 섹션 헤드라인 마스크 리빌
+   html.js 일 때만 적용(no-JS 폴백 안전). reduce-motion 은 base.css가
+   animation/transition 지속시간을 0화 → 즉시 최종 상태(접근성 안전).
+   ============================================================ */
+@keyframes yido-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes yido-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes yido-zoom { from { transform: scale(1.06); } to { transform: none; } }
+
+/* 히어로 첫 로딩 인트로 (1회): 배경 슬로우 줌 + 카피 순차 등장 */
+html.js .hero__bg { animation: yido-zoom 1.6s var(--ease-out) both; }
+html.js .hero__eyebrow,
+html.js #hero-title,
+html.js .hero__lead,
+html.js .hero__actions { animation: yido-rise .9s var(--ease-emph) both; }
+html.js .hero__eyebrow { animation-delay: .06s; }
+html.js #hero-title    { animation-delay: .18s; }
+html.js .hero__lead    { animation-delay: .34s; }
+html.js .hero__actions { animation-delay: .5s; }
+html.js .scroll-cue    { animation: yido-fade 1s var(--ease) both; animation-delay: .95s; } /* transform(중앙정렬) 보존 위해 opacity만 */
+
+/* 섹션 제목: 뷰 진입 시 마스크 와이프(헤드라인 강조). data-reveal 이 헤드 또는
+   상위 래퍼(lab·hygiene) 어디에 붙어도 동작하도록 '보이는 data-reveal 하위'로 매칭 */
+html.js .section__title {
+  clip-path: inset(0 0 105% 0);
+  transition: clip-path var(--dur-xslow) var(--ease-emph);
+}
+html.js [data-reveal].is-visible .section__title {
+  clip-path: inset(0 0 -5% 0);
+  transition-delay: .12s;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.js .section__title { clip-path: none !important; }
+}
+
 
 /* ---- Meaning callout ---- */
 .callout { padding: 0 0 0 var(--space-6); border-left: 2px solid var(--accent-600); margin: var(--space-7) 0; }
