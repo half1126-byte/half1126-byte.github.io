@@ -7,6 +7,7 @@
 window.YIDO_I18N = window.YIDO_I18N || {};
 window.YIDO_I18N.ja = {
   "skip": "本文へスキップ",
+  "totop.aria": "トップへ戻る",
   "draft.banner": "本ページはデザイン案です。院長名・住所・写真などは確定後に反映し、医療広告に関する表現は事前審査の上で掲載します。",
   "lang.aria": "言語を選択",
 

@@ -9,6 +9,7 @@
 
   var header = document.querySelector(".site-header");
   var progress = document.querySelector(".scroll-progress");
+  var toTop = document.querySelector(".to-top");
   var toggle = document.querySelector(".nav-toggle");
   var drawer = document.querySelector(".nav-drawer");
   var primaryLinks = Array.prototype.slice.call(
@@ -39,9 +40,19 @@
       var pct = max > 0 ? (y / max) * 100 : 0;
       progress.style.width = pct + "%";
     }
+    if (toTop) toTop.classList.toggle("is-visible", y > window.innerHeight * 1.2);
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  /* ---- 맨 위로 ---- */
+  if (toTop) {
+    toTop.addEventListener("click", function () {
+      var reduce = window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    });
+  }
 
   /* ---- 스크롤스파이 ---- */
   var sections = primaryLinks

@@ -7,6 +7,7 @@
 window.YIDO_I18N = window.YIDO_I18N || {};
 window.YIDO_I18N.en = {
   "skip": "Skip to content",
+  "totop.aria": "Back to top",
   "draft.banner": "This page is a design draft. Doctor names, address and photos will be finalized later, and all medical-advertising copy is published only after prior review.",
   "lang.aria": "Select language",
 

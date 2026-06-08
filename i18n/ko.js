@@ -8,6 +8,7 @@ window.YIDO_I18N = window.YIDO_I18N || {};
 window.YIDO_I18N.ko = {
   /* --- global / a11y --- */
   "skip": "본문 바로가기",
+  "totop.aria": "맨 위로",
   "draft.banner": "본 페이지는 디자인 초안입니다. 원장 성함·주소·사진 등은 확정 후 반영되며, 의료광고 표현은 사전 검수 후 게시됩니다.",
   "lang.aria": "언어 선택",
 

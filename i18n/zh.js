@@ -7,6 +7,7 @@
 window.YIDO_I18N = window.YIDO_I18N || {};
 window.YIDO_I18N.zh = {
   "skip": "跳到正文",
+  "totop.aria": "回到顶部",
   "draft.banner": "本页面为设计草案。院长姓名、地址、照片等将于确定后更新，医疗广告相关表述将在事先审核后发布。",
   "lang.aria": "选择语言",
 

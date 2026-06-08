@@ -683,7 +683,7 @@
                 <dd data-i18n="contact.addr">서울 마포구 마포대로 89, 8층 (공덕동)</dd>
                 <dd style="color:var(--ink-500);font-size:var(--fs-small)" data-i18n="contact.transit">지하철 5·6호선·공항철도·경의중앙선 공덕역 2번 출구 도보 3분</dd>
                 <dt data-i18n="contact.tel_label">예약·문의</dt>
-                <dd class="num" data-i18n="contact.tel">02-6953-0000</dd>
+                <dd class="num"><a class="tel-link" href="tel:0269530000" data-i18n="contact.tel">02-6953-0000</a></dd>
               </dl>
               <div class="contact-cta">
                 <a class="btn btn--solid" href="tel:0269530000" data-i18n="contact.cta_call">전화 상담</a>
@@ -758,6 +758,13 @@
     <a class="btn btn--ghost on-light" href="#contact" data-i18n="mcta.dir">오시는 길</a>
     <a class="btn btn--solid" href="tel:0269530000" data-i18n="mcta.book">예약·상담</a>
   </nav>
+
+  <!-- 맨 위로 (긴 페이지 모바일 내비) -->
+  <button class="to-top" type="button" data-i18n-attr="aria-label:totop.aria" aria-label="맨 위로">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <path d="M12 19V5M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
 
   <script defer src="i18n/ko.js"></script>
   <script defer src="i18n/en.js"></script>
