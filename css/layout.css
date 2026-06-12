@@ -74,7 +74,7 @@
   transition: opacity var(--dur-fast) var(--ease);
 }
 .wordmark:hover { opacity: .82; }
-.wordmark__img { height: 38px; width: auto; display: block; }
+.wordmark__img { height: 36px; width: auto; max-width: 180px; display: block; }
 /* 다크 히어로 위(기본)=화이트 로고, 스크롤 시 라이트 배경=다크 로고 */
 .wordmark__img--dark { display: none; }
 .site-header.is-scrolled .wordmark__img--light { display: none; }
