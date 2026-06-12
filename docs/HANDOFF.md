@@ -58,13 +58,17 @@ CSS는 **이 순서로 로드**됩니다(토큰 → base → layout → componen
 | `hygiene-image` | 위생·소독 | 소독·멸균 공간 |
 | `map` | 오시는 길 | 네이버/카카오/구글 지도 임베드 |
 
-## 5. 디자인 시스템 (요약 — 정본은 `css/tokens.css`)
-- **무드:** 모노크롬 에디토리얼 — 잉크/뉴트럴 그레이 + **본 아이보리** 배경(`--paper #ECEAE5`, 순백 아님),
-  다크 섹션은 매트 블랙(`--black #0E0E10`), 배경에 미세 **필름그레인** 텍스처.
-- **포인트 컬러(≤5%만):** 더스티 프리미엄 주황 — 본문 액센트 `--accent-600 #B86A39`,
-  CTA 솔리드 버튼 `--accent-cta #A85A2E`(흰 글자 대비 AA 충족). 과한 금색·쨍한 채도 금지.
-- **타이포:** 본문 **Pretendard**, 세리프 포인트 **Cormorant Garamond**, 숫자 **Inter**. 대형 디스플레이 타이포 + 섹션 번호 + 헤어라인 그리드.
+## 5. 디자인 시스템 (브랜드 가이드라인 반영 — 정본은 `css/tokens.css`)
+- **무드:** 에디토리얼 — **YIDO Light Ivory** 배경(`--paper #fffcf3`, 순백 아님), Brown Gray 본문,
+  다크 섹션은 **YIDO Black**(`--black #232220`), 배경에 미세 **필름그레인** 텍스처.
+- **브랜드 6색:** Black `#232220` · Brown Gray `#403d38` · Warm Gray `#cbc4b8` · Soft Beige `#d1c3b0` · Light Ivory `#fffcf3` · **Signature Orange `#e95e27`**.
+- **포인트 컬러(≤5%만):** 시그니처 오렌지 — 본문 액센트 `--accent-600 #e95e27`,
+  CTA 솔리드 버튼 `--accent-cta #c2491a`(흰 글자 대비 AA 충족). CTA·hover·focus·소액센트에만, 과채도 금지.
+- **타이포(2종):** 로고/브랜드명 **고운돋움(Gowun Dodum)**, 본문·UI 전체 **Pretendard**. 로고는 이미지(`assets/logo/`).
+- **로고:** YI/DO 모노그램(헤더, 라이트=`monogram-dark.png`/다크 위=`monogram-light.png` 스왑) + 풀 락업(`logo-light/dark.png`, 푸터). 파비콘 `favicon-32/180/512.png`.
 - **모션:** 스크롤 진입 페이드 + 패럴랙스 + 영상. `prefers-reduced-motion` 사용자는 자동 정적 표시(꼭 유지).
+- **공식 명칭:** 텍스트·메타·법적명칭은 **서울이도치과의원 / Seoul Yido Dental Office**. `YIDO`는 브랜드 심볼·섹션명에만.
+- **개원 전 초안:** 의료진 실명·학력·장비명·주소·연락처·진료시간·전후사진 등 미확정 정보는 placeholder. 실데이터·의료광고 심의 후 교체.
 
 ## 6. 규칙 / 주의
 - **빌드하지 마세요.** 파일 그대로가 결과물입니다(컴파일·번들 없음).
