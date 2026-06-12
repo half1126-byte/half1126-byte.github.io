@@ -6,52 +6,55 @@
    ============================================================ */
 
 :root {
-  /* ---- Ink (neutral near-black · MONOCHROME) ---- */
-  --black:    #0E0E10;   /* 다크 섹션/히어로 베이스 — 매트 블랙 카드 */
-  --ink-900:  #17171A;   /* 로고·헤드라인 */
-  --ink-700:  #2C2C30;   /* 본문 */
-  --ink-500:  #6C6C72;   /* 보조(뉴트럴 그레이) */
-  --ink-300:  #8C8C92;   /* 캡션·메타·큰 숫자 (대비 보강) */   /* 캡션·메타·큰 숫자 */
-  --ink-100:  #D4D4D8;
+  /* ---- Ink — YIDO Black + Brown Gray (브랜드 가이드라인) ---- */
+  --black:    #232220;   /* YIDO Black — 다크 섹션/히어로 베이스 */
+  --ink-900:  #232220;   /* YIDO Black — 로고·헤드라인 */
+  --ink-700:  #403d38;   /* YIDO Brown Gray — 본문 */
+  --ink-500:  #6b6760;   /* 보조(웜 그레이 미드) */
+  --ink-300:  #8f897e;   /* 캡션·메타 (웜) */
+  --ink-100:  #cbc4b8;   /* YIDO Warm Gray */
 
-  /* ---- Light base (warm-neutral bone, NOT bright white) ---- */
-  --paper:    #ECEAE5;   /* 페이지 기본 배경(본 아이보리) */
-  --paper-2:  #E3E0DA;   /* 교차 밴드(살짝 더 깊게) */
-  --paper-50: #F4F2EE;   /* 카드/surface(살짝 들어올림) */
+  /* ---- Light base — Light Ivory + Soft Beige (브랜드 가이드라인) ---- */
+  --paper:    #fffcf3;   /* YIDO Light Ivory — 페이지 기본 배경 */
+  --paper-2:  #f4ecdf;   /* 교차 밴드(아이보리→베이지 사이, 절제된 단계) */
+  --paper-50: #fdf9ee;   /* 카드/surface(살짝 들어올림) */
   --white:    #FFFFFF;
 
-  /* ---- Neutral grey (placeholder/그라데이션) ---- */
-  --wood-300: #CAC8C3;
-  --wood-500: #9C9A95;
+  /* ---- Brand neutrals (베이지·웜그레이 · placeholder/surface) ---- */
+  --beige:    #d1c3b0;   /* YIDO Soft Beige */
+  --warm-gray:#cbc4b8;   /* YIDO Warm Gray */
+  --wood-300: #cbc4b8;   /* (= Warm Gray) placeholder/그라데이션 */
+  --wood-500: #b0a692;   /* 웜 그레이 딥 */
 
-  /* ---- Accent — 포인트 키컬러: 더스티 프리미엄 주황(노션 브랜드 스펙). 차콜 베이스 + 핵심 포인트에만 ---- */
-  --accent-600: #B86A39;
-  --accent-500: #C8814F;
-  --accent-soft: #ECDCCD;
-  --accent-cta: #A85A2E;          /* CTA 솔리드 버튼 전용 — 흰 글자 WCAG AA(>4.5:1) 충족 */
-  --accent-cta-hover: #95501F;
+  /* ---- Accent — YIDO Signature Orange. CTA·hover·focus·소액센트에만(절제) ---- */
+  --accent-600: #e95e27;          /* Signature Orange — 텍스트/아이콘 액센트(대형·장식) */
+  --accent-500: #f0764f;          /* 밝은 변형 */
+  --accent-soft: #f7e4d8;         /* 소프트 틴트 배경 */
+  --accent-cta: #c2491a;          /* CTA 솔리드 버튼 전용 — 흰 글자 WCAG AA(≈4.5:1) 충족 */
+  --accent-cta-hover: #a23c12;
 
-  /* ---- Lines / overlays (neutral) ---- */
-  --line:        rgba(14,14,16,.10);
-  --line-strong: rgba(14,14,16,.20);
+  /* ---- Lines / overlays (warm, based on YIDO Black) ---- */
+  --line:        rgba(35,34,32,.12);
+  --line-strong: rgba(35,34,32,.22);
   --on-dark:     rgba(255,255,255,.90);
   --on-dark-dim: rgba(255,255,255,.60);
   --on-dark-line:rgba(255,255,255,.16);
 
-  --scrim: linear-gradient(180deg, rgba(8,8,9,.30) 0%, rgba(8,8,9,.54) 55%, rgba(8,8,9,.76) 100%);
+  --scrim: linear-gradient(180deg, rgba(20,19,17,.30) 0%, rgba(20,19,17,.54) 55%, rgba(20,19,17,.76) 100%);
 
-  --focus-ring: #17171A;
+  --focus-ring: #232220;
   --focus-ring-dark: #FFFFFF;
 
   /* ---- Texture (고급 명함 질감 · SVG film grain, grayscale) ---- */
   --tex-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
   --tex-grain-coarse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
 
-  /* ---- Typography ---- */
+  /* ---- Typography — 브랜드 가이드라인 2폰트: 고운돋움(로고/브랜드) + 프리텐다드(전체 UI/본문) ---- */
   --font-sans: "Pretendard", "Pretendard Variable", -apple-system, BlinkMacSystemFont,
                "Apple SD Gothic Neo", "Noto Sans KR", system-ui, "Malgun Gothic", sans-serif;
-  --font-serif: "Cormorant Garamond", "Nanum Myeongjo", Georgia, "Apple SD Gothic Neo", serif;
-  --font-num: "Inter", var(--font-sans);
+  --font-logo: "Gowun Dodum", var(--font-sans);   /* 로고/브랜드명 텍스트 */
+  --font-serif: "Gowun Dodum", "Nanum Myeongjo", var(--font-sans);  /* 브랜드 디스플레이 모먼트(고운돋움) */
+  --font-num: var(--font-sans);                    /* 숫자도 프리텐다드(2폰트 원칙) */
 
   --fs-display: clamp(3.5rem, 8.5vw, 8.5rem);
   --fs-h2:      clamp(2.375rem, 4.6vw, 4.25rem);

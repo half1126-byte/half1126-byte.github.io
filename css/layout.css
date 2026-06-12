@@ -63,24 +63,24 @@
   transition: background var(--dur) var(--ease), color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
 }
 .site-header.is-scrolled {
-  background: rgba(236,234,229,.95);
+  background: rgba(255,252,243,.95);
   color: var(--ink-900);
-  box-shadow: 0 1px 0 var(--line), 0 6px 20px -16px rgba(14,14,16,.5);
+  box-shadow: 0 1px 0 var(--line), 0 6px 20px -16px rgba(35,34,32,.5);
 }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: var(--space-5); }
 
 .wordmark {
-  font-family: var(--font-serif); font-weight: var(--w-bold);
-  font-size: 1.625rem; letter-spacing: 0.01em; line-height: 1;
-  color: inherit; display: inline-flex; align-items: baseline; gap: 1px;
+  display: inline-flex; align-items: center; line-height: 1;
   transition: opacity var(--dur-fast) var(--ease);
 }
-.wordmark .dot { color: var(--accent-600); opacity: 1; display: inline-block; transition: transform var(--dur) var(--ease-spring); }
-.wordmark:hover .dot { transform: translateY(-2px); }
-.wordmark .kr {
-  font-family: var(--font-sans); font-size: 0.7rem; font-weight: var(--w-med);
-  letter-spacing: 0.06em; margin-left: var(--space-3); opacity: .7; white-space: nowrap;
-}
+.wordmark:hover { opacity: .82; }
+.wordmark__img { height: 38px; width: auto; display: block; }
+/* 다크 히어로 위(기본)=화이트 로고, 스크롤 시 라이트 배경=다크 로고 */
+.wordmark__img--dark { display: none; }
+.site-header.is-scrolled .wordmark__img--light { display: none; }
+.site-header.is-scrolled .wordmark__img--dark { display: block; }
+
+.footer-logo { height: 64px; width: auto; display: block; }
 
 .nav-primary { display: none; }
 .nav-primary ul { display: flex; flex-wrap: nowrap; gap: clamp(10px, 1.2vw, 22px); list-style: none; padding: 0; margin: 0; }

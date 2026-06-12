@@ -1,5 +1,5 @@
 /* ============================================================
-   서울이도치과 (YIDO) — i18n dictionary: 한국어 (canonical)
+   서울이도치과의원 (YIDO) — i18n dictionary: 한국어 (canonical)
    이 파일이 모든 카피의 기준(source of truth)입니다.
    ⚠️ 문구 수정 시 index.html의 해당 텍스트와 본 파일을 함께 갱신하세요.
    data-i18n-html 키(hero.title, about.callout)는 신뢰된 인라인 마크업을 포함합니다.
@@ -9,10 +9,10 @@ window.YIDO_I18N.ko = {
   /* --- global / a11y --- */
   "skip": "본문 바로가기",
   "totop.aria": "맨 위로",
-  "meta.title": "서울이도치과 (YIDO) | 바른 진단과 섬세한 경험",
-  "meta.desc": "서울이도치과(YIDO)는 서울대학교 치과대학 출신 의료진으로 구성된 치과입니다. 임플란트·심미·보철·교정·턱관절·예방 진료와 YIDO Total Care 환자경험을 안내합니다. 서울 공덕.",
-  "meta.ogtitle": "서울이도치과 (YIDO) | 바른 진단과 섬세한 경험",
-  "meta.ogdesc": "서울대학교 치과대학 출신 의료진으로 구성된 치과. YIDO Total Care 환자경험을 안내합니다.",
+  "meta.title": "서울이도치과의원 | 바른 길을 걷다, 완벽에 닿다",
+  "meta.desc": "서울이도치과의원 — 원칙을 지키는 진단과 치료. 임플란트·심미치료를 중심으로 진료를 안내합니다. 서울 공덕. (개원 준비 중)",
+  "meta.ogtitle": "서울이도치과의원 | 바른 길을 걷다, 완벽에 닿다",
+  "meta.ogdesc": "바른 길을 걷다, 완벽에 닿다. 원칙을 지키는 진단과 치료를 지향하는 치과. 서울 공덕. (개원 준비 중)",
   "meta.locale": "ko_KR",
   "draft.banner": "본 페이지는 디자인 초안입니다. 원장 성함·주소·사진 등은 확정 후 반영되며, 의료광고 표현은 사전 검수 후 게시됩니다.",
   "lang.aria": "언어 선택",
@@ -31,20 +31,24 @@ window.YIDO_I18N.ko = {
   "nav.results": "변화",
 
   /* --- hero --- */
-  "hero.eyebrow": "SEOUL YIDO DENTAL",
-  "hero.title": "바른 진단과 <span class=\"accent\">섬세한 경험</span>,<br>서울이도치과",
-  "hero.lead": "좋은 진료는 결과만이 아니라 경험까지 이어진다고 생각합니다. 검진 한 번에도 다름이 느껴지는 치과를 준비하고 있습니다.",
+  "hero.eyebrow": "THE RIGHT WAY TO PERFECTION",
+  "hero.title": "바른 길을 걷다,<br><span class=\"accent\">완벽에 닿다.</span>",
+  "hero.lead": "원칙을 지키는 진료, 처음부터 끝까지. 치료의 기본을 지키고 기준을 만드는 치과, 서울이도치과의원입니다.",
   "hero.primary": "상담·예약 안내",
-  "hero.secondary": "서울이도치과 이야기",
+  "hero.secondary": "서울이도치과의원 이야기",
   "hero.scrollcue": "Scroll",
   "hero.media": "메인 영상 자리 — 공간·진료 전경 (16:9)",
 
   /* --- about --- */
   "about.eyebrow": "ABOUT",
   "about.title": "이름에 담은 마음,<br class=\"lb\">이도(YIDO)",
-  "about.callout": "<span class=\"serif\">“바른 길을 걷는 진료.”</span>",
+  "about.callout": "<span class=\"serif\">\u201C바른 길을 걷는 진료.\u201D</span>",
   "about.body": "이도(履道)는 ‘바른 길을 따른다’는 뜻입니다. 밟을 履와 길 道를 더해, 원칙을 지키는 바른 진료의 과정을 만들겠다는 다짐을 담았습니다. 영문 YIDO는 ‘Your Ideal Dental Office’로도 읽힙니다.",
-  "about.essence": "서울이도치과는 진료 기술과 공간, 응대와 관리 프로그램이 자연스럽게 이어지는 경험을 지향합니다. 스케일링이나 검진처럼 익숙한 진료에서도 ‘정성을 들이는구나’ 하고 느끼실 수 있도록 준비합니다.",
+  "about.essence": "서울이도치과의원는 진료 기술과 공간, 응대와 관리 프로그램이 자연스럽게 이어지는 경험을 지향합니다. 스케일링이나 검진처럼 익숙한 진료에서도 ‘정성을 들이는구나’ 하고 느끼실 수 있도록 준비합니다.",
+  "about.essence2": "바른 치료의 기본을 지키고 기준을 만드는 치과 — 그것이 서울이도치과의원가 향하는 방향입니다.",
+  "about.pos1": "환자에게 선택받는 치과",
+  "about.pos2": "환자에게 존중받는 치과",
+  "about.pos3": "환자에게 주목받는 치과",
   "about.chip1": "진료를 향한 정성",
   "about.chip2": "환자를 위한 기본",
   "about.chip3": "마음을 듣는 공감",
@@ -55,39 +59,39 @@ window.YIDO_I18N.ko = {
 
   /* --- doctors --- */
   "doctors.eyebrow": "OUR DOCTORS",
-  "doctors.title": "서울대학교 치과대학 출신<br class=\"lb\">의료진",
-  "doctors.lead": "각자의 전문 분야에서 바른 진단과 섬세한 진료를 지향하는 의료진이 함께합니다.",
-  "doctors.note": "서울이도치과는 서울대학교 치과대학 출신 의료진으로 구성되어 있습니다.",
+  "doctors.title": "진료 철학으로 함께하는<br class=\"lb\">의료진",
+  "doctors.lead": "각자의 자리에서 원칙을 지키는 진단과 바른 치료를 지향합니다. 의료진 프로필과 소개는 확정 후 공개해 드릴 예정입니다.",
+  "doctors.note": "의료진 소개는 개원 준비와 함께 순차적으로 공개될 예정입니다.",
 
-  "d1.role": "대표원장",
-  "d1.name": "김도현",
-  "d1.field": "수면치료 · 턱관절 · 보톡스",
-  "d1.quote": "“충분히 듣고, 이해하실 수 있게 설명합니다.”",
+  "d1.role": "의료진 소개 준비 중",
+  "d1.name": "",
+  "d1.field": "",
+  "d1.quote": "\u201C충분히 듣고, 이해하실 수 있게 설명합니다.\u201D",
 
-  "d2.role": "원장",
-  "d2.name": "이서연",
-  "d2.field": "심미치료 · 레진 · 충치 진단",
-  "d2.quote": "“꼭 필요한 치료를 신중하게 안내합니다.”",
+  "d2.role": "의료진 소개 준비 중",
+  "d2.name": "",
+  "d2.field": "",
+  "d2.quote": "\u201C꼭 필요한 치료를 신중하게 안내합니다.\u201D",
 
-  "d3.role": "원장",
-  "d3.name": "박지훈",
-  "d3.field": "심미 · 보철",
-  "d3.quote": "“1mm의 차이까지 살핍니다.”",
+  "d3.role": "의료진 소개 준비 중",
+  "d3.name": "",
+  "d3.field": "",
+  "d3.quote": "\u201C1mm의 차이까지 살핍니다.\u201D",
 
-  "d4.role": "교정 전문의",
-  "d4.name": "정민아",
-  "d4.field": "교정 · 인비절라인 · 투명교정",
-  "d4.quote": "“치아 배열과 균형을 함께 고려합니다.”",
+  "d4.role": "의료진 소개 준비 중",
+  "d4.name": "",
+  "d4.field": "",
+  "d4.quote": "\u201C치아 배열과 균형을 함께 고려합니다.\u201D",
 
-  "d1.career": "서울대학교 치과대학 졸업 · 대한구강악안면임플란트학회 정회원 · 수면·턱관절 진료",
-  "d2.career": "서울대학교 치과대학 졸업 · 대한심미치과학회 정회원 · 심미·보존 진료",
-  "d3.career": "서울대학교 치과대학 졸업 · 대한치과보철학회 정회원 · 보철·심미 진료",
-  "d4.career": "치과교정과 전문의 · 대한치과교정학회 인정의 · 서울대학교 치과병원 교정과 수련",
+  "d1.career": "",
+  "d2.career": "",
+  "d3.career": "",
+  "d4.career": "",
 
   /* --- care / 환자 경험 (핵심) --- */
   "care.eyebrow": "PATIENT EXPERIENCE",
   "care.title": "방문의 모든 순간을,<br class=\"lb\">경험으로",
-  "care.lead": "서울이도치과가 가장 중요하게 생각하는 것은 환자분의 경험입니다. 도착부터 진료, 그리고 사후 관리까지 — 모든 순간을 정성껏 설계합니다.",
+  "care.lead": "서울이도치과의원이 깊이 생각하는 것은 환자분의 경험입니다. 도착부터 진료, 그리고 사후 관리까지 — 모든 순간을 정성껏 설계합니다.",
   "care.media": "영상 자리 — 케어 과정",
 
   "exp.journey_title": "다른 차원의<br class=\"lb\">진료 경험",
@@ -103,7 +107,7 @@ window.YIDO_I18N.ko = {
   "exp.d1.t": "시그니처 향", "exp.d1.d": "공간마다 일관된 시그니처 향으로 편안한 분위기를 만듭니다.",
   "exp.d2.t": "양치 공간", "exp.d2.d": "진료 전후 편하게 사용하실 수 있는 양치 공간을 마련합니다.",
   "exp.d3.t": "체험·제품 공간", "exp.d3.d": "구강관리 제품을 직접 체험하고 안내받을 수 있는 공간을 운영합니다.",
-  "exp.d4.t": "다국어 응대", "exp.d4.d": "영어·일본어·중국어·독일어로 편안하게 소통합니다.",
+  "exp.d4.t": "다국어 응대", "exp.d4.d": "영어·일본어·중국어 안내를 준비하고 있습니다.",
   "exp.d5.t": "특진실·회복실", "exp.d5.d": "특진실과 회복실을 갖춰 진료와 회복을 편안하게 돕습니다.",
   "exp.d6.t": "구강관리 파우치", "exp.d6.d": "프로그램 참여 시 맞춤 구강관리 용품을 파우치로 제공합니다.",
 
@@ -121,19 +125,19 @@ window.YIDO_I18N.ko = {
   "care.disclaimer": "※ 결과는 개인의 구강 상태에 따라 차이가 있을 수 있습니다.",
 
   /* --- filmband (시네마틱 인터루드) --- */
-  "filmband.quote": "좋은 진료는 결과를 넘어, 경험으로 남습니다.",
-  "filmband.cite": "바른 진단과 섬세한 경험 — 서울이도치과",
+  "filmband.quote": "바른 길을 걷다, 완벽에 닿다.",
+  "filmband.cite": "The Right Way to Perfection — 서울이도치과의원",
 
   /* --- services --- */
   "services.eyebrow": "TREATMENTS",
   "services.title": "진료과목",
-  "services.lead": "서울이도치과의 진료는 세 방향으로 이어집니다 — 오래가는 임플란트, 기능과 심미의 복원, 그리고 평생의 구강 케어.",
+  "services.lead": "서울이도치과의원의 진료는 세 방향으로 이어집니다 — 오래가는 임플란트, 기능과 심미의 복원, 그리고 꾸준한 구강 케어.",
 
   /* --- 진료 3대 영역 (브랜드) --- */
   "svc.d1.theme": "수명을 생각하는 임플란트",
   "svc.d1.p1": "자연치아를 먼저 — 꼭 필요한 식립 시기인지 정직하게 진단합니다.",
   "svc.d1.p2": "예상 부작용까지 정리하고 식립 — 고령·전신질환 환자분은 더 철저히 준비합니다.",
-  "svc.d1.p3": "형식적 보증이 아닌, 전 직원이 함께하는 꾸준한 관리 케어.",
+  "svc.d1.p3": "형식적인 약속이 아닌, 전 직원이 함께하는 꾸준한 관리 케어.",
   "svc.d1.p4": "정교한 식립과 자가치아 뼈이식으로 회복을 돕습니다.",
   "svc.d1.covers": "임플란트 · 외과수술",
   "svc.d2.theme": "기능과 아름다움을 함께 복원",
@@ -142,7 +146,7 @@ window.YIDO_I18N.ko = {
   "svc.d2.p3": "치료 후에도 이어지는 평생 구강 케어.",
   "svc.d2.p4": "손끝의 정교함으로 까다로운 재치료까지 풀어냅니다.",
   "svc.d2.covers": "심미치료 · 보철 · 교정·인비절라인 · 교합",
-  "svc.d3.theme": "작은 디테일이 만드는 평생의 안심",
+  "svc.d3.theme": "작은 디테일이 만드는 오래가는 안심",
   "svc.d3.p1": "작은 충치도 추적관찰 — 꼭 필요한 시기인지 정직하게 봅니다.",
   "svc.d3.p2": "통증의 근본 원인과 습관, 전신 상태까지 함께 살핍니다.",
   "svc.d3.p3": "정기 관리 시스템으로 체계적인 예방을 돕습니다.",
@@ -151,65 +155,68 @@ window.YIDO_I18N.ko = {
 
   /* --- lab --- */
   "lab.eyebrow": "CRAFTED IN-HOUSE",
-  "lab.craft": "<span class=\"serif\">“한 사람을 위한, 가까이에서 빚는 보철.”</span>",
+  "lab.craft": "<span class=\"serif\">\u201C한 사람을 위한, 가까이에서 빚는 보철.\u201D</span>",
   "lab.spec_made_t": "제작", "lab.spec_made_d": "진료실 옆 원내 제작. 색과 형태를 직접 확인하며 조율합니다.",
-  "lab.spec_mat_t": "재료", "lab.spec_mat_d": "e.max(리튬 디실리케이트) · 지르코니아 세라믹",
-  "lab.spec_equip_t": "장비", "lab.spec_equip_d": "3Shape Trios 구강스캐너 · CAD/CAM 밀링 · 디지털 색조 매칭",
+  "lab.spec_mat_t": "재료", "lab.spec_mat_d": "세라믹 보철. 세부 재료는 확정 후 표기합니다.",
+  "lab.spec_equip_t": "장비", "lab.spec_equip_d": "디지털 보철 장비. 스캐너·밀링 등 사양은 확정 후 표기합니다.",
 
   /* --- tech (디지털 장비) --- */
   "tech.eyebrow": "DIGITAL TECHNOLOGY",
   "tech.title": "정밀을 만드는<br class=\"lb\">디지털 장비",
-  "tech.1t": "3Shape Trios 구강스캐너", "tech.1d": "본 뜨는 불편 없이 입안을 3D로 정밀하게 스캔합니다.",
-  "tech.2t": "CBCT · RAYFace 3D", "tech.2d": "3차원 영상과 안면 스캔으로 진단과 치료를 설계합니다.",
+  "tech.1t": "구강 스캐너", "tech.1d": "본 뜨는 불편 없이 입안을 3D로 정밀하게 스캔합니다.",
+  "tech.2t": "3D 영상 진단", "tech.2d": "3차원 영상과 안면 스캔으로 진단과 치료를 설계합니다.",
   "tech.3t": "수술용 미세현미경", "tech.3d": "육안보다 정밀한 시야로 미세한 차이까지 살핍니다.",
 
   /* --- results (비포애프터) --- */
   "results.eyebrow": "BEFORE & AFTER",
   "results.title": "변화는 디테일에서",
-  "results.lead": "손잡이를 좌우로 움직여 전·후를 비교해 보세요. 라미네이트·심미·교정으로 만든 변화입니다.",
+  "results.lead": "치료 사례는 의료광고 사전심의를 거쳐 공개될 예정입니다.",
   "results.before": "BEFORE",
   "results.after": "AFTER",
   "results.disclaimer": "※ 본 이미지는 디지털 시뮬레이션 예시이며 실제 치료 결과가 아닙니다. 치료 결과는 개인차가 있을 수 있습니다.",
+  "results.pending": "실제 치료 전·후 사례는 사전심의 절차를 마친 뒤 게시됩니다. 치료 결과는 개인의 상태에 따라 차이가 있을 수 있습니다.",
+  "hours.pending_t": "진료시간",
+  "hours.pending_d": "진료시간은 개원 일정에 맞추어 안내해 드릴 예정입니다.",
   "ba1.label": "라미네이트 비니어",
   "ba2.label": "무삭제 라미네이트",
   "ba3.label": "전치부 교정",
   "lab.title": "원내기공소 —<br class=\"lb\">가까이에서, 정밀하게",
-  "lab.body": "서울이도치과는 원내기공소를 운영합니다. 진료실과 기공소가 가까워 색과 형태를 직접 확인하며 보철물을 제작할 수 있습니다.",
-  "lab.master": "보철 분야 경력을 갖춘 기공소장(연○○ 소장)이 원내기공소를 이끕니다.",
-  "lab.why": "의료진과 기공소장이 직접 소통하며 세부 사항을 조율합니다.",
+  "lab.body": "진료실과 기공 과정이 가까이 이어지도록 준비하고 있습니다. 색과 형태를 직접 확인하며 보철물을 조율하는 과정을 지향합니다.",
+  "lab.master": "기공팀 구성과 세부 운영 방식은 개원 준비와 함께 안내해 드릴 예정입니다.",
+  "lab.why": "의료진과 기공 담당이 직접 소통하며 세부 사항을 조율하는 과정을 지향합니다.",
   "lab.media": "이미지 자리 — 원내기공소·작업 디테일",
 
   /* --- hygiene --- */
   "hygiene.eyebrow": "HYGIENE & STERILIZATION",
   "hygiene.title": "위생과 소독,<br class=\"lb\">보이지 않는 곳까지",
   "hygiene.lead": "환자 한 분 한 분께 안심을 드릴 수 있도록 정해진 소독 절차를 지킵니다.",
-  "hy1": "노바케어 소독 시스템 운영",
-  "hy2": "국제표준에 따른 감염관리 단계 준수",
+  "hy1": "체계적인 소독·멸균 시스템",
+  "hy2": "정해진 감염관리 단계 준수",
   "hy3": "멸균 기구 실링 관리",
   "hygiene.media": "이미지 자리 — 소독·멸균 공간",
 
   /* --- international --- */
   "intl.eyebrow": "INTERNATIONAL PATIENTS",
   "intl.title": "외국인 환자 안내",
-  "intl.body": "영어·일본어·중국어·독일어로 소통이 가능한 의료진이 진료를 돕습니다. 예약과 상담, 진료 안내를 다국어로 지원합니다.",
-  "intl.l1": "다국어 상담",
+  "intl.body": "영어·일본어·중국어 안내를 준비하고 있습니다. 다국어 상담과 진료 안내는 개원 시 순차적으로 지원할 예정입니다.",
+  "intl.l1": "다국어 상담 준비",
   "intl.l2": "진료 안내 자료",
-  "intl.l3": "예약 지원",
-  "intl.teaser": "Our doctors support consultations in English, Japanese, Chinese, and German.",
+  "intl.l3": "예약 지원 예정",
+  "intl.teaser": "We are preparing consultation support in English, Japanese, and Chinese.",
 
   /* --- contact --- */
   "contact.eyebrow": "VISIT US",
   "contact.title": "오시는 길 · 예약",
   "contact.map": "지도 자리 — 공덕 위치",
   "contact.addr_label": "주소",
-  "contact.addr": "서울 마포구 마포대로 89, 8층 (공덕동)",
+  "contact.addr": "서울 마포구 공덕 (상세 주소는 개원 시 안내해 드릴 예정입니다)",
   "contact.transit": "지하철 5·6호선·공항철도·경의중앙선 공덕역 2번 출구 도보 3분",
   "contact.tel_label": "예약·문의",
-  "contact.tel": "02-6953-0000",
+  "contact.tel": "연락처는 개원 시 안내해 드릴 예정입니다.",
   "contact.cta_call": "전화 상담",
   "contact.cta_naver": "네이버 예약",
   "contact.cta_kakao": "카카오톡 상담",
-  "contact.cta_note": "표시된 연락처·예약 채널은 예시이며, 개원 시 실제 정보로 연결됩니다.",
+  "contact.cta_note": "연락처·예약 채널과 진료시간은 개원 일정에 맞추어 안내해 드릴 예정입니다.",
   "mcta.dir": "오시는 길",
   "mcta.book": "예약·상담",
 
@@ -224,7 +231,11 @@ window.YIDO_I18N.ko = {
   "phil.eyebrow": "OUR PHILOSOPHY",
   "phil.title": "바른 진단에서<br class=\"lb\">시작하는 진료",
   "phil.lead": "진료의 성공은 대부분 정확한 진단에서 시작됩니다. 필요한 치료를 정확히, 과하지 않게 — 정직한 진단과 투명한 안내를 진료의 기준으로 삼습니다.",
+  "phil.stat": "진단이 치료의 80% 이상을 결정합니다.",
+  "phil.stat_sub": "같은 증상도 진단에 따라 치료의 방향이 달라집니다. 서울이도치과의원는 충분한 시간을 들인 정확한 진단을 진료의 시작으로 삼습니다.",
   "phil.closing": "가족의 손을 잡고 올 수 있는, 부담 없이 소개할 수 있는 치과. 천천히 가더라도 오래 동행하겠습니다.",
+  "phil.closing_quote": "\u201C이런 치과 하나쯤은 있어야 하지 않을까요?\u201D",
+  "phil.closing_attr": "— 서울이도치과의원 대표원장",
   "phil.1t": "바른 진단", "phil.1d": "꼭 필요한 치료만 신중하게 권해 드립니다. 과잉진료를 지양합니다.",
   "phil.2t": "이해하는 진료", "phil.2d": "진단 결과와 진료 과정을 충분히 듣고 이해하실 수 있게 설명합니다.",
   "phil.3t": "투명한 안내", "phil.3d": "진료 계획과 비용은 상담을 통해 투명하게 안내해 드립니다.",
@@ -232,21 +243,21 @@ window.YIDO_I18N.ko = {
   /* --- passion (YIDO PASSION STANDARD 7) --- */
   "passion.eyebrow": "YIDO PASSION STANDARD 7",
   "passion.title": "바른 진료를 지키는<br class=\"lb\">일곱 가지 기준",
-  "passion.lead": "서울이도치과가 진료의 모든 과정에서 지키는 일곱 가지 기준입니다.",
+  "passion.lead": "서울이도치과의원가 진료의 모든 과정에서 지키는 일곱 가지 기준입니다.",
   "passion.1": "빠른 치료보다, 한 번의 치료로 바른 선택이 되도록 진료합니다.",
   "passion.2": "불필요한 과잉진료 없이, 눈높이에 맞춘 명쾌한 설명으로 안심을 드립니다.",
   "passion.3": "진료의 모든 과정에서 품격과 편안함을 느끼실 수 있도록 합니다.",
   "passion.4": "가족을 돌보는 마음으로, 진료의 두려움을 따뜻하게 살핍니다.",
   "passion.5": "획일적인 진료가 아닌, 환자분의 상황에 맞춘 1:1 진료를 설계합니다.",
   "passion.6": "까다로운 고난도 재치료까지, 섬세한 손끝으로 풀어냅니다.",
-  "passion.7": "대한민국 치과의 바른 기준을 지향하며, 해외 환자분께도 신뢰받는 진료를 준비합니다.",
+  "passion.7": "대한민국 치과의 바른 기준을 지향하며, 누구에게나 신뢰받는 진료를 준비합니다.",
 
   "trust.eyebrow": "WHY YIDO",
-  "trust.1": "서울대학교 치과대학 출신 의료진",
-  "trust.2": "전문의 중심 진료",
-  "trust.3": "원내기공소 운영",
-  "trust.4": "국제표준 감염관리",
-  "trust.5": "영·일·중·독 다국어 진료",
+  "trust.1": "원칙을 지키는 진단",
+  "trust.2": "꼭 필요한 치료",
+  "trust.3": "설명하고 동의받는 과정",
+  "trust.4": "철저한 위생·소독",
+  "trust.5": "다국어 안내 준비",
   "trust.6": "YIDO Total Care 환자경험",
   "contact.cta": "예약 문의",
 
@@ -260,13 +271,13 @@ window.YIDO_I18N.ko = {
   "hours.r4_day": "일 · 공휴일", "hours.r4_hours": "휴진", "hours.r4_lunch": "—",
 
   /* --- 원장 경력 / 시설·장비 / 차별점 --- */
-  "care.diff": "<span class=\"serif\">“스케일링도, 케어처럼.”</span> 디스클로징으로 상태를 함께 확인하고 에어플로우로 관리하는 GBT 구강 스파로 진행합니다.",
+  "care.diff": "<span class=\"serif\">\u201C스케일링도, 케어처럼.\u201D</span> 디스클로징으로 상태를 함께 확인하고 에어플로우로 관리하는 GBT 구강 스파로 진행합니다.",
   "fac.eyebrow": "FACILITIES & EQUIPMENT",
   "fac.title": "공간과 장비",
   "fac.lead": "정밀한 진료와 편안한 회복을 위한 공간과 장비를 갖췄습니다.",
-  "fac.1t": "특진실 2실", "fac.1d": "프라이빗한 진료 공간",
-  "fac.2t": "수술실 2실", "fac.2d": "외과 진료 전용 공간",
-  "fac.3t": "회복실 2실", "fac.3d": "시술 후 안정을 위한 공간",
+  "fac.1t": "특진실", "fac.1d": "프라이빗한 진료 공간",
+  "fac.2t": "수술실", "fac.2d": "외과 진료 전용 공간",
+  "fac.3t": "회복실", "fac.3d": "시술 후 안정을 위한 공간",
   "fac.4t": "심미 진료 전담 섹터", "fac.4d": "별도 공간에서 섬세하게",
 
   /* --- FAQ (아코디언 · AEO) --- */
@@ -274,19 +285,19 @@ window.YIDO_I18N.ko = {
   "faq.title": "자주 묻는 질문",
   "faq.q1": "어떤 진료를 받을 수 있나요?",
   "faq.a1": "임플란트, 심미치료, 보철치료, 교정·인비절라인, 턱관절·수면치료, 예방관리를 진행합니다. 진단 후 개인 상태에 맞춘 진료 계획을 안내해 드립니다.",
-  "faq.q2": "외국어 진료가 가능한가요?",
-  "faq.a2": "영어·일본어·중국어·독일어로 소통이 가능한 의료진이 진료를 돕습니다. 예약과 상담, 진료 안내를 다국어로 지원합니다.",
+  "faq.q2": "외국어 안내가 가능한가요?",
+  "faq.a2": "영어·일본어·중국어 안내를 준비하고 있습니다. 다국어 상담과 진료 안내는 개원 시 순차적으로 지원할 예정입니다.",
   "faq.q3": "진료시간은 어떻게 되나요?",
-  "faq.a3": "평일 09:30–18:30(점심 12:30–14:00), 월·목 야간 진료 20:30까지, 토요일 09:30–14:30(점심시간 없음), 일요일·공휴일은 휴진입니다. 개원 일정에 따라 변동될 수 있습니다.",
+  "faq.a3": "진료시간은 개원 일정에 맞추어 안내해 드릴 예정입니다.",
   "faq.q4": "YIDO Total Care는 무엇인가요?",
-  "faq.a4": "검진·스케일링부터 예방·잇몸·회복 관리까지 이어지는 환자경험 프로그램입니다. GBT 스케일링, 부종 케어, 구강 유산균 안내, 예방관리 등을 포함하며 결과는 개인차가 있을 수 있습니다.",
+  "faq.a4": "검진·스케일링부터 예방·잇몸·회복 관리까지 이어지는 환자경험 프로그램입니다. 세부 구성은 개원 시 안내해 드리며, 결과는 개인의 상태에 따라 차이가 있을 수 있습니다.",
 
   /* --- footer --- */
-  "footer.kr": "서울이도치과",
-  "footer.biz": "서울이도치과의원 · 대표 김도현 · 사업자등록번호 000-00-00000 · 서울 마포구 마포대로 89, 8층 · 02-6953-0000",
+  "footer.kr": "서울이도치과의원",
+  "footer.biz": "서울이도치과의원 · Seoul Yido Dental Office · 사업자 정보와 연락처는 개원 시 안내해 드릴 예정입니다.",
   "footer.navtitle": "바로가기",
   "footer.disclaimer": "본 페이지는 초안이며, 의료광고 관련 표현은 사전 검수 후 게시됩니다.",
-  "footer.copy": "© 2026 서울이도치과 (YIDO). All rights reserved.",
+  "footer.copy": "© 2026 서울이도치과의원 Seoul Yido Dental Office. All rights reserved.",
 
   "gallery.eyebrow": "OUR SPACE",
   "gallery.title": "공간이 곧 경험입니다",
@@ -296,5 +307,5 @@ window.YIDO_I18N.ko = {
   /* --- scroll-scrub film (정서 카피만 · 의료 주장 0, 히어로 문구 재사용) --- */
   "scrub.c1": "섬세하게, 한 사람을 위해",
   "scrub.c2": "결과만이 아니라, 경험까지",
-  "scrub.c3": "서울이도치과"
+  "scrub.c3": "서울이도치과의원"
 };

@@ -135,6 +135,36 @@ html.js [data-reveal].is-visible .section__title {
 .callout { padding: 0 0 0 var(--space-6); border-left: 2px solid var(--accent-600); margin: var(--space-7) 0; }
 .callout .serif { font-size: clamp(1.5rem, 3vw, 2.25rem); color: var(--ink-900); font-style: italic; line-height: 1.3; }
 
+/* ---- Stat callout (80% 진단) ---- */
+.callout--stat {
+  padding: var(--space-8) var(--space-7);
+  border-left: none;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  margin: var(--space-9) 0;
+  background: transparent;
+}
+.callout__stat-line {
+  display: flex; align-items: baseline; justify-content: center; gap: 4px;
+  line-height: 1; margin-bottom: var(--space-4);
+}
+.callout__num {
+  font-family: var(--font-num); font-size: clamp(5rem, 14vw, 9rem);
+  font-weight: 200; letter-spacing: -0.03em; color: var(--ink-900); line-height: 1;
+}
+.callout__unit {
+  font-family: var(--font-num); font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 200; color: var(--accent-600); line-height: 1; align-self: flex-end; padding-bottom: 0.15em;
+}
+.callout__stat-main {
+  font-family: var(--font-serif); font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-style: italic; color: var(--ink-900); margin-bottom: var(--space-3); line-height: 1.4;
+}
+.callout__stat-sub {
+  font-size: var(--fs-small); color: var(--ink-500); max-width: 44ch; margin: 0 auto; line-height: 1.7;
+}
+
 /* ---- Cards ---- */
 .card { background: var(--paper-50); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: var(--space-7); height: 100%; box-shadow: var(--hairline-top); }
 .card h3 { margin-bottom: var(--space-3); }
@@ -606,4 +636,64 @@ html.js [data-reveal].is-visible .section__title {
   background-image: var(--tex-grain);
   background-size: 200px 200px;
   background-blend-mode: overlay;
+}
+
+/* ---- Results pending (B&A 심의 전 안내) ---- */
+.results-pending {
+  margin-top: var(--space-7); padding: var(--space-9) var(--space-7);
+  border: 1px solid var(--line); border-radius: var(--radius-md);
+  background: var(--paper-50); text-align: center;
+}
+.results-pending__note {
+  max-width: 52ch; margin: 0 auto; color: var(--ink-500);
+  font-size: var(--fs-body); line-height: 1.75;
+}
+
+/* ---- Hours pending (진료시간 개원 전 안내) ---- */
+.hours-pending {
+  padding: var(--space-8) var(--space-7);
+  border: 1px solid var(--line); border-radius: var(--radius-md);
+  background: var(--paper-50);
+}
+.hours-pending__title {
+  font-size: var(--fs-eyebrow); letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase; color: var(--ink-500); margin-bottom: var(--space-3);
+}
+.hours-pending__note { color: var(--ink-700); font-size: var(--fs-body); line-height: 1.7; }
+
+/* ---- Phil quote (원장 클로징) ---- */
+.phil-quote {
+  margin: var(--space-10) auto 0;
+  padding: 0;
+  max-width: 52ch;
+  text-align: center;
+  border: none;
+}
+.phil-quote p {
+  font-family: var(--font-serif); font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+  font-style: italic; line-height: 1.5; color: var(--ink-900); margin-bottom: var(--space-3);
+}
+.phil-quote cite {
+  display: block; font-style: normal; font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tracking-eyebrow); color: var(--ink-400); text-transform: uppercase;
+}
+
+/* ---- About essence2 ---- */
+.about-essence2 {
+  font-size: clamp(1rem, 2vw, 1.15rem); color: var(--ink-600);
+  line-height: 1.7; margin-top: var(--space-5); margin-bottom: var(--space-6);
+}
+
+/* ---- About positioning 3축 ---- */
+.about-position {
+  list-style: none; padding: 0; margin: 0 0 var(--space-8);
+  display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-7);
+}
+.about-position li {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.2rem); color: var(--ink-700);
+  padding-bottom: 3px; border-bottom: 1px solid var(--accent-600);
+}
+@media (max-width: 599px) {
+  .about-position { flex-direction: column; gap: var(--space-3); }
 }
