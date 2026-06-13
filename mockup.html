@@ -522,6 +522,66 @@
     .qa-item--warn::before { content: "⚠"; color: var(--warm); opacity: .8; }
     .qa-item--pending::before { content: "○"; color: var(--dim); }
 
+    /* ══ FUNCTIONS / CONTENT GUIDE ══ */
+    .feat-section { padding: 0 0 9rem; }
+
+    /* Section list (table) */
+    .sec-list { border-radius: 12px; overflow: hidden; box-shadow: 0 0 0 1px var(--line); margin-bottom: 1px; }
+    .sec-row {
+      display: grid; grid-template-columns: 3rem 1fr 2fr 5.5rem;
+      gap: 1.25rem; align-items: center;
+      padding: .95rem 1.75rem; border-bottom: 1px solid var(--line);
+      background: var(--bg); font-size: .78rem;
+    }
+    .sec-row:last-child { border-bottom: none; }
+    .sec-row--alt { background: rgba(255,255,255,.012); }
+    .sec-row--special { background: rgba(233,94,39,.04); }
+    .sec-row__num { font-size: .58rem; letter-spacing: .2em; font-weight: 600; color: var(--orange); }
+    .sec-row__name { color: var(--ivory); font-weight: 400; line-height: 1.4; }
+    .sec-row__desc { color: var(--dim); line-height: 1.6; }
+    .sec-badge { display: inline-flex; padding: .18rem .55rem; border-radius: 20px; font-size: .54rem; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; border: 1px solid var(--line); color: var(--dim); }
+    .sec-badge--orange { border-color: var(--o-dim); color: var(--orange); }
+    .sec-badge--warm { color: var(--warm); border-color: rgba(203,196,184,.2); }
+    @media (max-width: 1000px) { .sec-row { grid-template-columns: 2.5rem 1fr; } .sec-row__desc, .sec-row > .sec-badge { display: none; } }
+
+    /* Feature cards */
+    .feat-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--line);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .feat-card {
+      background: var(--bg); padding: 1.75rem 2rem;
+      display: flex; flex-direction: column; gap: .6rem;
+    }
+    .feat-card--dark { background: var(--black); }
+    .feat-card--accent { background: rgba(233,94,39,.04); border-left: 2px solid var(--orange); }
+    .feat-card__tag { font-size: .56rem; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); }
+    .feat-card__title { font-size: .95rem; font-weight: 400; color: var(--ivory); line-height: 1.35; }
+    .feat-card__body { font-size: .78rem; color: var(--dim); line-height: 1.72; flex: 1; }
+    .feat-card__code { font-size: .6rem; font-family: monospace; color: rgba(203,196,184,.35); margin-top: auto; padding-top: .65rem; border-top: 1px solid var(--line); letter-spacing: .02em; }
+    @media (max-width: 1000px) { .feat-grid { grid-template-columns: 1fr; } }
+
+    /* Button demo */
+    .btn-demo {
+      display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center;
+      padding: 2.25rem 2.5rem;
+      background: var(--black);
+      border-radius: 12px; box-shadow: 0 0 0 1px var(--line);
+      margin-bottom: 1px;
+    }
+    .btn-item { display: flex; flex-direction: column; gap: .55rem; align-items: flex-start; }
+    .btn-label { font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+
+    /* Inline demo buttons (visual only, not linked) */
+    .demo-btn { display: inline-flex; align-items: center; justify-content: center; font-family: var(--ff); cursor: default; text-decoration: none; border: none; }
+    .demo-btn--solid { background: var(--orange); color: #fff; padding: .55rem 1.25rem; font-size: .78rem; font-weight: 600; letter-spacing: .04em; border-radius: 3px; }
+    .demo-btn--invert { background: var(--ivory); color: var(--black); padding: .55rem 1.25rem; font-size: .78rem; font-weight: 600; letter-spacing: .04em; border-radius: 3px; }
+    .demo-btn--text { background: transparent; color: var(--warm); font-size: .78rem; font-weight: 400; letter-spacing: .06em; padding: .55rem 0; text-decoration: underline; text-underline-offset: 3px; }
+    .demo-btn--lg { padding: .8rem 2rem; font-size: .92rem; }
+    .demo-btn--outline { background: transparent; border: 1px solid var(--line); color: var(--ivory); padding: .55rem 1.25rem; font-size: .78rem; font-weight: 500; letter-spacing: .06em; border-radius: 3px; }
+
     /* ══ SPACE GALLERY ══ */
     .space-section { padding: 0 0 9rem; }
     .space-gallery {
@@ -1207,6 +1267,204 @@
         <span class="sgal__cap">진료실</span>
         <span class="sgal__notice">Rendering</span>
       </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── 웹사이트 기능 & 콘텐츠 안내 ── -->
+  <section class="feat-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">FUNCTIONS</span>
+        <h2 class="sh__title">웹사이트 기능 &amp; 콘텐츠 구조</h2>
+        <span class="sh__meta">섹션 · 버튼 · 인터랙션 · 다국어</span>
+      </div>
+
+      <!-- A. 섹션 & 콘텐츠 구조 -->
+      <div class="subsh" style="padding:0 0 2rem">
+        <p class="subsh__eye">Content Map</p>
+        <p class="subsh__title">10개 섹션 구성</p>
+      </div>
+      <div class="sec-list" data-stagger>
+        <div class="sec-row">
+          <span class="sec-row__num">HERO</span>
+          <span class="sec-row__name">히어로</span>
+          <span class="sec-row__desc">배경 영상 + 슬로건 헤드라인 + 상담 CTA 2개. 스크롤 큐 표시.</span>
+          <span class="sec-badge sec-badge--orange">배경 영상</span>
+        </div>
+        <div class="sec-row sec-row--alt">
+          <span class="sec-row__num">01</span>
+          <span class="sec-row__name">소개 (About)</span>
+          <span class="sec-row__desc">이도(履道) 브랜드 스토리 + 진료 가치 3가지 (영상 카드). "바른 길을 걷는 진료." 인용구.</span>
+          <span class="sec-badge">영상 3개</span>
+        </div>
+        <div class="sec-row">
+          <span class="sec-row__num">—</span>
+          <span class="sec-row__name">진료 철학 (Philosophy)</span>
+          <span class="sec-row__desc">80% 진단 통계 강조 callout + 바른 진단·이해하는 진료·투명한 안내 3원칙. 대표원장 인용구.</span>
+          <span class="sec-badge">Callout</span>
+        </div>
+        <div class="sec-row sec-row--alt">
+          <span class="sec-row__num">—</span>
+          <span class="sec-row__name">PASSION STANDARD 7</span>
+          <span class="sec-row__desc">바른 진료 7가지 기준 (P.A.S.S.I.O.N). 다크 섹션.</span>
+          <span class="sec-badge">7 Items</span>
+        </div>
+        <div class="sec-row">
+          <span class="sec-row__num">02</span>
+          <span class="sec-row__name">원장진 (Doctors)</span>
+          <span class="sec-row__desc">의료진 4인 카드 (사진·진료분야·인용구). 개원 전 placeholder — 촬영 후 교체.</span>
+          <span class="sec-badge sec-badge--warm">사진 교체 필요</span>
+        </div>
+        <div class="sec-row sec-row--alt">
+          <span class="sec-row__num">03</span>
+          <span class="sec-row__name">환자경험 (Care)</span>
+          <span class="sec-row__desc">GBT 구강 스파 + 시그니처 향·체험 공간 + YIDO Total Care 5단계 프로그램.</span>
+          <span class="sec-badge">영상 7개</span>
+        </div>
+        <div class="sec-row sec-row--special">
+          <span class="sec-row__num">—</span>
+          <span class="sec-row__name">진료 여정 (Pinscroll)</span>
+          <span class="sec-row__desc">스크롤을 내릴수록 6단계 진료 여정이 배경 영상과 함께 전환되는 핀드 스크롤 섹션. 핵심 인터랙션.</span>
+          <span class="sec-badge sec-badge--orange">핀드 스크롤</span>
+        </div>
+        <div class="sec-row">
+          <span class="sec-row__num">04</span>
+          <span class="sec-row__name">진료과목 (Services)</span>
+          <span class="sec-row__desc">임플란트 · 심미보철교정 · 예방·일반 3대 영역 + 각 세부 진료 리스트.</span>
+          <span class="sec-badge">영상 3개</span>
+        </div>
+        <div class="sec-row sec-row--alt">
+          <span class="sec-row__num">05·06</span>
+          <span class="sec-row__name">원내기공소 · 위생·소독</span>
+          <span class="sec-row__desc">원내 기공 시스템 설명 (개원 확정 후 업데이트) + 멸균·소독 절차 안내.</span>
+          <span class="sec-badge sec-badge--warm">콘텐츠 준비 중</span>
+        </div>
+        <div class="sec-row">
+          <span class="sec-row__num">—</span>
+          <span class="sec-row__name">오시는 길 (Contact)</span>
+          <span class="sec-row__desc">주소·전화·진료시간 placeholder. 개원 시 실 정보 반영. 지도 연동 예정.</span>
+          <span class="sec-badge sec-badge--warm">개원 시 반영</span>
+        </div>
+      </div>
+
+      <!-- B. 네비게이션 & 버튼 -->
+      <div class="subsh" style="padding:5rem 0 2rem">
+        <p class="subsh__eye">Navigation &amp; Buttons</p>
+        <p class="subsh__title">헤더 & 버튼 구조</p>
+      </div>
+      <div class="feat-grid" data-stagger>
+        <div class="feat-card feat-card--dark">
+          <p class="feat-card__tag">Header — 로고</p>
+          <p class="feat-card__title">투명 → 솔리드 전환</p>
+          <p class="feat-card__body">히어로 위에서는 흰색 로고 + 투명 헤더. 스크롤하면 아이보리 배경 + 다크 로고로 자동 전환. 클릭 시 최상단으로 이동.</p>
+          <p class="feat-card__code">.site-header.is-scrolled</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">Navigation — 메뉴</p>
+          <p class="feat-card__title">섹션 이동 앵커 링크</p>
+          <p class="feat-card__body">소개 · 원장진 · 환자경험 · 진료과목 · 원내기공소 · 위생·소독 · 오시는 길. 데스크탑 1200px 이상 표시, 이하 햄버거 메뉴.</p>
+          <p class="feat-card__code">href="#about" → smooth scroll</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">Language — 언어 전환</p>
+          <p class="feat-card__title">KO · EN · JP · CN</p>
+          <p class="feat-card__body">버튼 클릭 시 해당 언어 정적 페이지로 이동. KO(루트) / EN(/en/) / JA(/ja/) / ZH(/zh/) 4개 독립 URL. SEO hreflang 적용.</p>
+          <p class="feat-card__code">data-lang="en" → /en/index.html</p>
+        </div>
+        <div class="feat-card feat-card--accent">
+          <p class="feat-card__tag">CTA — 상담·예약</p>
+          <p class="feat-card__title">상담·예약 안내</p>
+          <p class="feat-card__body">헤더 오른쪽 상단 + 히어로 섹션에 위치. 클릭 시 "오시는 길" 섹션(#contact)으로 스크롤. 개원 후 예약 시스템 연동 가능.</p>
+          <p class="feat-card__code">href="#contact" → 추후 예약 URL 교체</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">Mobile — 드로어</p>
+          <p class="feat-card__title">햄버거 → 풀스크린 메뉴</p>
+          <p class="feat-card__body">1200px 미만에서 햄버거 아이콘 표시. 탭 시 전체화면 다크 드로어 슬라이드인. 메뉴 + 언어 전환 포함. 뒤로가기·링크 탭 시 닫힘.</p>
+          <p class="feat-card__code">nav-toggle → .nav-drawer.is-open</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">Scroll — 프로그레스</p>
+          <p class="feat-card__title">상단 스크롤 진행 바</p>
+          <p class="feat-card__body">페이지 최상단에 1px 흰 라인이 스크롤 위치에 따라 좌→우로 채워짐. mix-blend-mode: difference로 배경 밝기 무관하게 항상 표시.</p>
+          <p class="feat-card__code">.scroll-progress · mix-blend-mode:difference</p>
+        </div>
+      </div>
+
+      <!-- C. 버튼 종류 데모 -->
+      <div class="subsh" style="padding:3.5rem 0 1.5rem">
+        <p class="subsh__eye">Button Types</p>
+        <p class="subsh__title">4가지 버튼 스타일</p>
+      </div>
+      <div class="btn-demo" data-reveal>
+        <div class="btn-item">
+          <span class="btn-label">Solid — 기본 CTA</span>
+          <span class="demo-btn demo-btn--solid">상담·예약 안내</span>
+        </div>
+        <div class="btn-item">
+          <span class="btn-label">Invert — 히어로 위 CTA</span>
+          <span class="demo-btn demo-btn--invert">상담·예약 안내</span>
+        </div>
+        <div class="btn-item">
+          <span class="btn-label">Invert + Large — 히어로 메인</span>
+          <span class="demo-btn demo-btn--invert demo-btn--lg">상담·예약 안내</span>
+        </div>
+        <div class="btn-item">
+          <span class="btn-label">Text — 보조 링크</span>
+          <span class="demo-btn demo-btn--text">서울이도치과의원 이야기 →</span>
+        </div>
+        <div class="btn-item">
+          <span class="btn-label">Outline — 네비·보조</span>
+          <span class="demo-btn demo-btn--outline">KO</span>
+        </div>
+      </div>
+
+      <!-- D. 인터랙션 & 기술 -->
+      <div class="subsh" style="padding:3.5rem 0 2rem">
+        <p class="subsh__eye">Interactions &amp; Tech</p>
+        <p class="subsh__title">7가지 인터랙션</p>
+      </div>
+      <div class="feat-grid" data-stagger>
+        <div class="feat-card feat-card--dark">
+          <p class="feat-card__tag">Pinned Scroll — 핵심</p>
+          <p class="feat-card__title">진료 여정 핀드 스크롤</p>
+          <p class="feat-card__body">스크롤을 내릴수록 왼쪽 배경 영상이 6단계 여정에 맞게 자동 전환. 텍스트는 오른쪽에 고정. 모바일에서는 일반 스크롤로 fallback.</p>
+          <p class="feat-card__code">data-pinscroll · IntersectionObserver</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">Video — 자동재생</p>
+          <p class="feat-card__title">섹션 영상 자동재생</p>
+          <p class="feat-card__body">화면에 들어올 때 자동 재생, 벗어나면 일시정지. 소리 없음(muted). 대역폭 절약을 위해 뷰포트 진입 전까지 로드 안 함(preload="none").</p>
+          <p class="feat-card__code">data-autovideo · IntersectionObserver</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">Scroll Reveal — 애니메이션</p>
+          <p class="feat-card__title">스크롤 진입 시 페이드인</p>
+          <p class="feat-card__body">모든 섹션 헤더·카드·그리드가 화면에 들어오면 아래→위로 부드럽게 등장. 카드 그리드는 순서대로 시차 등장(stagger). prefers-reduced-motion 지원.</p>
+          <p class="feat-card__code">data-reveal · data-stagger · .is-in</p>
+        </div>
+        <div class="feat-card feat-card--accent">
+          <p class="feat-card__tag">i18n — 다국어</p>
+          <p class="feat-card__title">KO · EN · JA · ZH 4개 언어</p>
+          <p class="feat-card__body">언어별 독립 URL (/en/ /ja/ /zh/)로 완전한 SEO 다국어 대응. hreflang 태그로 구글·야후·바이두에 언어 신호 전달. 자동 번역이 아닌 검수된 번역문.</p>
+          <p class="feat-card__code">gen-lang-pages.js · hreflang · og:locale</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">SEO / AEO / GEO</p>
+          <p class="feat-card__title">검색·AI·지역 최적화</p>
+          <p class="feat-card__body">Google 검색(SEO): robots.txt · sitemap.xml · JSON-LD Dentist 스키마. AI 답변 엔진(AEO): FAQ 스키마 + speakable. 지역 검색(GEO): 구글 비즈니스 프로필 연동 준비.</p>
+          <p class="feat-card__code">JSON-LD: Dentist · FAQPage · WebPage</p>
+        </div>
+        <div class="feat-card">
+          <p class="feat-card__tag">배포 · 관리</p>
+          <p class="feat-card__title">GitHub Pages 정적 배포</p>
+          <p class="feat-card__body">별도 서버 불필요. 파일 수정 후 git push 1개 명령으로 즉시 반영. 현재 noindex 초안 상태 — 개원 시 index,follow로 전환 후 구글 등록.</p>
+          <p class="feat-card__code">git push ghroot main · noindex → index</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
