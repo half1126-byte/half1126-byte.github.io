@@ -387,6 +387,136 @@
     }
     .fnote strong { color: var(--warm); font-weight: 400; }
 
+    /* ══ 05 — PASSION STANDARD 7 ══ */
+    .passion-section { padding: 0 0 9rem; }
+    .passion-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line); gap: 1px;
+      background: var(--line);
+    }
+    .pcard {
+      padding: 2.25rem 2rem;
+      background: var(--bg);
+      display: flex; flex-direction: column; gap: .85rem;
+    }
+    .pcard--full { grid-column: 1 / -1; background: rgba(233,94,39,.04); border-top: 1px solid var(--o-dim); }
+    .pcard--dark { background: var(--black); }
+    .pcard__letter { font-size: 3.5rem; font-weight: 100; letter-spacing: -.04em; line-height: 1; color: var(--orange); opacity: .72; }
+    .pcard__kw { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--warm); }
+    .pcard__body { font-size: .82rem; color: var(--dim); line-height: 1.78; flex: 1; }
+
+    /* ══ 06 — YIDO TOTAL CARE ══ */
+    .care-section { padding: 0 0 9rem; }
+    .care-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line); gap: 1px;
+      background: var(--line);
+    }
+    .ccard {
+      padding: 2.25rem 2rem; background: var(--bg);
+      display: flex; flex-direction: column; gap: .8rem;
+    }
+    .ccard--dark { background: var(--black); }
+    .ccard__num { font-size: .6rem; letter-spacing: .2em; color: var(--orange); text-transform: uppercase; }
+    .ccard__title { font-size: 1rem; font-weight: 400; color: var(--ivory); line-height: 1.35; }
+    .ccard__body { font-size: .79rem; color: var(--dim); line-height: 1.78; flex: 1; }
+    .ccard__disclaimer { font-size: .62rem; color: rgba(203,196,184,.35); margin-top: auto; padding-top: .75rem; border-top: 1px solid var(--line); }
+
+    /* ══ 07 — 진료 3대 영역 ══ */
+    .svc-section { padding: 0 0 9rem; }
+    .svc-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--line);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .svcol { background: var(--bg); padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+    .svcol--dark { background: var(--black); }
+    .svcol__theme { font-size: .88rem; font-weight: 500; color: var(--ivory); line-height: 1.4; }
+    .svcol__covers { font-size: .62rem; letter-spacing: .08em; color: var(--orange); text-transform: uppercase; border-top: 1px solid var(--o-dim); padding-top: .85rem; margin-top: auto; }
+    .svcol__list { display: flex; flex-direction: column; gap: .7rem; list-style: none; }
+    .svcol__item { display: flex; gap: .65rem; align-items: flex-start; }
+    .svcol__item::before { content: "—"; color: var(--orange); flex-shrink: 0; font-size: .75rem; margin-top: .15rem; }
+    .svcol__item p { font-size: .8rem; color: var(--dim); line-height: 1.72; }
+
+    /* ══ 08 — 의료진 ══ */
+    .doc-section { padding: 0 0 9rem; }
+    .doc-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: var(--line);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .doc-card { background: var(--bg); padding: 2.5rem 1.75rem; display: flex; flex-direction: column; gap: 1rem; }
+    .doc-card__avatar {
+      width: 68px; height: 68px; border-radius: 50%;
+      background: var(--black); display: flex; align-items: center; justify-content: center;
+      font-size: .56rem; letter-spacing: .08em; color: var(--dim); text-align: center; line-height: 1.4;
+      border: 1px solid var(--line); flex-shrink: 0;
+    }
+    .doc-card__role { font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+    .doc-card__field { font-size: .82rem; color: var(--warm); line-height: 1.5; }
+    .doc-card__quote { font-size: .82rem; color: var(--dim); line-height: 1.78; flex: 1; font-style: italic; border-left: 2px solid var(--o-dim); padding-left: .85rem; }
+    .doc-card__notice { font-size: .62rem; color: rgba(203,196,184,.32); margin-top: auto; padding-top: .75rem; border-top: 1px solid var(--line); }
+
+    /* ══ 09 — 환자경험 ══ */
+    .exp-section { padding: 0 0 9rem; }
+    .journey-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--line);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line); margin-bottom: 1px;
+    }
+    .jstep { background: var(--bg); padding: 2.25rem 2rem; display: flex; flex-direction: column; gap: .75rem; }
+    .jstep--dark { background: var(--black); }
+    .jstep__num { font-size: .6rem; letter-spacing: .2em; color: var(--orange); }
+    .jstep__title { font-size: 1rem; font-weight: 400; color: var(--ivory); }
+    .jstep__body { font-size: .79rem; color: var(--dim); line-height: 1.78; }
+    .exp-details {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--line);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .edet { background: rgba(255,255,255,.012); padding: 1.75rem 2rem; display: flex; flex-direction: column; gap: .55rem; }
+    .edet__title { font-size: .88rem; font-weight: 400; color: var(--warm); }
+    .edet__body { font-size: .78rem; color: var(--dim); line-height: 1.72; }
+
+    /* ══ 10 — 개원 로드맵 ══ */
+    .roadmap-section { padding: 0 0 9rem; }
+    .roadmap {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: var(--line);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .rnode { background: var(--bg); padding: 2.25rem 2rem; display: flex; flex-direction: column; gap: .75rem; position: relative; }
+    .rnode--active { background: var(--black); }
+    .rnode--cta { background: rgba(233,94,39,.06); border-left: 2px solid var(--orange); }
+    .rnode__phase { font-size: .58rem; letter-spacing: .2em; color: var(--orange); text-transform: uppercase; }
+    .rnode__title { font-size: 1rem; font-weight: 400; color: var(--ivory); }
+    .rnode__date { font-size: .7rem; color: var(--warm); letter-spacing: .04em; }
+    .rnode__body { font-size: .78rem; color: var(--dim); line-height: 1.72; flex: 1; }
+    .rnode__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); position: absolute; top: 2rem; right: 2rem; }
+    .rnode--active .rnode__dot, .rnode--cta .rnode__dot { animation: pulse 2.4s ease-in-out infinite; }
+
+    /* ══ QA ══ */
+    .qa-section { padding: 0 0 9rem; }
+    .qa-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 1px; background: var(--line);
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .qa-cell { background: var(--bg); padding: 2rem 2rem; }
+    .qa-cell__title { font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--warm); margin-bottom: 1rem; }
+    .qa-item { display: flex; gap: .6rem; align-items: flex-start; margin-bottom: .55rem; font-size: .78rem; color: var(--dim); line-height: 1.6; }
+    .qa-item::before { content: "✓"; color: var(--orange); flex-shrink: 0; font-size: .72rem; }
+    .qa-item--warn::before { content: "⚠"; color: var(--warm); opacity: .8; }
+    .qa-item--pending::before { content: "○"; color: var(--dim); }
+
     /* ══ RESPONSIVE ══ */
     @media (max-width: 1000px) {
       .sc--left, .sc--right { display: none; }
@@ -401,9 +531,14 @@
       .tcell--full { grid-column: 1; }
       .vcard { border-right: none; border-bottom: 1px solid var(--line); }
       .vcard:last-child { border-bottom: none; }
+      .passion-grid, .svc-grid, .doc-grid, .roadmap, .qa-grid { grid-template-columns: 1fr; }
+      .pcard--full { grid-column: 1; }
+      .care-grid { grid-template-columns: repeat(2, 1fr); }
+      .journey-grid, .exp-details { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       .palette { grid-template-columns: repeat(2, 1fr); }
+      .care-grid { grid-template-columns: 1fr; }
       .phones-row { gap: 2rem; }
       .sh { flex-wrap: wrap; }
       .sh__meta { margin-left: 0; }
@@ -433,7 +568,7 @@
         <span class="pill">Brand Guideline</span>
         <span class="pill">noindex · 개원 준비</span>
       </div>
-      <span class="cover__pg">01 / 04</span>
+      <span class="cover__pg">01 / 10</span>
     </div>
   </section>
 
@@ -679,12 +814,348 @@
     </div>
   </section>
 
+  <div class="divider"></div>
+
+  <!-- ── 05 PASSION STANDARD 7 ── -->
+  <section class="passion-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">05 — PASSION STANDARD 7</span>
+        <h2 class="sh__title">바른 진료를 지키는 일곱 가지 기준</h2>
+        <span class="sh__meta">P.A.S.S.I.O.N</span>
+      </div>
+      <div class="passion-grid">
+        <div class="pcard">
+          <div class="pcard__letter">P</div>
+          <p class="pcard__kw">Precision — 바른 선택</p>
+          <p class="pcard__body">빠른 치료보다, 한 번의 치료로 바른 선택이 되도록 진료합니다.</p>
+        </div>
+        <div class="pcard">
+          <div class="pcard__letter">A</div>
+          <p class="pcard__kw">Attentiveness — 명쾌한 설명</p>
+          <p class="pcard__body">불필요한 과잉진료 없이, 눈높이에 맞춘 명쾌한 설명으로 안심을 드립니다.</p>
+        </div>
+        <div class="pcard">
+          <div class="pcard__letter">S</div>
+          <p class="pcard__kw">Service — 품격과 편안함</p>
+          <p class="pcard__body">진료의 모든 과정에서 품격과 편안함을 느끼실 수 있도록 합니다.</p>
+        </div>
+        <div class="pcard pcard--dark">
+          <div class="pcard__letter">S</div>
+          <p class="pcard__kw">Sincerity — 따뜻한 마음</p>
+          <p class="pcard__body">가족을 돌보는 마음으로, 진료의 두려움을 따뜻하게 살핍니다.</p>
+        </div>
+        <div class="pcard pcard--dark">
+          <div class="pcard__letter">I</div>
+          <p class="pcard__kw">Individual — 1:1 맞춤 진료</p>
+          <p class="pcard__body">획일적인 진료가 아닌, 환자분의 상황에 맞춘 1:1 진료를 설계합니다.</p>
+        </div>
+        <div class="pcard pcard--dark">
+          <div class="pcard__letter">O</div>
+          <p class="pcard__kw">Originality — 섬세한 손끝</p>
+          <p class="pcard__body">까다로운 고난도 재치료까지, 섬세한 손끝으로 풀어냅니다.</p>
+        </div>
+        <div class="pcard pcard--full">
+          <div class="pcard__letter">N</div>
+          <p class="pcard__kw">New Standard — 바른 기준</p>
+          <p class="pcard__body" style="max-width:64ch">대한민국 치과의 바른 기준을 지향하며, 누구에게나 신뢰받는 진료를 준비합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── 06 YIDO TOTAL CARE ── -->
+  <section class="care-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">06 — YIDO Total Care</span>
+        <h2 class="sh__title">환자경험 케어 프로그램</h2>
+        <span class="sh__meta">6 Programs</span>
+      </div>
+      <div class="care-grid">
+        <div class="ccard">
+          <p class="ccard__num">01</p>
+          <p class="ccard__title">GBT 구강 스파<br>스케일링</p>
+          <p class="ccard__body">디스클로징으로 치면 상태를 함께 확인하고, 에어플로우를 활용해 꼼꼼하게 관리하는 스케일링 프로그램입니다.</p>
+          <p class="ccard__disclaimer">결과는 개인의 구강 상태에 따라 차이가 있을 수 있습니다.</p>
+        </div>
+        <div class="ccard">
+          <p class="ccard__num">02</p>
+          <p class="ccard__title">회복 케어<br>울킨 LDM</p>
+          <p class="ccard__body">발치·임플란트 등 시술 이후의 회복 과정을 살피는 케어 프로그램입니다.</p>
+          <p class="ccard__disclaimer">결과는 개인차가 있습니다. 기기 허가범위 내 안내합니다.</p>
+        </div>
+        <div class="ccard">
+          <p class="ccard__num">03</p>
+          <p class="ccard__title">데일리 밸런스<br>구강 유산균</p>
+          <p class="ccard__body">일상 구강 관리를 돕는 구강 유산균을 안내해 드립니다.</p>
+          <p class="ccard__disclaimer">효능은 개인차가 있을 수 있습니다.</p>
+        </div>
+        <div class="ccard">
+          <p class="ccard__num">04</p>
+          <p class="ccard__title">프리벤션<br>예방관리·리콜</p>
+          <p class="ccard__body">정기 점검과 예방 관리로 구강 건강을 함께 살펴보는 프로그램입니다.</p>
+          <p class="ccard__disclaimer">개인별 주기는 상담 후 안내합니다.</p>
+        </div>
+        <div class="ccard">
+          <p class="ccard__num">05</p>
+          <p class="ccard__title">잇몸 케어<br>맞춤 관리</p>
+          <p class="ccard__body">잇몸 상태를 점검하고 맞춤 관리 방향을 안내해 드립니다.</p>
+          <p class="ccard__disclaimer">결과는 개인의 구강 상태에 따라 차이가 있을 수 있습니다.</p>
+        </div>
+        <div class="ccard ccard--dark">
+          <p class="ccard__num">06</p>
+          <p class="ccard__title">웰컴 케어<br>첫 방문 온보딩</p>
+          <p class="ccard__body">첫 방문 시 구강 컨디션을 함께 확인하고 관리 방향을 안내해 드리는 시작 단계입니다.</p>
+          <p class="ccard__disclaimer">상담 후 맞춤 안내합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── 07 진료 3대 영역 ── -->
+  <section class="svc-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">07 — 진료 3대 영역</span>
+        <h2 class="sh__title">이도치과가 집중하는 세 방향</h2>
+        <span class="sh__meta">임플란트 · 심미보철교정 · 일반·예방</span>
+      </div>
+      <div class="svc-grid">
+        <div class="svcol">
+          <p class="svcol__theme">수명을 생각하는<br>임플란트</p>
+          <ul class="svcol__list">
+            <li class="svcol__item"><p>자연치아를 먼저 — 꼭 필요한 식립 시기인지 정직하게 진단합니다.</p></li>
+            <li class="svcol__item"><p>예상 부작용까지 정리하고 식립 — 고령·전신질환 환자분은 더 철저히 준비합니다.</p></li>
+            <li class="svcol__item"><p>형식적인 약속이 아닌, 전 직원이 함께하는 꾸준한 관리 케어.</p></li>
+            <li class="svcol__item"><p>정교한 식립과 자가치아 뼈이식으로 회복을 돕습니다.</p></li>
+          </ul>
+          <p class="svcol__covers">임플란트 · 외과수술</p>
+        </div>
+        <div class="svcol svcol--dark">
+          <p class="svcol__theme">기능과 아름다움을<br>함께 복원</p>
+          <ul class="svcol__list">
+            <li class="svcol__item"><p>깎기보다 보존 — 최소 삭제, 본래 치아 구조부터 진단합니다.</p></li>
+            <li class="svcol__item"><p>겉모습만이 아닌 교합·턱관절 안정까지 설계합니다.</p></li>
+            <li class="svcol__item"><p>치료 후에도 이어지는 평생 구강 케어.</p></li>
+            <li class="svcol__item"><p>손끝의 정교함으로 까다로운 재치료까지 풀어냅니다.</p></li>
+          </ul>
+          <p class="svcol__covers">심미치료 · 보철 · 교정·인비절라인 · 교합</p>
+        </div>
+        <div class="svcol">
+          <p class="svcol__theme">작은 디테일이 만드는<br>오래가는 안심</p>
+          <ul class="svcol__list">
+            <li class="svcol__item"><p>작은 충치도 추적관찰 — 꼭 필요한 시기인지 정직하게 봅니다.</p></li>
+            <li class="svcol__item"><p>통증의 근본 원인과 습관, 전신 상태까지 함께 살핍니다.</p></li>
+            <li class="svcol__item"><p>정기 관리 시스템으로 체계적인 예방을 돕습니다.</p></li>
+            <li class="svcol__item"><p>섬세한 손끝으로 자극과 통증까지 세심하게 조절합니다.</p></li>
+          </ul>
+          <p class="svcol__covers">일반진료 · 예방·스케일링 · 턱관절·수면 케어</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── 08 의료진 ── -->
+  <section class="doc-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">08 — 의료진</span>
+        <h2 class="sh__title">진료 철학으로 함께하는 의료진</h2>
+        <span class="sh__meta">4인 · 소개 준비 중</span>
+      </div>
+      <div class="doc-grid">
+        <div class="doc-card">
+          <div class="doc-card__avatar">PHOTO<br>준비 중</div>
+          <p class="doc-card__role">의료진 01</p>
+          <p class="doc-card__field">상담·수면치료<br>턱관절·스플린트</p>
+          <p class="doc-card__quote">"충분히 듣고, 이해하실 수 있게 설명합니다."</p>
+          <p class="doc-card__notice">소개 준비 중 — 개원과 함께 공개됩니다</p>
+        </div>
+        <div class="doc-card">
+          <div class="doc-card__avatar">PHOTO<br>준비 중</div>
+          <p class="doc-card__role">의료진 02</p>
+          <p class="doc-card__field">심미치료·레진<br>충치 진단</p>
+          <p class="doc-card__quote">"꼭 필요한 치료를 신중하게 안내합니다."</p>
+          <p class="doc-card__notice">소개 준비 중 — 개원과 함께 공개됩니다</p>
+        </div>
+        <div class="doc-card">
+          <div class="doc-card__avatar">PHOTO<br>준비 중</div>
+          <p class="doc-card__role">의료진 03</p>
+          <p class="doc-card__field">심미치료·보철<br>국제 학술 활동</p>
+          <p class="doc-card__quote">"1mm의 차이까지 살핍니다."</p>
+          <p class="doc-card__notice">소개 준비 중 — 개원과 함께 공개됩니다</p>
+        </div>
+        <div class="doc-card">
+          <div class="doc-card__avatar">PHOTO<br>준비 중</div>
+          <p class="doc-card__role">의료진 04</p>
+          <p class="doc-card__field">교정·투명교정<br>인비절라인</p>
+          <p class="doc-card__quote">"치아 배열과 균형을 함께 고려합니다."</p>
+          <p class="doc-card__notice">소개 준비 중 — 개원과 함께 공개됩니다</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── 09 환자경험 ── -->
+  <section class="exp-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">09 — 환자경험</span>
+        <h2 class="sh__title">방문의 모든 순간을 경험으로</h2>
+        <span class="sh__meta">THE YIDO EXPERIENCE · 6 STEPS</span>
+      </div>
+      <div class="journey-grid">
+        <div class="jstep">
+          <p class="jstep__num">STEP 01</p>
+          <p class="jstep__title">도착과 맞이</p>
+          <p class="jstep__body">들어서는 순간의 공기와 향, 직원의 안내까지 — 첫인상을 정성껏 준비합니다.</p>
+        </div>
+        <div class="jstep">
+          <p class="jstep__num">STEP 02</p>
+          <p class="jstep__title">편안한 대기</p>
+          <p class="jstep__body">기다리는 시간이 부담이 되지 않도록 예상 시간을 안내하고, 편안한 공간을 마련합니다.</p>
+        </div>
+        <div class="jstep">
+          <p class="jstep__num">STEP 03</p>
+          <p class="jstep__title">충분한 상담</p>
+          <p class="jstep__body">궁금한 점을 편하게 여쭤보실 수 있도록, 충분히 듣고 이해하실 수 있게 설명합니다.</p>
+        </div>
+        <div class="jstep jstep--dark">
+          <p class="jstep__num">STEP 04</p>
+          <p class="jstep__title">정성스러운 진료</p>
+          <p class="jstep__body">특진실과 회복실 등 편안한 공간에서 진료와 회복을 돕습니다.</p>
+        </div>
+        <div class="jstep jstep--dark">
+          <p class="jstep__num">STEP 05</p>
+          <p class="jstep__title">사후 케어</p>
+          <p class="jstep__body">진료 후의 관리까지 이어지는 YIDO Total Care로 끝까지 살핍니다.</p>
+        </div>
+        <div class="jstep jstep--dark">
+          <p class="jstep__num">STEP 06</p>
+          <p class="jstep__title">배웅과 일상 관리</p>
+          <p class="jstep__body">구강관리 파우치와 맞춤 관리 안내로 일상에서의 관리를 돕습니다.</p>
+        </div>
+      </div>
+
+      <div class="subsh" style="padding:4rem 0 2rem">
+        <p class="subsh__eye">경험을 만드는 것들</p>
+        <p class="subsh__title">공간부터 일상까지</p>
+      </div>
+      <div class="exp-details">
+        <div class="edet"><p class="edet__title">시그니처 향</p><p class="edet__body">공간마다 일관된 시그니처 향으로 편안한 분위기를 만듭니다.</p></div>
+        <div class="edet"><p class="edet__title">양치 공간</p><p class="edet__body">진료 전후 편하게 사용하실 수 있는 양치 공간을 마련합니다.</p></div>
+        <div class="edet"><p class="edet__title">체험·제품 공간</p><p class="edet__body">구강관리 제품을 직접 체험하고 안내받을 수 있는 공간을 운영합니다.</p></div>
+        <div class="edet"><p class="edet__title">다국어 응대</p><p class="edet__body">영어·일본어·중국어 안내를 준비하고 있습니다.</p></div>
+        <div class="edet"><p class="edet__title">특진실·회복실</p><p class="edet__body">특진실과 회복실을 갖춰 진료와 회복을 편안하게 돕습니다.</p></div>
+        <div class="edet"><p class="edet__title">구강관리 파우치</p><p class="edet__body">프로그램 참여 시 맞춤 구강관리 용품을 파우치로 제공합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── 10 개원 로드맵 ── -->
+  <section class="roadmap-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">10 — 개원 로드맵</span>
+        <h2 class="sh__title">서울이도치과의원의 여정</h2>
+        <span class="sh__meta">2026 · 서울 마포구 공덕</span>
+      </div>
+      <div class="roadmap">
+        <div class="rnode rnode--active">
+          <div class="rnode__dot"></div>
+          <p class="rnode__phase">PHASE 01 — 현재</p>
+          <p class="rnode__title">개원 준비</p>
+          <p class="rnode__date">2026년 6월 ~</p>
+          <p class="rnode__body">인테리어 · 장비 설치 · 의료진 구성 · 웹사이트 초안 검토</p>
+        </div>
+        <div class="rnode">
+          <p class="rnode__phase">PHASE 02</p>
+          <p class="rnode__title">소프트 오픈</p>
+          <p class="rnode__date">2026년 8월 초 (가오픈)</p>
+          <p class="rnode__body">제한 인원 운영 · 의료진·시스템 최종 점검 · noindex 해제 준비</p>
+        </div>
+        <div class="rnode rnode--cta">
+          <div class="rnode__dot"></div>
+          <p class="rnode__phase">PHASE 03</p>
+          <p class="rnode__title">정식 개원</p>
+          <p class="rnode__date">2026년 8월 중순</p>
+          <p class="rnode__body">서울 마포구 공덕 · 공덕역 2번 출구 도보 3분 · 전 언어 대응</p>
+        </div>
+        <div class="rnode">
+          <p class="rnode__phase">PHASE 04</p>
+          <p class="rnode__title">콘텐츠 런칭</p>
+          <p class="rnode__date">개원 후</p>
+          <p class="rnode__body">의료진 소개 공개 · B&amp;A 심의 후 게시 · 블로그·AEO 콘텐츠 시작</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── QA 체크리스트 ── -->
+  <section class="qa-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">QA — 체크리스트</span>
+        <h2 class="sh__title">게시 전 확인 사항</h2>
+        <span class="sh__meta">의료광고법 · 데이터 완결성</span>
+      </div>
+      <div class="qa-grid">
+        <div class="qa-cell">
+          <p class="qa-cell__title">의료광고법 (의료법 제56조②)</p>
+          <div class="qa-item">최상급 표현 0건 — 최고·1등·완벽·보장·무통·유일 없음</div>
+          <div class="qa-item">전후사진·후기 — 사전심의 후 개인식별불가 크롭 + 개인차 disclaimer</div>
+          <div class="qa-item">과잉진료 방지 문구 — 꼭 필요한 치료만, 개인차 안내 포함</div>
+          <div class="qa-item">비교·비방 0건 — "타 병원보다 우수" 표현 없음</div>
+          <div class="qa-item">의료진 학력·전문의 표기 — 확정 전 placeholder 유지</div>
+        </div>
+        <div class="qa-cell">
+          <p class="qa-cell__title">개원 전 Placeholder 현황</p>
+          <div class="qa-item qa-item--pending">의료진 실명·사진 — 개원 준비와 함께 공개 예정</div>
+          <div class="qa-item qa-item--pending">주소·전화·진료시간 — 개원 시 안내 예정</div>
+          <div class="qa-item qa-item--pending">B&amp;A 전후 사례 — 사전심의 완료 후 게시</div>
+          <div class="qa-item qa-item--pending">원내기공소 상세 — 운영 확정 후 업데이트</div>
+          <div class="qa-item qa-item--warn">noindex 유지 중 — 정식 개원 시 해제 필요</div>
+        </div>
+        <div class="qa-cell">
+          <p class="qa-cell__title">기술 QA</p>
+          <div class="qa-item">모바일 390px · 375px 레이아웃 확인</div>
+          <div class="qa-item">다국어 4종 (KO · EN · JA · ZH) 렌더</div>
+          <div class="qa-item">iframe lazy loading 적용 — 6개</div>
+          <div class="qa-item">가로스크롤 없음</div>
+          <div class="qa-item">GitHub Pages 배포 — half1126-byte.github.io</div>
+        </div>
+        <div class="qa-cell">
+          <p class="qa-cell__title">개원 전 게이트</p>
+          <div class="qa-item qa-item--pending">의료진 실명·학력·전문의 확정 후 업데이트</div>
+          <div class="qa-item qa-item--pending">실 주소·전화·진료시간·사업자번호 반영</div>
+          <div class="qa-item qa-item--pending">도메인 구매 · canonical URL 교체</div>
+          <div class="qa-item qa-item--pending">Google Business Profile 등록</div>
+          <div class="qa-item qa-item--warn">robots.txt → index,follow 전환 (개원 시)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── FOOTER ── -->
   <div class="fnote">
     <strong>서울이도치과의원 · Seoul Yido Dental Office</strong><br>
-    Brand Guideline 2025 · 개원 전 초안 · noindex 유지 중<br>
-    의료진 실명·주소·연락처·B&amp;A 는 개원 확정 및 의료광고 심의 후 반영<br><br>
-    half1126-byte.github.io · 배포: git push ghroot main
+    Brand Proposal &amp; Web Mockup 2026 · 10 Sections · 개원 전 초안 · noindex 유지 중<br>
+    의료진 실명·주소·연락처·B&amp;A 는 개원 확정 및 의료광고 심의 후 반영<br>
+    의료광고법(의료법 제56조②) 준수 — LAW_HARD 0건 확인<br><br>
+    half1126-byte.github.io/mockup.html · 배포: git push ghroot main
   </div>
 
 </div>
