@@ -517,6 +517,142 @@
     .qa-item--warn::before { content: "⚠"; color: var(--warm); opacity: .8; }
     .qa-item--pending::before { content: "○"; color: var(--dim); }
 
+    /* ══ MOTION TOKENS ══ */
+    :root {
+      --dur-cover:   0.8s;
+      --dur-reveal:  0.6s;
+      --dur-stagger: 0.08s;
+      --dur-hover:   0.22s;
+      --dur-float:   6s;
+      --dur-draw:    0.7s;
+      --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-gentle:  cubic-bezier(0.4, 0, 0.2, 1);
+      --ease-inout:   cubic-bezier(0.45, 0, 0.55, 1);
+    }
+
+    /* ── Cover intro (body-load, no scroll) ── */
+    @keyframes cv-up   { from { opacity: 0; transform: translateY(12px);  } to { opacity: 1; transform: translateY(0); } }
+    @keyframes cv-down { from { opacity: 0; transform: translateY(-8px);  } to { opacity: 1; transform: translateY(0); } }
+    @keyframes cv-rule { from { opacity: 0; transform: scaleX(.92);        } to { opacity: 1; transform: scaleX(1); } }
+    @keyframes cv-head { from { opacity: 0; transform: translateY(16px); letter-spacing: -.06em; } to { opacity: 1; transform: translateY(0); letter-spacing: -.04em; } }
+
+    .cover__top     { animation: cv-down var(--dur-cover) var(--ease-premium) 0s    both; }
+    .cover__kr      { animation: cv-up   var(--dur-cover) var(--ease-premium) 0.25s both; }
+    .cover__headline{ animation: cv-head var(--dur-cover) var(--ease-premium) 0.45s both; }
+    .cover__en      { animation: cv-up   var(--dur-cover) var(--ease-premium) 0.75s both; }
+    .cover__rule    { animation: cv-rule var(--dur-cover) var(--ease-premium) 0.95s both; transform-origin: center; }
+    .cover__bottom  { animation: cv-up   var(--dur-cover) var(--ease-premium) 1.15s both; }
+
+    /* ── Scroll reveal ── */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity var(--dur-reveal) var(--ease-premium),
+                  transform var(--dur-reveal) var(--ease-premium);
+    }
+    [data-reveal].is-in { opacity: 1; transform: translateY(0); }
+
+    /* ── Stagger (children get --i CSS var via JS) ── */
+    [data-stagger] > * {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity var(--dur-reveal) var(--ease-premium) calc(var(--i, 0) * var(--dur-stagger)),
+                  transform var(--dur-reveal) var(--ease-premium) calc(var(--i, 0) * var(--dur-stagger));
+    }
+    [data-stagger].is-in > * { opacity: 1; transform: translateY(0); }
+
+    /* ── Stagger wide (journey 0.12s) ── */
+    [data-stagger-wide] > * {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity var(--dur-reveal) var(--ease-premium) calc(var(--i, 0) * 0.12s),
+                  transform var(--dur-reveal) var(--ease-premium) calc(var(--i, 0) * 0.12s);
+    }
+    [data-stagger-wide].is-in > * { opacity: 1; transform: translateY(0); }
+
+    /* ── Card hover ── */
+    .pcard, .ccard, .vcard, .svcol, .doc-card, .jstep, .edet, .rnode {
+      transition: transform var(--dur-hover) var(--ease-gentle),
+                  box-shadow var(--dur-hover) var(--ease-gentle);
+    }
+    @media (hover: hover) {
+      .pcard:hover, .ccard:hover, .vcard:hover, .svcol:hover,
+      .doc-card:hover, .jstep:hover, .edet:hover, .rnode:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 32px rgba(0,0,0,.45);
+      }
+    }
+
+    /* ── Float (Device Preview) ── */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-6px); }
+    }
+    @keyframes float-center {
+      0%, 100% { transform: translate(-50%, calc(-50% + 0px)); }
+      50%       { transform: translate(-50%, calc(-50% - 4px)); }
+    }
+    .sc--center[data-float].is-in {
+      animation: float-center var(--dur-float) var(--ease-inout) var(--float-delay, 0s) infinite;
+    }
+    .phone[data-float].is-in {
+      animation: float var(--dur-float) var(--ease-inout) var(--float-delay, 0s) infinite;
+    }
+
+    /* ── Divider draw ── */
+    .divider {
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform var(--dur-draw) var(--ease-premium);
+    }
+    .divider.is-in { transform: scaleY(1); }
+
+    /* ── Journey vertical line ── */
+    .journey-line {
+      width: 1px; height: 0;
+      background: linear-gradient(var(--orange), transparent);
+      margin: 0 auto;
+      transition: height var(--dur-draw) var(--ease-premium) 0.2s;
+    }
+    .journey-line.is-in { height: 72px; }
+
+    /* ── Roadmap top border draw ── */
+    .roadmap {
+      position: relative;
+    }
+    .roadmap::before {
+      content: "";
+      position: absolute; top: -1px; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--orange) 30%, var(--orange) 70%, transparent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--dur-draw) var(--ease-premium);
+    }
+    .roadmap.is-in::before { transform: scaleX(1); }
+
+    /* ── Section header reveal ── */
+    .sh {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.55s var(--ease-premium), transform 0.55s var(--ease-premium);
+    }
+    .sh.is-in { opacity: 1; transform: translateY(0); }
+
+    /* ── prefers-reduced-motion ── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0ms !important;
+      }
+      [data-reveal], [data-stagger] > *, [data-stagger-wide] > * {
+        opacity: 1 !important; transform: none !important;
+      }
+      .sh { opacity: 1 !important; transform: none !important; }
+      .divider, .journey-line { transform: none !important; height: 72px !important; }
+    }
+
     /* ══ RESPONSIVE ══ */
     @media (max-width: 1000px) {
       .sc--left, .sc--right { display: none; }
@@ -579,7 +715,7 @@
         <h2 class="sh__title">브랜드 스토리</h2>
         <span class="sh__meta">履道 · 슬로건 · 포지셔닝</span>
       </div>
-      <div class="voice-grid">
+      <div class="voice-grid" data-stagger>
         <div class="vcard vcard--lead">
           <p class="vcard__num">Origin · 이름의 뜻</p>
           <h3 class="vcard__title">이도(履道)<br>바른 길을<br>따르다</h3>
@@ -614,7 +750,7 @@
       </div>
 
       <!-- Color Palette -->
-      <div class="palette">
+      <div class="palette" data-reveal>
         <div class="pchip">
           <div class="pchip__color" style="background:#232220"></div>
           <div class="pchip__label" style="background:#232220">
@@ -666,7 +802,7 @@
       </div>
 
       <!-- Logo -->
-      <div class="logo-row" style="margin-top:1px">
+      <div class="logo-row" style="margin-top:1px" data-reveal>
         <div class="lcell lcell--ivory">
           <span class="lcell__tag">On Light — 스크롤 후 헤더</span>
           <img class="lcell__img" src="assets/logo/logo-dark.png" alt="서울이도치과의원 로고 (다크)" />
@@ -684,7 +820,7 @@
         <p class="subsh__eye">Typography — 2폰트 원칙</p>
         <p class="subsh__title">고운돋움 · 프리텐다드 Variable</p>
       </div>
-      <div class="typo-grid">
+      <div class="typo-grid" data-reveal>
         <div class="tcell">
           <p class="tcell__role">Brand / Logo — 고운돋움</p>
           <p class="tcell__sample" style="font-family:'Gowun Dodum',sans-serif;font-size:2rem;letter-spacing:.04em">서울이도치과의원</p>
@@ -727,7 +863,7 @@
         <h2 class="sh__title">바른 진료를 지키는 일곱 가지 기준</h2>
         <span class="sh__meta">P.A.S.S.I.O.N</span>
       </div>
-      <div class="passion-grid">
+      <div class="passion-grid" data-stagger>
         <div class="pcard">
           <div class="pcard__letter">P</div>
           <p class="pcard__kw">Precision — 바른 선택</p>
@@ -777,7 +913,7 @@
         <h2 class="sh__title">이도치과가 집중하는 세 방향</h2>
         <span class="sh__meta">임플란트 · 심미보철교정 · 일반·예방</span>
       </div>
-      <div class="svc-grid">
+      <div class="svc-grid" data-stagger>
         <div class="svcol">
           <p class="svcol__theme">수명을 생각하는<br>임플란트</p>
           <ul class="svcol__list">
@@ -822,7 +958,7 @@
         <h2 class="sh__title">환자경험 케어 프로그램</h2>
         <span class="sh__meta">6 Programs</span>
       </div>
-      <div class="care-grid">
+      <div class="care-grid" data-stagger>
         <div class="ccard">
           <p class="ccard__num">01</p>
           <p class="ccard__title">GBT 구강 스파<br>스케일링</p>
@@ -873,7 +1009,7 @@
         <h2 class="sh__title">진료 철학으로 함께하는 의료진</h2>
         <span class="sh__meta">4인 · 소개 준비 중</span>
       </div>
-      <div class="doc-grid">
+      <div class="doc-grid" data-stagger>
         <div class="doc-card">
           <div class="doc-card__avatar">PHOTO<br>준비 중</div>
           <p class="doc-card__role">의료진 01</p>
@@ -916,7 +1052,8 @@
         <h2 class="sh__title">방문의 모든 순간을 경험으로</h2>
         <span class="sh__meta">THE YIDO EXPERIENCE · 6 STEPS</span>
       </div>
-      <div class="journey-grid">
+      <div class="journey-line"></div>
+      <div class="journey-grid" data-stagger-wide>
         <div class="jstep">
           <p class="jstep__num">STEP 01</p>
           <p class="jstep__title">도착과 맞이</p>
@@ -953,7 +1090,7 @@
         <p class="subsh__eye">경험을 만드는 것들</p>
         <p class="subsh__title">공간부터 일상까지</p>
       </div>
-      <div class="exp-details">
+      <div class="exp-details" data-stagger>
         <div class="edet"><p class="edet__title">시그니처 향</p><p class="edet__body">공간마다 일관된 시그니처 향으로 편안한 분위기를 만듭니다.</p></div>
         <div class="edet"><p class="edet__title">양치 공간</p><p class="edet__body">진료 전후 편하게 사용하실 수 있는 양치 공간을 마련합니다.</p></div>
         <div class="edet"><p class="edet__title">체험·제품 공간</p><p class="edet__body">구강관리 제품을 직접 체험하고 안내받을 수 있는 공간을 운영합니다.</p></div>
@@ -991,7 +1128,7 @@
           </div>
           <iframe class="sc__frame" src="https://half1126-byte.github.io/en/" title="EN" loading="lazy"></iframe>
         </div>
-        <div class="sc sc--center">
+        <div class="sc sc--center" data-float>
           <div class="sc__bar">
             <div class="sc__dot"></div><div class="sc__dot"></div><div class="sc__dot"></div>
             <div class="sc__url"><span class="lk">🔒</span>half1126-byte.github.io</div>
@@ -1021,7 +1158,7 @@
     </div>
     <div class="phones-row">
       <div class="phone-col">
-        <div class="phone">
+        <div class="phone" data-float style="--float-delay:0s">
           <div class="phone__island"></div>
           <div class="phone__screen">
             <iframe class="phone__iframe" src="https://half1126-byte.github.io/" title="한국어" loading="lazy"></iframe>
@@ -1031,7 +1168,7 @@
         <span class="phone-col__label"><b>KO</b>한국어</span>
       </div>
       <div class="phone-col">
-        <div class="phone">
+        <div class="phone" data-float style="--float-delay:1.2s">
           <div class="phone__island"></div>
           <div class="phone__screen">
             <iframe class="phone__iframe" src="https://half1126-byte.github.io/en/" title="English" loading="lazy"></iframe>
@@ -1041,7 +1178,7 @@
         <span class="phone-col__label"><b>EN</b>English</span>
       </div>
       <div class="phone-col">
-        <div class="phone">
+        <div class="phone" data-float style="--float-delay:2.4s">
           <div class="phone__island"></div>
           <div class="phone__screen">
             <iframe class="phone__iframe" src="https://half1126-byte.github.io/ja/" title="日本語" loading="lazy"></iframe>
@@ -1104,7 +1241,7 @@
         <h2 class="sh__title">게시 전 확인 사항</h2>
         <span class="sh__meta">의료광고법 · 데이터 완결성</span>
       </div>
-      <div class="qa-grid">
+      <div class="qa-grid" data-stagger>
         <div class="qa-cell">
           <p class="qa-cell__title">의료광고법 (의료법 제56조②)</p>
           <div class="qa-item">최상급 표현 0건 — 최고·1등·완벽·보장·무통·유일 없음</div>
@@ -1151,5 +1288,61 @@
   </div>
 
 </div>
+
+<script>
+(function () {
+  var PREFIX = 'is-in';
+  var THRESHOLD = 0.15;
+
+  function observe(selector, onEnter, opts) {
+    var els = document.querySelectorAll(selector);
+    if (!els.length) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { onEnter(e.target); io.unobserve(e.target); }
+      });
+    }, Object.assign({ threshold: THRESHOLD }, opts || {}));
+    els.forEach(function (el) { io.observe(el); });
+  }
+
+  /* Section headers */
+  observe('.sh', function (el) { el.classList.add(PREFIX); });
+
+  /* Dividers */
+  observe('.divider', function (el) { el.classList.add(PREFIX); }, { threshold: 0.5 });
+
+  /* Journey line */
+  observe('.journey-line', function (el) { el.classList.add(PREFIX); }, { threshold: 0.5 });
+
+  /* Roadmap top border */
+  observe('.roadmap', function (el) { el.classList.add(PREFIX); });
+
+  /* Single reveals */
+  observe('[data-reveal]', function (el) {
+    el.classList.add(PREFIX);
+  }, { threshold: 0.08 });
+
+  /* Stagger grids (0.08s increment) */
+  observe('[data-stagger]', function (el) {
+    Array.from(el.children).forEach(function (child, i) {
+      child.style.setProperty('--i', i);
+    });
+    el.classList.add(PREFIX);
+  }, { threshold: 0.06 });
+
+  /* Stagger wide grids (0.12s increment, journey) */
+  observe('[data-stagger-wide]', function (el) {
+    Array.from(el.children).forEach(function (child, i) {
+      child.style.setProperty('--i', i);
+    });
+    el.classList.add(PREFIX);
+  }, { threshold: 0.06 });
+
+  /* Float elements */
+  observe('[data-float]', function (el) {
+    el.classList.add(PREFIX);
+  }, { threshold: 0.1 });
+}());
+</script>
 </body>
 </html>
