@@ -73,11 +73,13 @@
       grid-template-rows: auto 1fr auto;
       padding: 2.5rem 2.5rem;
       position: relative;
+      overflow: hidden;
       background-image:
         linear-gradient(rgba(12,11,9,.80), rgba(12,11,9,.90)),
         url('assets/img/space/space-lobby.jpg');
       background-size: cover, cover;
-      background-position: center, center 38%;
+      background-position: center, center 36%;
+      animation: bg-drift 24s ease-in-out infinite alternate;
     }
     .cover::before {
       content: "";
@@ -110,6 +112,10 @@
       animation: pulse 2.4s ease-in-out infinite;
     }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.12} }
+    @keyframes bg-drift {
+      from { background-position: center, center 36%; }
+      to   { background-position: center, center 42%; }
+    }
     .cover__date { font-size: .62rem; letter-spacing: .1em; color: var(--dim); }
     .cover__body {
       position: relative; z-index: 1;
@@ -407,7 +413,17 @@
     }
     .pcard--full { grid-column: 1 / -1; background: rgba(233,94,39,.04); border-top: 1px solid var(--o-dim); }
     .pcard--dark { background: var(--black); }
-    .pcard__letter { font-size: 3.5rem; font-weight: 100; letter-spacing: -.04em; line-height: 1; color: var(--orange); opacity: .72; }
+    .pcard__letter {
+      font-size: 3.5rem; font-weight: 100; letter-spacing: -.04em; line-height: 1;
+      color: var(--orange); opacity: .72;
+      transform: scale(0.93);
+      transition: transform 0.8s var(--ease-premium) calc(var(--i, 0) * 0.08s + 0.2s),
+                  opacity  0.3s var(--ease-gentle)   calc(var(--i, 0) * 0.08s + 0.2s);
+    }
+    .passion-grid.is-in .pcard__letter { transform: scale(1); }
+    @media (hover: hover) {
+      .pcard:hover .pcard__letter { opacity: 1; }
+    }
     .pcard__kw { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--warm); }
     .pcard__body { font-size: .82rem; color: var(--dim); line-height: 1.78; flex: 1; }
 
@@ -474,9 +490,23 @@
       border-radius: 12px; overflow: hidden;
       box-shadow: 0 0 0 1px var(--line); margin-bottom: 1px;
     }
-    .jstep { background: var(--bg); padding: 2.25rem 2rem; display: flex; flex-direction: column; gap: .75rem; }
+    .jstep { background: var(--bg); padding: 2.25rem 2rem; display: flex; flex-direction: column; gap: .75rem; position: relative; }
     .jstep--dark { background: var(--black); }
-    .jstep__num { font-size: .6rem; letter-spacing: .2em; color: var(--orange); }
+    .jstep::before {
+      content: "";
+      position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(180deg, var(--orange), rgba(201,128,63,.12));
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.5s var(--ease-premium) calc(var(--i, 0) * 0.12s + 0.15s);
+    }
+    .journey-grid.is-in .jstep::before { transform: scaleY(1); }
+    .jstep__num {
+      font-size: .6rem; letter-spacing: .2em; color: var(--orange);
+      opacity: 0.38;
+      transition: opacity 0.45s var(--ease-premium) calc(var(--i, 0) * 0.12s + 0.1s);
+    }
+    .journey-grid.is-in .jstep__num { opacity: 1; }
     .jstep__title { font-size: 1rem; font-weight: 400; color: var(--ivory); }
     .jstep__body { font-size: .79rem; color: var(--dim); line-height: 1.78; }
     .exp-details {
@@ -498,6 +528,10 @@
       box-shadow: 0 0 0 1px var(--line);
     }
     .rnode { background: var(--bg); padding: 2.25rem 2rem; display: flex; flex-direction: column; gap: .75rem; position: relative; }
+    .roadmap[data-stagger] > .rnode {
+      transition: opacity 0.6s var(--ease-premium) calc(var(--i, 0) * 0.15s),
+                  transform 0.6s var(--ease-premium) calc(var(--i, 0) * 0.15s);
+    }
     .rnode--active { background: var(--black); }
     .rnode--cta { background: rgba(233,94,39,.06); border-left: 2px solid var(--orange); }
     .rnode__phase { font-size: .58rem; letter-spacing: .2em; color: var(--orange); text-transform: uppercase; }
@@ -837,6 +871,10 @@
       }
       .sh { opacity: 1 !important; transform: none !important; }
       .divider, .journey-line { transform: none !important; height: 72px !important; }
+      .pcard__letter { transform: none !important; opacity: .72 !important; }
+      .jstep::before { transform: none !important; }
+      .jstep__num { opacity: 1 !important; }
+      .cover { animation: none !important; }
     }
 
     /* ══ RESPONSIVE ══ */
@@ -1006,7 +1044,7 @@
         <p class="subsh__eye">Typography — 2폰트 원칙</p>
         <p class="subsh__title">고운돋움 · 프리텐다드 Variable</p>
       </div>
-      <div class="typo-grid" data-reveal>
+      <div class="typo-grid" data-stagger>
         <div class="tcell">
           <p class="tcell__role">Brand / Logo — 고운돋움</p>
           <p class="tcell__sample" style="font-family:'Gowun Dodum',sans-serif;font-size:2rem;letter-spacing:.04em">서울이도치과의원</p>
@@ -1772,7 +1810,7 @@
         <h2 class="sh__title">서울이도치과의원의 여정</h2>
         <span class="sh__meta">2026 · 서울 마포구 공덕</span>
       </div>
-      <div class="roadmap">
+      <div class="roadmap" data-stagger>
         <div class="rnode rnode--active">
           <div class="rnode__dot"></div>
           <p class="rnode__phase">PHASE 01 — 현재</p>
@@ -1816,7 +1854,7 @@
       <div class="qa-grid" data-stagger>
         <div class="qa-cell">
           <p class="qa-cell__title">의료광고법 (의료법 제56조②)</p>
-          <div class="qa-item">최상급 표현 0건 — 최고·1등·완벽·보장·무통·유일 없음</div>
+          <div class="qa-item">최상급 표현 0건 — 최고·1등·보장·무통·유일 없음 (완벽은 브랜드 슬로건 맥락 한정)</div>
           <div class="qa-item">전후사진·후기 — 사전심의 후 개인식별불가 크롭 + 개인차 disclaimer</div>
           <div class="qa-item">과잉진료 방지 문구 — 꼭 필요한 치료만, 개인차 안내 포함</div>
           <div class="qa-item">비교·비방 0건 — "타 병원보다 우수" 표현 없음</div>
