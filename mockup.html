@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>서울이도치과의원 — 브랜드 웹목업 2025</title>
+  <title>서울이도치과의원 — 브랜드 프로포절 2026</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,7 +49,7 @@
 
     /* ── Section Header ── */
     .sh {
-      display: flex; align-items: center; gap: 1.25rem;
+      display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;
       padding-bottom: 1.25rem;
       border-bottom: 1px solid var(--line);
       margin-bottom: 3.5rem;
@@ -309,7 +309,7 @@
     }
     .lcell--ivory .lcell__tag { background: rgba(35,34,32,.07); color: var(--ink); }
     .lcell--dark  .lcell__tag { background: rgba(255,255,255,.07); color: var(--warm); }
-    .lcell__img { max-height: 50px; width: auto; display: block; }
+    .lcell__img { max-height: 50px; width: auto; max-width: 100%; display: block; align-self: flex-start; }
     .lcell__rule { font-size: .7rem; line-height: 1.75; max-width: 36ch; }
     .lcell--ivory .lcell__rule { color: var(--ink); }
     .lcell--dark  .lcell__rule { color: var(--dim); }
@@ -539,8 +539,7 @@
     @media (max-width: 640px) {
       .palette { grid-template-columns: repeat(2, 1fr); }
       .care-grid { grid-template-columns: 1fr; }
-      .phones-row { gap: 2rem; }
-      .sh { flex-wrap: wrap; }
+      .phones-row { gap: 1.5rem; }
       .sh__meta { margin-left: 0; }
     }
   </style>
