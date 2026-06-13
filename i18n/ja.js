@@ -22,7 +22,7 @@ window.YIDO_I18N.ja = {
 
   "hero.eyebrow": "THE RIGHT WAY TO PERFECTION",
   "hero.title": "正しい道を歩み、<br><span class=\"accent\">完璧に近づく。</span>",
-  "hero.lead": "原則を守る診療、最初から最後まで。治療の基本を守り、基準を作る歯科、ソウルYIDO歯科です。",
+  "hero.lead": "原則を守る診療、最初から最後まで。治療の基本を守り、基準を作る歯科、ソウルイド歯科医院です。",
   "hero.primary": "相談・予約のご案内",
   "hero.secondary": "ソウルイド歯科医院のストーリー",
   "hero.scrollcue": "Scroll",
