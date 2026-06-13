@@ -73,6 +73,11 @@
       grid-template-rows: auto 1fr auto;
       padding: 2.5rem 2.5rem;
       position: relative;
+      background-image:
+        linear-gradient(rgba(12,11,9,.80), rgba(12,11,9,.90)),
+        url('assets/img/space/space-lobby.jpg');
+      background-size: cover, cover;
+      background-position: center, center 38%;
     }
     .cover::before {
       content: "";
@@ -516,6 +521,52 @@
     .qa-item::before { content: "✓"; color: var(--orange); flex-shrink: 0; font-size: .72rem; }
     .qa-item--warn::before { content: "⚠"; color: var(--warm); opacity: .8; }
     .qa-item--pending::before { content: "○"; color: var(--dim); }
+
+    /* ══ SPACE GALLERY ══ */
+    .space-section { padding: 0 0 9rem; }
+    .space-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 300px 260px 220px;
+      gap: 4px;
+    }
+    .sgal {
+      position: relative; overflow: hidden;
+      background: var(--black);
+    }
+    .sgal--hero { grid-column: span 2; grid-row: span 2; }
+    .sgal--wide { grid-column: span 2; }
+    .sgal img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .sgal:hover img { transform: scale(1.04); }
+    .sgal__cap {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: .6rem 1rem;
+      background: linear-gradient(transparent, rgba(12,11,9,.72));
+      font-size: .6rem; letter-spacing: .13em; text-transform: uppercase;
+      color: rgba(255,252,243,.65);
+    }
+    .sgal__notice {
+      position: absolute; top: .75rem; right: .75rem;
+      padding: .2rem .55rem; border: 1px solid rgba(255,255,255,.15);
+      border-radius: 3px; font-size: .54rem; letter-spacing: .1em;
+      text-transform: uppercase; color: rgba(255,252,243,.4);
+    }
+    @media (max-width: 1000px) {
+      .space-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 240px 200px 200px 200px;
+      }
+      .sgal--hero { grid-column: 1 / -1; grid-row: span 1; }
+      .sgal--wide { grid-column: 1 / -1; }
+    }
+    @media (max-width: 640px) {
+      .space-gallery { grid-template-columns: 1fr; grid-template-rows: none; }
+      .sgal { height: 220px; }
+      .sgal--hero, .sgal--wide { grid-column: 1; grid-row: auto; }
+    }
 
     /* ══ MOTION TOKENS ══ */
     :root {
@@ -1097,6 +1148,64 @@
         <div class="edet"><p class="edet__title">다국어 응대</p><p class="edet__body">영어·일본어·중국어 안내를 준비하고 있습니다.</p></div>
         <div class="edet"><p class="edet__title">특진실·회복실</p><p class="edet__body">특진실과 회복실을 갖춰 진료와 회복을 편안하게 돕습니다.</p></div>
         <div class="edet"><p class="edet__title">구강관리 파우치</p><p class="edet__body">프로그램 참여 시 맞춤 구강관리 용품을 파우치로 제공합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── 공간 · 인테리어 렌더링 ── -->
+  <section class="space-section">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">SPACE — 인테리어</span>
+        <h2 class="sh__title">공간이 경험입니다</h2>
+        <span class="sh__meta">인테리어 렌더링 · 개원 준비 중</span>
+      </div>
+    </div>
+    <div class="space-gallery" data-stagger>
+      <!-- hero: 2col × 2row -->
+      <div class="sgal sgal--hero">
+        <img src="assets/img/space/space-reception.jpg" alt="서울이도치과의원 리셉션" loading="lazy">
+        <span class="sgal__cap">리셉션 · 접수 공간</span>
+        <span class="sgal__notice">Rendering</span>
+      </div>
+      <!-- row 1 right -->
+      <div class="sgal">
+        <img src="assets/img/space/space-consultation.jpg" alt="상담실" loading="lazy">
+        <span class="sgal__cap">상담실</span>
+        <span class="sgal__notice">Rendering</span>
+      </div>
+      <div class="sgal">
+        <img src="assets/img/space/space-entrance.jpg" alt="입구 · 로비" loading="lazy">
+        <span class="sgal__cap">입구 · 로비</span>
+        <span class="sgal__notice">Rendering</span>
+      </div>
+      <!-- row 3: 4 equal -->
+      <div class="sgal">
+        <img src="assets/img/space/space-lobby.jpg" alt="대기 라운지" loading="lazy">
+        <span class="sgal__cap">대기 라운지</span>
+        <span class="sgal__notice">Rendering</span>
+      </div>
+      <div class="sgal">
+        <img src="assets/img/space/space-lounge.jpg" alt="라운지 전경" loading="lazy">
+        <span class="sgal__cap">라운지 전경</span>
+        <span class="sgal__notice">Rendering</span>
+      </div>
+      <div class="sgal">
+        <img src="assets/img/space/space-private.jpg" alt="특진실" loading="lazy">
+        <span class="sgal__cap">특진실</span>
+        <span class="sgal__notice">Rendering</span>
+      </div>
+      <div class="sgal">
+        <img src="assets/img/space/space-vanity.jpg" alt="양치 공간" loading="lazy">
+        <span class="sgal__cap">양치 공간</span>
+        <span class="sgal__notice">Rendering</span>
+      </div>
+      <div class="sgal">
+        <img src="assets/img/space/space-treatment.jpg" alt="진료실" loading="lazy">
+        <span class="sgal__cap">진료실</span>
+        <span class="sgal__notice">Rendering</span>
       </div>
     </div>
   </section>
