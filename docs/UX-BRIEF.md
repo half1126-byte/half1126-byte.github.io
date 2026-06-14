@@ -30,6 +30,30 @@
 
 ![환자경험 여정 섹션 UX 어노테이션](ux-assets/05_journey.png)
 
+### 트러스트 스트립 + ABOUT / 브랜드 스토리
+
+![트러스트스트립 및 ABOUT 섹션 UX 어노테이션](ux-assets/06_trust_about.png)
+
+### YIDO PASSION STANDARD 7
+
+![PASSION STANDARD 7 섹션 UX 어노테이션](ux-assets/07_passion7.png)
+
+### FAQ 아코디언 + 푸터
+
+![FAQ 및 푸터 섹션 UX 어노테이션](ux-assets/08_faq_footer.png)
+
+### 전체 섹션 순서 플로우
+
+![전체 페이지 섹션 흐름 다이어그램](ux-assets/09_scroll_flow.png)
+
+### 모바일 뷰 (375px) — 데스크탑과 달라지는 레이아웃
+
+![모바일 뷰 UX 어노테이션](ux-assets/10_mobile.png)
+
+### 브랜드 컬러 + 타이포그래피 역할 가이드
+
+![브랜드 토큰 가이드](ux-assets/11_brand_tokens.png)
+
 ---
 
 ## 1. 헤더 & 네비게이션
