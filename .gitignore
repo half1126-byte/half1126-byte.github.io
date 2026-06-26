@@ -17,3 +17,5 @@ video/이미지/
 .DS_Store
 Thumbs.db
 .gstack/
+.bkit/
+.omc/
