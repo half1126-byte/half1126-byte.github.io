@@ -252,6 +252,11 @@ html.js [data-reveal].is-visible .section__title {
 .svc-principles li { position: relative; padding-left: var(--space-7); color: var(--ink-700); font-size: var(--fs-small); line-height: 1.6; }
 .svc-principles li::before { counter-increment: svp; content: counter(svp); position: absolute; left: 0; top: 1px; font-family: var(--font-num); font-size: 0.8rem; color: var(--accent-600); font-weight: var(--w-semi); }
 .svc-domain__covers { font-size: var(--fs-eyebrow); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-500); border-top: 1px solid var(--line); padding-top: var(--space-4); }
+/* 임플란트의 새로운 경험 — 4축(마취·붓기·턱관절·후속) */
+.svc-exp { margin-top: var(--space-5); }
+.svc-exp__label { font-size: var(--fs-eyebrow); letter-spacing: .06em; text-transform: uppercase; color: var(--accent-600); font-weight: var(--w-semi); margin: 0 0 var(--space-3); }
+.svc-exp__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-2); }
+.svc-exp__grid li { font-size: var(--fs-small); color: var(--ink-700); font-weight: var(--w-med); padding: var(--space-3) var(--space-4); background: var(--accent-soft); border-radius: var(--radius-pill); text-align: center; }
 .fac-grid .num-badge { font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-600); display: block; margin-bottom: var(--space-2); }
 /* 시설 카드: 이미지-상단 + 텍스트(이미지는 카드 라운드에 맞춰 클립) */
 .fac-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }

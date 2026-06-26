@@ -97,7 +97,7 @@ window.YIDO_I18N.en = {
 
   "services.eyebrow": "TREATMENTS",
   "services.title": "Treatments",
-  "services.lead": "Our care follows three directions — implants made to last, restoration of function and aesthetics, and long-term oral care.",
+  "services.lead": "Our care follows three directions — restoration of function and aesthetics, implants made to last, and long-term oral care.",
 
   /* --- 진료 3대 영역 (브랜드) --- */
   "svc.d1.theme": "Implants made to last",
@@ -106,6 +106,11 @@ window.YIDO_I18N.en = {
   "svc.d1.p3": "Not a token promise — steady aftercare from the whole team.",
   "svc.d1.p4": "Precise planning and diagnosis to support the healing process.",
   "svc.d1.covers": "Implants · Oral surgery",
+  "svc.d1.exp_t": "A new implant experience",
+  "svc.d1.exp1": "Comfort-focused anesthesia",
+  "svc.d1.exp2": "Swelling care",
+  "svc.d1.exp3": "TMJ care",
+  "svc.d1.exp4": "Follow-up care",
   "svc.d2.theme": "Restoring function and beauty together",
   "svc.d2.p1": "Preserve over reduce — minimal trimming, starting from your natural structure.",
   "svc.d2.p2": "We design for occlusion and TMJ stability, not just appearance.",
@@ -148,7 +153,7 @@ window.YIDO_I18N.en = {
   "lab.title": "In-house lab —<br class=\"lb\">close by, and precise",
   "lab.body": "We are preparing for treatment and prosthetic work to sit close together, so color and shape can be checked directly while restorations are refined.",
   "lab.master": "Lab team composition and operating details will be announced as we prepare to open.",
-  "lab.why": "Clinicians and the prosthetic team communicate directly to fine-tune the details.",
+  "lab.why": "Clinicians and our aesthetic-prosthetic lab work as one team. From diagnosis to shade and shape, we craft each patient's restoration together.",
   "lab.media": "Image — in-house lab & craft detail",
 
   "hygiene.eyebrow": "HYGIENE & STERILIZATION",
@@ -237,6 +242,10 @@ window.YIDO_I18N.en = {
   "faq.a3": "Opening hours will be announced in line with the opening schedule.",
   "faq.q4": "What is YIDO Total Care?",
   "faq.a4": "A patient-experience program that runs from check-ups and scaling through prevention, gum and recovery care. Details will be announced at opening; results may vary by individual.",
+  "faq.q5": "What is the implant experience like?",
+  "faq.a5": "We aim for an implant experience that connects comfort-focused anesthesia, swelling care, TMJ care, and follow-up care. We first assess honestly whether placement is truly needed, and we look after recovery and maintenance afterward. Results may vary by individual condition.",
+  "faq.q6": "How are your prosthetic (aesthetic) restorations made?",
+  "faq.a6": "Clinicians and our aesthetic-prosthetic lab work as one team. From diagnosis to shade and shape, we aim to design and refine each patient's restoration together. Details will be shared at opening.",
 
   "footer.kr": "Seoul Yido Dental Office",
   "footer.biz": "Seoul Yido Dental Office · Business details and contact will be announced at opening.",
