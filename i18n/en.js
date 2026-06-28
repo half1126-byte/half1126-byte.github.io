@@ -355,5 +355,23 @@ window.YIDO_I18N.en = {
   "tx.prevention.q3": "Is preventive care available for children?",
   "tx.prevention.a3": "We guide preventive care according to age and oral condition.",
 
+  "tx.tmj.title": "TMJ & Sleep — Diagnosis-centered care | Seoul Yido Dental Office",
+  "tx.tmj.desc": "Care for TMJ pain and sounds, teeth grinding and related sleep symptoms, centered on diagnosis. (Preparing to open.)",
+  "tx.tmj.h1": "TMJ & Sleep",
+  "tx.tmj.lead": "TMJ and sleep care addresses jaw pain and sounds, teeth grinding and other symptoms based on diagnosis. We first identify the cause and guide care suited to each individual.",
+  "tx.tmj.f1": "Detailed diagnosis of symptoms and causes",
+  "tx.tmj.f2": "Appliance (e.g., splint) guidance",
+  "tx.tmj.f3": "Lifestyle-habit coaching",
+  "tx.tmj.p1": "Interview and diagnosis",
+  "tx.tmj.p2": "Cause analysis",
+  "tx.tmj.p3": "Tailored care / appliance",
+  "tx.tmj.p4": "Progress check",
+  "tx.tmj.q1": "Do I need treatment if my jaw makes sounds?",
+  "tx.tmj.a1": "It depends on the degree and cause of symptoms; we advise whether care is needed after diagnosis.",
+  "tx.tmj.q2": "Do you treat teeth grinding?",
+  "tx.tmj.a2": "Grinding and clenching are addressed after diagnosis with an appliance or lifestyle care.",
+  "tx.tmj.q3": "Can I consult about sleep-related symptoms?",
+  "tx.tmj.a3": "Sleep-related symptoms are guided based on diagnosis, with referral recommended when needed.",
+
   "tx.hub.lead": "Under three major areas, we are preparing guidance for each treatment. Every treatment begins with an accurate diagnosis."
 };

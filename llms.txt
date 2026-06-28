@@ -46,6 +46,7 @@
   - 교정·인비절라인(Orthodontics): /treatments/ortho/
   - 일반진료(General): /treatments/general/
   - 예방·구강관리(Prevention): /treatments/prevention/
+  - 턱관절·수면(TMJ & Sleep): /treatments/tmj/
 - 모든 페이지는 한국어 기준이며 /en/ /ja/ /zh/ 접두로 다국어를 제공합니다(일부 번역 준비 중). 진료 안내는 개원·원장 감수 후 확정됩니다.
 
 ## 언어별 페이지 (Localized pages)

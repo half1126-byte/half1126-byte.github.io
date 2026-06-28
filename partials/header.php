@@ -22,6 +22,7 @@
               <li><a href="~/treatments/ortho/" data-i18n="tx.ortho.h1">교정 · 인비절라인</a></li>
               <li><a href="~/treatments/general/" data-i18n="tx.general.h1">일반진료</a></li>
               <li><a href="~/treatments/prevention/" data-i18n="tx.prevention.h1">예방 · 구강관리</a></li>
+              <li><a href="~/treatments/tmj/" data-i18n="tx.tmj.h1">턱관절 · 수면</a></li>
             </ul>
           </li>
           <li><a href="~/lab/" data-i18n="nav.lab">원내기공소</a></li>
@@ -55,6 +56,7 @@
       <li class="nav-drawer__sub"><a href="~/treatments/ortho/" data-i18n="tx.ortho.h1">교정 · 인비절라인</a></li>
       <li class="nav-drawer__sub"><a href="~/treatments/general/" data-i18n="tx.general.h1">일반진료</a></li>
       <li class="nav-drawer__sub"><a href="~/treatments/prevention/" data-i18n="tx.prevention.h1">예방 · 구강관리</a></li>
+      <li class="nav-drawer__sub"><a href="~/treatments/tmj/" data-i18n="tx.tmj.h1">턱관절 · 수면</a></li>
       <li><a href="~/lab/" data-i18n="nav.lab">원내기공소</a></li>
       <li><a href="~/about/#hygiene" data-i18n="nav.hygiene">위생·소독</a></li>
       <li><a href="~/visit/#contact" data-i18n="nav.contact">오시는 길</a></li>

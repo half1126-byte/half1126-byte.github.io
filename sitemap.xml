@@ -416,4 +416,36 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/prevention/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/prevention/" />
   </url>
+  <url>
+    <loc>https://half1126-byte.github.io/treatments/tmj/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/tmj/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/treatments/tmj/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/tmj/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/treatments/tmj/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/tmj/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/treatments/tmj/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/tmj/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/tmj/" />
+  </url>
 </urlset>

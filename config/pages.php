@@ -75,4 +75,10 @@ return [
     'crumb' => [['tx.crumb.home', ''], ['tx.crumb.tx', 'treatments/'], ['tx.prevention.h1', 'treatments/prevention/']],
     'faq' => [['tx.prevention.q1','tx.prevention.a1'],['tx.prevention.q2','faq.a4'],['tx.prevention.q3','tx.prevention.a3']],
   ],
+  'treatments/tmj' => [
+    'path' => 'treatments/tmj/', 'template' => 'treatments/tmj.php',
+    'title' => 'tx.tmj.title', 'desc' => 'tx.tmj.desc', 'wptype' => 'MedicalWebPage',
+    'crumb' => [['tx.crumb.home', ''], ['tx.crumb.tx', 'treatments/'], ['tx.tmj.h1', 'treatments/tmj/']],
+    'faq' => [['tx.tmj.q1','tx.tmj.a1'],['tx.tmj.q2','tx.tmj.a2'],['tx.tmj.q3','tx.tmj.a3']],
+  ],
 ];

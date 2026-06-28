@@ -12,6 +12,7 @@
           <li><a href="~/treatments/ortho/"><span data-i18n="tx.ortho.h1">교정 · 인비절라인</span></a></li>
           <li><a href="~/treatments/general/"><span data-i18n="tx.general.h1">일반진료</span></a></li>
           <li><a href="~/treatments/prevention/"><span data-i18n="tx.prevention.h1">예방 · 구강관리</span></a></li>
+          <li><a href="~/treatments/tmj/"><span data-i18n="tx.tmj.h1">턱관절 · 수면</span></a></li>
         </ul>
       </div>
     </section>

@@ -59,6 +59,7 @@
         <a href="~/treatments/aesthetic/" data-i18n="tx.aesthetic.h1">심미 · 보철</a>
         <a href="~/treatments/ortho/" data-i18n="tx.ortho.h1">교정 · 인비절라인</a>
         <a href="~/treatments/general/" data-i18n="tx.general.h1">일반진료</a>
+        <a href="~/treatments/tmj/" data-i18n="tx.tmj.h1">턱관절 · 수면</a>
         </nav>
       </div>
     </section>
