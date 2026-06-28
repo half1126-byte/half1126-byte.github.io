@@ -877,8 +877,27 @@
       .cover { animation: none !important; }
     }
 
+    /* ══ BRAND GUIDE SLIDES ══ */
+    [data-stagger] img {
+      /* preserve reveal (opacity+translateY) AND add hover (scale+shadow) */
+      transition: opacity var(--dur-reveal) var(--ease-premium) calc(var(--i,0)*var(--dur-stagger)),
+                  transform var(--dur-reveal) var(--ease-premium) calc(var(--i,0)*var(--dur-stagger)),
+                  box-shadow .3s cubic-bezier(0.16,1,0.3,1);
+      cursor: zoom-in;
+    }
+    @media (hover: hover) {
+      [data-stagger].is-in img:hover {
+        transform: scale(1.025) !important;
+        box-shadow: 0 16px 48px rgba(0,0,0,.7);
+        z-index: 2; position: relative;
+      }
+    }
+
     /* ══ RESPONSIVE ══ */
     @media (max-width: 1000px) {
+      [data-stagger] img { aspect-ratio: 16/9; }
+      [data-stagger][style*="grid-template-columns:repeat(3"] { grid-template-columns: repeat(2,1fr) !important; }
+
       .sc--left, .sc--right { display: none; }
       .scene { height: 420px; }
       .sc--center { width: 90vw; max-width: 580px; }
@@ -1029,12 +1048,12 @@
       <div class="logo-row" style="margin-top:1px" data-reveal>
         <div class="lcell lcell--ivory">
           <span class="lcell__tag">On Light — 스크롤 후 헤더</span>
-          <img class="lcell__img" src="assets/logo/logo-dark.png" alt="서울이도치과의원 로고 (다크)" />
+          <img class="lcell__img" src="/assets/logo/logo-dark.png" alt="서울이도치과의원 로고 (다크)" />
           <p class="lcell__rule">라이트 배경(#fffcf3)에서 사용.<br>스크롤 이후 헤더, 인쇄물, 밝은 배경.</p>
         </div>
         <div class="lcell lcell--dark">
           <span class="lcell__tag">On Dark — 히어로 헤더 · 푸터</span>
-          <img class="lcell__img" src="assets/logo/logo-light.png" alt="서울이도치과의원 로고 (화이트)" />
+          <img class="lcell__img" src="/assets/logo/logo-light.png" alt="서울이도치과의원 로고 (화이트)" />
           <p class="lcell__rule">다크 배경(#232220)에서 사용.<br>히어로 상단 헤더, 푸터, 어두운 면적.</p>
         </div>
       </div>
@@ -1339,44 +1358,44 @@
     <div class="space-gallery" data-stagger>
       <!-- hero: 2col × 2row -->
       <div class="sgal sgal--hero">
-        <img src="assets/img/space/space-reception.jpg" alt="서울이도치과의원 리셉션" loading="lazy">
+        <img src="/assets/img/space/space-reception.jpg" alt="서울이도치과의원 리셉션" loading="lazy">
         <span class="sgal__cap">리셉션 · 접수 공간</span>
         <span class="sgal__notice">Rendering</span>
       </div>
       <!-- row 1 right -->
       <div class="sgal">
-        <img src="assets/img/space/space-consultation.jpg" alt="상담실" loading="lazy">
+        <img src="/assets/img/space/space-consultation.jpg" alt="상담실" loading="lazy">
         <span class="sgal__cap">상담실</span>
         <span class="sgal__notice">Rendering</span>
       </div>
       <div class="sgal">
-        <img src="assets/img/space/space-entrance.jpg" alt="입구 · 로비" loading="lazy">
+        <img src="/assets/img/space/space-entrance.jpg" alt="입구 · 로비" loading="lazy">
         <span class="sgal__cap">입구 · 로비</span>
         <span class="sgal__notice">Rendering</span>
       </div>
       <!-- row 3: 4 equal -->
       <div class="sgal">
-        <img src="assets/img/space/space-lobby.jpg" alt="대기 라운지" loading="lazy">
+        <img src="/assets/img/space/space-lobby.jpg" alt="대기 라운지" loading="lazy">
         <span class="sgal__cap">대기 라운지</span>
         <span class="sgal__notice">Rendering</span>
       </div>
       <div class="sgal">
-        <img src="assets/img/space/space-lounge.jpg" alt="라운지 전경" loading="lazy">
+        <img src="/assets/img/space/space-lounge.jpg" alt="라운지 전경" loading="lazy">
         <span class="sgal__cap">라운지 전경</span>
         <span class="sgal__notice">Rendering</span>
       </div>
       <div class="sgal">
-        <img src="assets/img/space/space-private.jpg" alt="특진실" loading="lazy">
+        <img src="/assets/img/space/space-private.jpg" alt="특진실" loading="lazy">
         <span class="sgal__cap">특진실</span>
         <span class="sgal__notice">Rendering</span>
       </div>
       <div class="sgal">
-        <img src="assets/img/space/space-vanity.jpg" alt="양치 공간" loading="lazy">
+        <img src="/assets/img/space/space-vanity.jpg" alt="양치 공간" loading="lazy">
         <span class="sgal__cap">양치 공간</span>
         <span class="sgal__notice">Rendering</span>
       </div>
       <div class="sgal">
-        <img src="assets/img/space/space-treatment.jpg" alt="진료실" loading="lazy">
+        <img src="/assets/img/space/space-treatment.jpg" alt="진료실" loading="lazy">
         <span class="sgal__cap">진료실</span>
         <span class="sgal__notice">Rendering</span>
       </div>
@@ -1888,13 +1907,75 @@
     </div>
   </section>
 
+  <div class="divider"></div>
+
+  <!-- ── BRAND GUIDE SLIDES ── -->
+  <section style="padding:0 0 9rem">
+    <div class="container">
+      <div class="sh">
+        <span class="sh__num">APPENDIX — 브랜드 가이드</span>
+        <h2 class="sh__title">브랜드 가이드 — 로고 · 컬러 · 어플리케이션</h2>
+        <span class="sh__meta">FOR INTERNAL USE ONLY · 16 slides · Draft</span>
+      </div>
+    </div>
+
+    <!-- 로고 시스템 (s14~s20) + 컬러 CMYK (s22) + 타이포 웨이트 (s24) + 브랜드 어플리케이션 (s26~s33) -->
+    <!-- 제거: s01~s04(커버/스토리/컨셉/PASSION — 위 섹션과 중복), s05~s12(스토리/렌더 — SPACE 갤러리 중복), -->
+    <!--       s13/s21/s23/s25(디바이더), s34~s36(웹 — Device Preview 중복) -->
+
+    <!-- ── 로고 시스템 ── -->
+    <div style="padding:.75rem 2.5rem;background:rgba(35,34,32,.5)">
+      <span style="font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange)">Logo System</span>
+    </div>
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:3px;
+      background:rgba(255,255,255,.04);
+    " data-stagger>
+      <div style="grid-column:1/-1;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;background:rgba(35,34,32,.6)">
+        <span style="font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)">Brand Guideline · 서울이도치과의원</span>
+        <span style="font-size:.6rem;color:var(--dim);letter-spacing:.06em">16 slides · 로고 시스템 · 컬러/타이포 스펙 · 어플리케이션 · 개원 전 초안</span>
+      </div>
+      <img src="/assets/slides/s14.png" alt="Logo Mark"      style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s15.png" alt="Brand Name"     style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s16.png" alt="Logo Don't"     style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s17.png" alt="Logo Color"     style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s18.png" alt="Logo System"    style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s19.png" alt="Logo Spacing"   style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s20.png" alt="Logo Usage"     style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s22.png" alt="Color Spectrum · CMYK" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s24.png" alt="Typography · Weights"  style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+    </div>
+
+    <!-- ── 브랜드 어플리케이션 ── -->
+    <div style="padding:.75rem 2.5rem;background:rgba(35,34,32,.5);margin-top:3px">
+      <span style="font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange)">Brand Application</span>
+    </div>
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:3px;
+      background:rgba(255,255,255,.04);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    " data-stagger>
+      <img src="/assets/slides/s26.png" alt="사이니지 외부"   style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s27.png" alt="사이니지 내부"   style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s28.png" alt="명함 1"          style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s29.png" alt="명함 2 컬러"     style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s30.png" alt="명함 목업"        style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s31.png" alt="쇼핑백"          style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+      <img src="/assets/slides/s33.png" alt="문구류"          style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+    </div>
+  </section>
+
   <!-- ── FOOTER ── -->
   <div class="fnote">
     <strong>서울이도치과의원 · Seoul Yido Dental Office</strong><br>
-    Brand Proposal &amp; Web Mockup 2026 · 10 Sections · 개원 전 초안 · noindex 유지 중<br>
+    Brand Proposal &amp; Web Mockup 2026 · 11 Sections + Brand Guide 17p · 개원 전 초안 · noindex 유지 중<br>
     의료진 실명·주소·연락처·B&amp;A 는 개원 확정 및 의료광고 심의 후 반영<br>
     의료광고법(의료법 제56조②) 준수 — LAW_HARD 0건 확인<br><br>
-    half1126-byte.github.io/mockup.html · 배포: git push ghroot main
+    half1126-byte.github.io/_작업본/mockup.html · 배포: git push ghroot main
   </div>
 
 </div>

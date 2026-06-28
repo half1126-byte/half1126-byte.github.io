@@ -1,0 +1,71 @@
+  <main id="main">
+
+
+    <!-- ============ 03 PATIENT EXPERIENCE (환자 경험 — 핵심) ============ -->
+    <section class="section section--band" id="care" aria-labelledby="care-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div class="section__kicker"><span class="section__num">03</span><span class="section__eyebrow" data-i18n="care.eyebrow">PATIENT EXPERIENCE</span></div>
+          <h2 class="section__title" id="care-title" data-i18n-html="care.title">방문의 모든 순간을, 경험으로</h2>
+          <p class="section__lead" data-i18n="care.lead">서울이도치과의원이 깊이 생각하는 것은 환자분의 경험입니다. 도착부터 진료, 그리고 사후 관리까지 — 모든 순간을 정성껏 설계합니다.</p>
+        </div>
+        <div class="callout" data-reveal data-i18n-html="care.diff"><span class="serif">“스케일링도, 케어처럼.”</span> 디스클로징으로 상태를 함께 확인하고 에어플로우로 관리하는 GBT 구강 스파로 진행합니다.</div>
+
+        <!-- 이미지: GBT 구강 스파 케어 도구(카피와 일치). 입안·시술·사람 없음(의료광고법) -->
+        <div class="placeholder placeholder--wide" data-asset="care-image" data-reveal>
+          <video poster="assets/img/care-gbt.webp" muted loop playsinline preload="none" data-autovideo aria-label="GBT 구강 스파 — 위생 케어 도구와 물 한 잔"><source src="video/care-gbt.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/care-gbt.mp4" type="video/mp4"></video>
+        </div>
+
+        <!-- (방문 경험 여정은 아래 풀블리드 핀드 스크롤 섹션 #journey 으로 승격) -->
+
+        <!-- 경험을 만드는 것들 -->
+        <h3 class="subhead" data-reveal data-i18n="exp.detail_title">경험을 만드는 것들</h3>
+        <div class="exp-details" data-stagger>
+          <article class="card exp-card"><div class="exp-card__img"><video poster="assets/img/exp-scent.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="video/exp-scent.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/exp-scent.mp4" type="video/mp4"></video></div><div class="exp-card__body"><h4 data-i18n="exp.d1.t">시그니처 향</h4><p data-i18n="exp.d1.d">공간마다 일관된 시그니처 향으로 편안한 분위기를 만듭니다.</p></div></article>
+          <article class="card exp-card"><div class="exp-card__img"><video poster="assets/img/exp-product.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="video/exp-product.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/exp-product.mp4" type="video/mp4"></video></div><div class="exp-card__body"><h4 data-i18n="exp.d3.t">체험·제품 공간</h4><p data-i18n="exp.d3.d">구강관리 제품을 직접 체험하고 안내받을 수 있는 공간을 운영합니다.</p></div></article>
+        </div>
+
+        <!-- 케어 프로그램 -->
+        <h3 class="subhead" data-reveal data-i18n="care.program_title">케어 프로그램 — YIDO Total Care</h3>
+        <ol class="care-steps" data-stagger>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care1-gbt.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="video/care1-gbt.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/care1-gbt.mp4" type="video/mp4"></video><span class="care-step__num">01</span></div><div class="care-step__body"><h4 data-i18n="care.s1.t">GBT 구강 스파 스케일링</h4><p data-i18n="care.s1.d">디스클로징으로 치면 상태를 함께 확인하고, 에어플로우를 활용해 꼼꼼하게 관리하는 스케일링 프로그램입니다.</p></div></li>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care2-ldm.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="video/care2-ldm.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/care2-ldm.mp4" type="video/mp4"></video><span class="care-step__num">02</span></div><div class="care-step__body"><h4 data-i18n="care.s2.t">부종 케어 (울킨 LDM)</h4><p data-i18n="care.s2.d">발치·임플란트 등 시술 이후의 회복 과정을 살피는 케어 프로그램입니다.</p></div></li>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care3-probiotic.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="video/care3-probiotic.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/care3-probiotic.mp4" type="video/mp4"></video><span class="care-step__num">03</span></div><div class="care-step__body"><h4 data-i18n="care.s3.t">구강 유산균 안내</h4><p data-i18n="care.s3.d">일상 구강 관리를 돕는 구강 유산균을 안내해 드립니다.</p></div></li>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care4-prevent.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="video/care4-prevent.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/care4-prevent.mp4" type="video/mp4"></video><span class="care-step__num">04</span></div><div class="care-step__body"><h4 data-i18n="care.s4.t">예방관리</h4><p data-i18n="care.s4.d">정기 점검과 개인별 관리 계획으로 구강 건강을 함께 관리합니다.</p></div></li>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care5-pouch.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="video/care5-pouch.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/care5-pouch.mp4" type="video/mp4"></video><span class="care-step__num">05</span></div><div class="care-step__body"><h4 data-i18n="care.s5.t">구강관리 파우치 제공</h4><p data-i18n="care.s5.d">프로그램 참여 시 맞춤 구강관리 용품을 파우치로 제공합니다.</p></div></li>
+        </ol>
+        <p class="care-disclaimer" data-i18n="care.disclaimer">※ 결과는 개인의 구강 상태에 따라 차이가 있을 수 있습니다.</p>
+      </div>
+    </section>
+
+
+    <!-- ============ PINNED EXPERIENCE JOURNEY (sangguk AnatomyScroll 패턴) ============ -->
+    <section class="pinscroll" id="journey" data-pinscroll aria-labelledby="journey-title">
+      <div class="pinscroll__stage">
+        <div class="pinscroll__media" aria-hidden="true">
+          <video class="pinscroll__img is-active" data-step="0" poster="assets/img/about-interior.webp" muted loop playsinline preload="none" aria-hidden="true"><source src="video/about-interior.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/about-interior.mp4" type="video/mp4"></video>
+          <video class="pinscroll__img" data-step="1" poster="assets/img/space-waiting.webp" muted loop playsinline preload="none" aria-hidden="true"><source src="video/space-waiting.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/space-waiting.mp4" type="video/mp4"></video>
+          <video class="pinscroll__img" data-step="2" poster="assets/img/space-consult.webp" muted loop playsinline preload="none" aria-hidden="true"><source src="video/space-consult.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/space-consult.mp4" type="video/mp4"></video>
+          <video class="pinscroll__img" data-step="3" poster="assets/img/space-treatment.webp" muted loop playsinline preload="none" aria-hidden="true"><source src="video/space-treatment.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/space-treatment.mp4" type="video/mp4"></video>
+          <video class="pinscroll__img" data-step="4" poster="assets/img/space-recovery.webp" muted loop playsinline preload="none" aria-hidden="true"><source src="video/space-recovery.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/space-recovery.mp4" type="video/mp4"></video>
+          <video class="pinscroll__img" data-step="5" poster="assets/img/space-brushing.webp" muted loop playsinline preload="none" aria-hidden="true"><source src="video/space-brushing.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="video/space-brushing.mp4" type="video/mp4"></video>
+        </div>
+        <div class="pinscroll__scrim" aria-hidden="true"></div>
+        <canvas class="pinscroll__canvas" aria-hidden="true"></canvas>
+        <div class="pinscroll__inner container">
+          <span class="section__eyebrow" data-i18n="exp.journey_eyebrow">THE YIDO EXPERIENCE</span>
+          <h2 class="pinscroll__title" id="journey-title" data-i18n-html="exp.journey_title">다른 차원의 진료 경험</h2>
+          <div class="pinscroll__moments">
+            <article class="pmoment is-active" data-step="0"><span class="pmoment__idx">01</span><h3 data-i18n="exp.j1.t">도착과 맞이</h3><p data-i18n="exp.j1.d">들어서는 순간의 공기와 향, 직원의 안내까지 — 첫인상을 정성껏 준비합니다.</p></article>
+            <article class="pmoment" data-step="1"><span class="pmoment__idx">02</span><h3 data-i18n="exp.j2.t">편안한 대기</h3><p data-i18n="exp.j2.d">기다리는 시간이 부담이 되지 않도록 예상 시간을 안내하고, 편안한 공간을 마련합니다.</p></article>
+            <article class="pmoment" data-step="2"><span class="pmoment__idx">03</span><h3 data-i18n="exp.j3.t">충분한 상담</h3><p data-i18n="exp.j3.d">궁금한 점을 편하게 여쭤보실 수 있도록, 충분히 듣고 이해하실 수 있게 설명합니다.</p></article>
+            <article class="pmoment" data-step="3"><span class="pmoment__idx">04</span><h3 data-i18n="exp.j4.t">정성스러운 진료</h3><p data-i18n="exp.j4.d">특진실과 회복실 등 편안한 공간에서 진료와 회복을 돕습니다.</p></article>
+            <article class="pmoment" data-step="4"><span class="pmoment__idx">05</span><h3 data-i18n="exp.j5.t">사후 케어</h3><p data-i18n="exp.j5.d">진료 후의 관리까지 이어지는 YIDO Total Care로 끝까지 살핍니다.</p></article>
+            <article class="pmoment" data-step="5"><span class="pmoment__idx">06</span><h3 data-i18n="exp.j6.t">배웅과 일상 관리</h3><p data-i18n="exp.j6.d">구강관리 파우치와 맞춤 관리 안내로 일상에서의 관리를 돕습니다.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>

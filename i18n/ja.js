@@ -13,6 +13,7 @@ window.YIDO_I18N.ja = {
   "meta.ogtitle": "ソウルイド歯科医院",
   "meta.ogdesc": "原則を守る診断と治療を目指す歯科。ソウル・孔徳。（開院準備中）",
   "meta.locale": "ja_JP",
+  "brand.name": "ソウルイド歯科医院",
   "draft.banner": "本ページはデザイン案です。院長名・住所・写真などは確定後に反映し、医療広告に関する表現は事前審査の上で掲載します。",
   "lang.aria": "言語を選択",
 

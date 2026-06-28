@@ -37,7 +37,11 @@
     var el = document.querySelector(sel);
     if (el) el.setAttribute("content", val);
   }
-  function urlFor(lang) { return lang === "ko" ? "/" : "/" + lang + "/"; }
+  /* 현재 경로를 유지한 채 언어만 교체 (MPA: /about/ ↔ /en/about/) */
+  function urlFor(lang) {
+    var path = location.pathname.replace(/^\/(en|ja|zh)(\/|$)/, "/");
+    return lang === "ko" ? path : "/" + lang + path;
+  }
 
   function applyLang(lang) {
     if (SUPPORTED.indexOf(lang) === -1) lang = "ko";

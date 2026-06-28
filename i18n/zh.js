@@ -13,6 +13,7 @@ window.YIDO_I18N.zh = {
   "meta.ogtitle": "首尔以道齿科医院",
   "meta.ogdesc": "坚持原则的诊断与治疗的齿科。首尔·孔德。（筹备开业中）",
   "meta.locale": "zh_CN",
+  "brand.name": "首尔以道齿科医院",
   "draft.banner": "本页面为设计草案。院长姓名、地址、照片等将于确定后更新，医疗广告相关表述将在事先审核后发布。",
   "lang.aria": "选择语言",
 

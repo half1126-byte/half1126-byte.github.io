@@ -13,6 +13,7 @@ window.YIDO_I18N.en = {
   "meta.ogtitle": "Seoul Yido Dental Office | The Right Way to Perfection",
   "meta.ogdesc": "Walk the right path, reach perfection. Seoul Yido Dental Office — principled diagnosis and treatment. Gongdeok, Seoul. (Preparing to open.)",
   "meta.locale": "en_US",
+  "brand.name": "Seoul Yido Dental Office",
   "draft.banner": "This page is a design draft. Doctor names, address and photos will be finalized later, and all medical-advertising copy is published only after prior review.",
   "lang.aria": "Select language",
 

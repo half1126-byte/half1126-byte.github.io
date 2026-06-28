@@ -1,0 +1,24 @@
+# 서울이도치과 (YIDO) — Apache 운영 라우팅 (PHP MPA)
+# 모든 경로를 index.php(라우터)로 위임. 실제 존재하는 파일(css/js/assets/video 등)만 직접 서빙.
+# 라우터가 /{lang}/{pageKey}/ 를 config/pages.php 화이트리스트로 매핑.
+#
+# ※ GitHub Pages(정적)는 .htaccess·PHP를 실행하지 않으므로 무시됩니다.
+#   PHP 호스팅(Apache+mod_php / LiteSpeed 등)으로 이전할 때 동작합니다.
+# ※ PHP 호스팅에선 정적 산출물(index.html, en/ja/zh/index.html)을 두지 마세요.
+#   라우터(index.php)가 모든 페이지를 렌더하므로 충돌 방지를 위해 제외합니다.
+
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 실제 파일(자산)은 그대로 서빙
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # 그 외 모든 경로(루트·언어·페이지·미존재) → 라우터
+  RewriteRule ^ index.php [L]
+</IfModule>
+
+# UTF-8
+AddDefaultCharset UTF-8

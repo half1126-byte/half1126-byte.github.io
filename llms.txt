@@ -37,6 +37,17 @@
 - 상세 주소·연락처·진료시간·사업자 정보
 - 치료 전·후 사례는 의료광고 사전심의 후 공개
 
+## 페이지 안내 (Site pages)
+- 홈: https://half1126-byte.github.io/
+- 병원소개(About): /about/ · 의료진(Doctors): /doctors/ · 환자경험(Experience): /experience/ · 원내기공소(Lab): /lab/ · 오시는 길(Visit): /visit/ · 자주 묻는 질문(FAQ): /faq/
+- 진료과목 허브(Treatments): /treatments/
+  - 임플란트(Implant): /treatments/implant/
+  - 심미·보철(Aesthetic & Prosthetic): /treatments/aesthetic/
+  - 교정·인비절라인(Orthodontics): /treatments/ortho/
+  - 일반진료(General): /treatments/general/
+  - 예방·구강관리(Prevention): /treatments/prevention/
+- 모든 페이지는 한국어 기준이며 /en/ /ja/ /zh/ 접두로 다국어를 제공합니다(일부 번역 준비 중). 진료 안내는 개원·원장 감수 후 확정됩니다.
+
 ## 언어별 페이지 (Localized pages)
 - 한국어: https://half1126-byte.github.io/
 - English: https://half1126-byte.github.io/en/

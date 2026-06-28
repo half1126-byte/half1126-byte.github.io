@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 언어별 정적 페이지(scripts/gen-lang-pages.js 생성). 배포 시 도메인 변경되면 loc 일괄 치환. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://half1126-byte.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/" />
@@ -9,9 +7,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://half1126-byte.github.io/en/</loc>
@@ -20,9 +15,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://half1126-byte.github.io/ja/</loc>
@@ -31,9 +23,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://half1126-byte.github.io/zh/</loc>
@@ -42,8 +31,389 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/" />
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/about/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/about/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/about/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/about/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/doctors/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/doctors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/doctors/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/doctors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/doctors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/doctors/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/doctors/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/doctors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/doctors/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/doctors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/doctors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/doctors/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/doctors/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/doctors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/doctors/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/doctors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/doctors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/doctors/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/doctors/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/doctors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/doctors/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/doctors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/doctors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/doctors/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/treatments/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/treatments/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/treatments/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/treatments/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/experience/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/experience/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/experience/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/experience/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/experience/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/experience/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/experience/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/experience/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/experience/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/experience/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/experience/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/experience/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/experience/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/experience/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/experience/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/experience/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/experience/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/experience/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/experience/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/experience/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/experience/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/experience/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/experience/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/experience/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/lab/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/lab/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/lab/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/lab/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/lab/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/lab/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/lab/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/lab/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/lab/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/lab/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/lab/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/lab/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/lab/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/lab/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/lab/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/lab/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/lab/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/lab/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/lab/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/lab/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/lab/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/lab/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/lab/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/lab/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/visit/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/visit/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/visit/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/visit/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/visit/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/visit/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/visit/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/visit/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/visit/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/visit/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/visit/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/visit/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/visit/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/visit/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/visit/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/visit/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/visit/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/visit/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/visit/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/visit/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/visit/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/visit/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/visit/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/visit/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/faq/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/faq/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/faq/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/faq/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/faq/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/faq/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/faq/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/faq/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/faq/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/faq/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/faq/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/faq/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/faq/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/faq/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/faq/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/faq/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/treatments/implant/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/implant/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/treatments/implant/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/implant/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/treatments/implant/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/implant/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/treatments/implant/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/implant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/implant/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/treatments/aesthetic/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/treatments/aesthetic/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/treatments/aesthetic/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/treatments/aesthetic/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/aesthetic/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/aesthetic/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/treatments/ortho/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/ortho/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/treatments/ortho/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/ortho/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/treatments/ortho/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/ortho/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/treatments/ortho/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/ortho/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/ortho/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/treatments/general/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/general/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/treatments/general/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/general/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/treatments/general/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/general/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/treatments/general/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/general/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/general/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/treatments/prevention/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/prevention/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/en/treatments/prevention/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/prevention/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/ja/treatments/prevention/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/prevention/" />
+  </url>
+  <url>
+    <loc>https://half1126-byte.github.io/zh/treatments/prevention/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://half1126-byte.github.io/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://half1126-byte.github.io/en/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://half1126-byte.github.io/ja/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://half1126-byte.github.io/zh/treatments/prevention/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://half1126-byte.github.io/treatments/prevention/" />
   </url>
 </urlset>

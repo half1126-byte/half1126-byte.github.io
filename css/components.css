@@ -702,3 +702,53 @@ html.js [data-reveal].is-visible .section__title {
 @media (max-width: 599px) {
   .about-position { flex-direction: column; gap: var(--space-3); }
 }
+
+/* ===== 진료별 허브 페이지(2단계) ===== */
+.breadcrumb { padding-top: var(--space-5); font-size: var(--fs-small); color: var(--ink-700); display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.breadcrumb a { color: var(--ink-700); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent-600); }
+.breadcrumb [aria-current="page"] { color: var(--ink-900); font-weight: var(--w-semi); }
+
+.tx-intro h1 { margin: var(--space-2) 0 var(--space-4); }
+.tx-lead { font-size: var(--fs-lead, 1.125rem); line-height: 1.7; color: var(--ink-700); max-width: 46rem; }
+.tx-draft { margin-top: var(--space-4); font-size: var(--fs-small); color: var(--ink-500, #8a8278); }
+
+.tx-feat { list-style: none; margin: var(--space-4) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: var(--space-3); }
+.tx-feat li { padding: var(--space-4) var(--space-5); background: var(--accent-soft); border-radius: var(--radius-md, 14px); font-weight: var(--w-med); color: var(--ink-900); }
+
+.tx-proc { margin: var(--space-4) 0 0; padding-left: 0; list-style: none; counter-reset: step; display: grid; gap: var(--space-3); }
+.tx-proc li { counter-increment: step; position: relative; padding-left: 2.6rem; color: var(--ink-800, #3a3833); line-height: 1.6; }
+.tx-proc li::before { content: counter(step); position: absolute; left: 0; top: -.1rem; width: 1.9rem; height: 1.9rem; display: grid; place-items: center; border-radius: 50%; background: var(--accent-600); color: #fff; font-size: var(--fs-small); font-weight: var(--w-semi); }
+
+.tx-note { margin-top: var(--space-5); font-size: var(--fs-small); color: var(--ink-500, #8a8278); }
+
+.tx-related { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-3); }
+.tx-related a { display: inline-block; padding: var(--space-2) var(--space-4); border: 1px solid var(--line, #e5ded2); border-radius: var(--radius-pill); color: var(--ink-900); text-decoration: none; font-size: var(--fs-small); }
+.tx-related a:hover { border-color: var(--accent-600); color: var(--accent-600); }
+
+.tx-hub h1 { margin: var(--space-2) 0 var(--space-3); }
+.tx-cards { list-style: none; margin: var(--space-5) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: var(--space-3); }
+.tx-cards a { display: flex; align-items: center; justify-content: space-between; padding: var(--space-5); background: #fff; border: 1px solid var(--line, #e5ded2); border-radius: var(--radius-md, 14px); color: var(--ink-900); text-decoration: none; font-weight: var(--w-semi); transition: border-color .2s ease, transform .2s ease; }
+.tx-cards a::after { content: "→"; color: var(--accent-600); }
+.tx-cards a:hover { border-color: var(--accent-600); transform: translateY(-2px); }
+
+/* ===== 진료과목 드롭다운(데스크톱) ===== */
+.nav-primary .has-sub { position: relative; }
+.nav-primary .nav-sub {
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(6px);
+  min-width: 13rem; margin: 0; padding: var(--space-3); list-style: none;
+  background: #fff; border: 1px solid var(--line, #e5ded2); border-radius: var(--radius-md, 14px);
+  box-shadow: 0 12px 30px rgba(35,34,32,.12);
+  opacity: 0; visibility: hidden; transition: opacity .18s ease, transform .18s ease; z-index: 60;
+}
+.nav-primary .has-sub:hover .nav-sub,
+.nav-primary .has-sub:focus-within .nav-sub {
+  opacity: 1; visibility: visible; transform: translateX(-50%) translateY(2px);
+}
+.nav-primary .nav-sub li { display: block; }
+.nav-primary .nav-sub a { display: block; padding: var(--space-2) var(--space-3); border-radius: 8px; white-space: nowrap; color: var(--ink-900); }
+.nav-primary .nav-sub a:hover { background: var(--accent-soft); color: var(--accent-600); }
+
+/* 모바일 드로어: 진료 하위 항목 들여쓰기 */
+.nav-drawer__sub a { padding-left: var(--space-5); font-size: var(--fs-small); opacity: .9; }
+.nav-drawer__sub a::before { content: "— "; color: var(--accent-600); }
