@@ -709,9 +709,40 @@ html.js [data-reveal].is-visible .section__title {
 .breadcrumb a:hover { color: var(--accent-600); }
 .breadcrumb [aria-current="page"] { color: var(--ink-900); font-weight: var(--w-semi); }
 
-.tx-intro h1 { margin: var(--space-2) 0 var(--space-4); }
+/* tx-intro: 다크 시네마틱 서브페이지 인트로 */
+.tx-intro {
+  background-color: var(--black);
+  background-image: var(--tex-grain), var(--tex-grain-coarse);
+  background-size: 140px 140px, 220px 220px;
+  background-blend-mode: soft-light, overlay;
+  color: var(--on-dark);
+  padding-block: clamp(72px, 9vw, 140px);
+  border-bottom: 1px solid var(--on-dark-line);
+  --accent-600: #C9803F;
+}
+.tx-intro h1 { margin: var(--space-3) 0 var(--space-5); color: var(--white); }
+.tx-intro .eyebrow,
+.tx-intro .section__eyebrow {
+  display: block;
+  font-size: var(--fs-eyebrow); font-weight: var(--w-semi);
+  letter-spacing: var(--tracking-eyebrow); text-transform: uppercase;
+  color: var(--on-dark-dim);
+}
 .tx-lead { font-size: var(--fs-lead, 1.125rem); line-height: 1.7; color: var(--ink-700); max-width: 46rem; }
+.tx-intro .tx-lead { color: var(--on-dark-dim); }
 .tx-draft { margin-top: var(--space-4); font-size: var(--fs-small); color: var(--ink-500, #8a8278); }
+.tx-intro .tx-draft { color: rgba(255,255,255,.42); }
+
+/* breadcrumb — tx-intro 있는 페이지는 다크 연결 */
+main:has(.tx-intro) .breadcrumb {
+  background: var(--black); padding-top: var(--space-5);
+  background-image: var(--tex-grain); background-size: 140px; background-blend-mode: soft-light;
+}
+main:has(.tx-intro) .breadcrumb,
+main:has(.tx-intro) .breadcrumb span[aria-hidden] { color: var(--on-dark-dim); }
+main:has(.tx-intro) .breadcrumb a { color: var(--on-dark-dim); }
+main:has(.tx-intro) .breadcrumb a:hover { color: var(--white); text-decoration: none; }
+main:has(.tx-intro) .breadcrumb [aria-current="page"] { color: var(--on-dark); font-weight: var(--w-semi); }
 
 .tx-feat { list-style: none; margin: var(--space-4) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: var(--space-3); }
 .tx-feat li { padding: var(--space-4) var(--space-5); background: var(--accent-soft); border-radius: var(--radius-md, 14px); font-weight: var(--w-med); color: var(--ink-900); }

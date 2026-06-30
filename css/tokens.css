@@ -110,4 +110,13 @@
   --video-filter: none;
 
   --z-nav: 100; --z-langmenu: 110; --z-drawer: 120; --z-skip: 200;
+
+  /* ---- Legacy aliases — 하위 호환 (서브페이지 인라인 스타일 대응) ---- */
+  --ink-55:  var(--ink-500);
+  --ink-40:  var(--ink-300);
+  --ink-800: var(--ink-700);
+  --fs-sm:   var(--fs-small);
+  --fs-xs:   var(--fs-eyebrow);
+  --soft:    var(--paper-2);
+  --radius:  var(--radius-md);
 }
