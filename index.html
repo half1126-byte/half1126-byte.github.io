@@ -48,6 +48,7 @@
   <link rel="stylesheet" href="/css/base.css" />
   <link rel="stylesheet" href="/css/layout.css" />
   <link rel="stylesheet" href="/css/components.css" />
+  <link rel="preload" as="image" href="/assets/img/about-interior.webp" fetchpriority="high" />
 
   <script type="application/ld+json">
   {
@@ -127,7 +128,7 @@
     <div class="container">
       <a class="wordmark" href="/" aria-label="서울이도치과의원 Seoul Yido Dental Office 홈">
         <img class="wordmark__img wordmark__img--light" src="/assets/logo/logo-light.png" alt="서울이도치과의원 Seoul Yido Dental Office" width="142" height="36" />
-        <img class="wordmark__img wordmark__img--dark" src="/assets/logo/logo-dark.png" alt="" aria-hidden="true" width="142" height="36" />
+        <img class="wordmark__img wordmark__img--dark" loading="lazy" src="/assets/logo/logo-dark.png" alt="" aria-hidden="true" width="142" height="36" />
       </a>
       <nav class="nav-primary" aria-label="주요 메뉴">
         <ul>
@@ -322,9 +323,9 @@
           <video poster="assets/img/care-gbt.webp" muted loop playsinline preload="none" data-autovideo aria-label="GBT 구강 스파 — 위생 케어 도구와 물 한 잔"><source src="/video/care-gbt.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="/video/care-gbt.mp4" type="video/mp4"></video>
         </div>
         <ol class="care-steps" data-stagger>
-          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care1-gbt.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="/video/care1-gbt.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="/video/care1-gbt.mp4" type="video/mp4"></video><span class="care-step__num">01</span></div><div class="care-step__body"><h4 data-i18n="care.s1.t">GBT 구강 스파 스케일링</h4><p data-i18n="care.s1.d">디스클로징으로 치면 상태를 함께 확인하고, 에어플로우를 활용해 꼼꼼하게 관리하는 스케일링 프로그램입니다.</p></div></li>
-          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care2-ldm.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="/video/care2-ldm.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="/video/care2-ldm.mp4" type="video/mp4"></video><span class="care-step__num">02</span></div><div class="care-step__body"><h4 data-i18n="care.s2.t">부종 케어 (울킨 LDM)</h4><p data-i18n="care.s2.d">발치·임플란트 등 시술 이후의 회복 과정을 살피는 케어 프로그램입니다.</p></div></li>
-          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care3-probiotic.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="/video/care3-probiotic.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="/video/care3-probiotic.mp4" type="video/mp4"></video><span class="care-step__num">03</span></div><div class="care-step__body"><h4 data-i18n="care.s3.t">구강 유산균 안내</h4><p data-i18n="care.s3.d">일상 구강 관리를 돕는 구강 유산균을 안내해 드립니다.</p></div></li>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care1-gbt.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="/video/care1-gbt.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="/video/care1-gbt.mp4" type="video/mp4"></video><span class="care-step__num">01</span></div><div class="care-step__body"><h3 data-i18n="care.s1.t">GBT 구강 스파 스케일링</h3><p data-i18n="care.s1.d">디스클로징으로 치면 상태를 함께 확인하고, 에어플로우를 활용해 꼼꼼하게 관리하는 스케일링 프로그램입니다.</p></div></li>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care2-ldm.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="/video/care2-ldm.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="/video/care2-ldm.mp4" type="video/mp4"></video><span class="care-step__num">02</span></div><div class="care-step__body"><h3 data-i18n="care.s2.t">부종 케어 (울킨 LDM)</h3><p data-i18n="care.s2.d">발치·임플란트 등 시술 이후의 회복 과정을 살피는 케어 프로그램입니다.</p></div></li>
+          <li class="care-step"><div class="care-step__img"><video poster="assets/img/care3-probiotic.webp" muted loop playsinline preload="none" data-autovideo aria-hidden="true"><source src="/video/care3-probiotic.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'><source src="/video/care3-probiotic.mp4" type="video/mp4"></video><span class="care-step__num">03</span></div><div class="care-step__body"><h3 data-i18n="care.s3.t">구강 유산균 안내</h3><p data-i18n="care.s3.d">일상 구강 관리를 돕는 구강 유산균을 안내해 드립니다.</p></div></li>
         </ol>
         <div style="margin-top:var(--space-8);text-align:center;" data-reveal>
           <a class="btn btn--text" href="/experience/">환자 경험 전체 보기 →</a>
@@ -471,7 +472,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img class="footer-logo" src="/assets/logo/logo-light.png" alt="서울이도치과의원 Seoul Yido Dental Office" width="320" height="81" />
+          <img class="footer-logo" loading="lazy" src="/assets/logo/logo-light.png" alt="서울이도치과의원 Seoul Yido Dental Office" width="320" height="81" />
           <p class="footer-info" style="margin-top:var(--space-4)" data-i18n="footer.biz">서울이도치과의원 · Seoul Yido Dental Office · 사업자 정보와 연락처는 개원 시 안내해 드릴 예정입니다.</p>
         </div>
         <nav class="footer-nav" aria-label="푸터 메뉴">
