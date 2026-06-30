@@ -18,7 +18,7 @@ window.YIDO_I18N.zh = {
   "lang.aria": "选择语言",
 
   "nav.about": "关于我们", "nav.doctors": "医生团队", "nav.care": "患者体验", "nav.services": "诊疗项目",
-  "nav.lab": "院内技工所", "nav.hygiene": "卫生·消毒", "nav.intl": "外籍患者", "nav.contact": "交通指引",
+  "nav.lab": "院内技工所", "nav.hygiene": "卫生·消毒", "nav.intl": "外籍患者", "nav.contact": "交通指引", "nav.faq": "常见问题",
   "nav.menu": "打开菜单", "nav.consult": "咨询·预约", "nav.results": "改变",
 
   "hero.eyebrow": "THE RIGHT WAY TO PERFECTION",

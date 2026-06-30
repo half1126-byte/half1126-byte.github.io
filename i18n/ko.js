@@ -27,6 +27,7 @@ window.YIDO_I18N.ko = {
   "nav.hygiene": "위생·소독",
   "nav.intl": "외국인 진료",
   "nav.contact": "오시는 길",
+  "nav.faq": "자주 묻는 질문",
   "nav.menu": "메뉴 열기",
   "nav.consult": "상담·예약 안내",
   "nav.results": "변화",
