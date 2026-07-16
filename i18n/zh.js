@@ -48,19 +48,25 @@ window.YIDO_I18N.zh = {
 
   "doctors.eyebrow": "OUR DOCTORS",
   "doctors.title": "以诊疗理念同行的<br class=\"lb\">医疗团队",
-  "doctors.lead": "医疗团队在各自的岗位上坚持原则的诊断与正确的治疗。医生简介将于确定后公开。",
+  "doctors.lead": "医疗团队在各自的岗位上坚持原则的诊断与正确的治疗。每位医生在各自专业领域坚守原则，提供正确的诊断与治疗。",
   "doctors.note": "医疗团队介绍将随开业筹备陆续公开。",
 
-  "d1.role": "医疗团队介绍准备中", "d1.name": "", "d1.field": "",
+  "d1.role": "고성민 · 代表院长", "d1.name": "고성민", "d1.field": "手术中心长 · 颞颌关节 · 睡眠牙科",
   "d1.quote": "\u201C充分倾听，并以您能理解的方式说明。\u201D",
-  "d2.role": "医疗团队介绍准备中", "d2.name": "", "d2.field": "",
+  "d2.role": "박지현 · 代表院长", "d2.name": "박지현", "d2.field": "美学中心长 · 口腔修复专科医生",
   "d2.quote": "\u201C仅审慎地建议确有必要的治疗。\u201D",
-  "d3.role": "医疗团队介绍准备中", "d3.name": "", "d3.field": "",
-  "d3.quote": "\u201C连1mm的差异也细致把关。\u201D",
+  "d3.role": "원소윤 · 首席院长", "d3.name": "원소윤", "d3.field": "美学中心 · 树脂·贴面专项",
+  "d3.quote": "\u201C连1mm的差异也细致把关。\u201D",
 
-  "d1.career": "",
-  "d2.career": "",
-  "d3.career": "",
+  "d4.role": "한이연 · 正畸院长",
+  "d4.name": "한이연",
+  "d4.field": "口腔正畸专科医生",
+  "d4.quote": ""连细微的不适也绝不会忽视。"",
+
+  "d1.career": "首尔大学牙科大学院毕业",
+  "d2.career": "首尔大学牙科大学院毕业 · 口腔修复专科医生",
+  "d3.career": "首尔大学牙科大学院毕业",
+  "d4.career": "首尔大学牙科大学院毕业 · 口腔正畸专科医生",
 
   "care.eyebrow": "PATIENT EXPERIENCE",
   "care.title": "把每一个就诊瞬间，<br class=\"lb\">化为体验",

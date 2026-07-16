@@ -48,19 +48,25 @@ window.YIDO_I18N.en = {
 
   "doctors.eyebrow": "OUR DOCTORS",
   "doctors.title": "Clinicians who share<br class=\"lb\">our philosophy of care",
-  "doctors.lead": "Each clinician works toward honest diagnosis and right treatment. Profiles and introductions will be shared once confirmed.",
+  "doctors.lead": "Each clinician works toward honest diagnosis and right treatment. Each clinician upholds principled diagnosis and right treatment in their specialty.",
   "doctors.note": "Our clinical team will be introduced as we prepare to open.",
 
-  "d1.role": "Profile coming soon", "d1.name": "", "d1.field": "",
+  "d1.role": "Ko Seong-min · Chief Dentist", "d1.name": "Ko Seong-min", "d1.field": "Surgical Center Chief · Jaw joint & Sleep dentistry",
   "d1.quote": "\u201CWe listen fully, and explain so you understand.\u201D",
-  "d2.role": "Profile coming soon", "d2.name": "", "d2.field": "",
+  "d2.role": "Park Ji-hyun · Chief Dentist", "d2.name": "Park Ji-hyun", "d2.field": "Aesthetics Center Chief · Prosthodontics Specialist",
   "d2.quote": "\u201CWe recommend only the treatment that is truly needed, carefully.\u201D",
-  "d3.role": "Profile coming soon", "d3.name": "", "d3.field": "",
-  "d3.quote": "\u201CWe attend to differences down to a millimeter.\u201D",
+  "d3.role": "Won So-yun · Senior Dentist", "d3.name": "Won So-yun", "d3.field": "Aesthetics Center · Resin build-up & Laminate",
+  "d3.quote": "\u201CWe attend to differences down to a millimeter.\u201D",
 
-  "d1.career": "",
-  "d2.career": "",
-  "d3.career": "",
+  "d4.role": "Han I-yeon · Orthodontics Director",
+  "d4.name": "Han I-yeon",
+  "d4.field": "Orthodontics Specialist",
+  "d4.quote": "“No discomfort, however small, goes unnoticed.”",
+
+  "d1.career": "Seoul National University, Grad. School of Dentistry",
+  "d2.career": "Seoul National University, Grad. School of Dentistry · Prosthodontics Specialist",
+  "d3.career": "Seoul National University,
+  "d4.career": "Seoul National University, Grad. School of Dentistry · Orthodontics Specialist", Grad. School of Dentistry",
 
   "care.eyebrow": "PATIENT EXPERIENCE",
   "care.title": "Every moment of your visit,<br class=\"lb\">as an experience",
