@@ -597,6 +597,36 @@ html.js [data-reveal].is-visible .section__title {
 .placeholder img, .placeholder video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
 .placeholder--16 { aspect-ratio: 16 / 9; width: 100%; }
 
+/* ============================================================
+   YIDO PASSION STANDARD 7 (진료 7대 기준 · 다크 섹션)
+   ============================================================ */
+.passion-list { list-style: none; margin: var(--space-7) 0 0; padding: 0; }
+.passion-item {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: var(--space-3) var(--space-6);
+  align-items: baseline;
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--on-dark-line);
+}
+.passion-item:last-child { border-bottom: 1px solid var(--on-dark-line); }
+.passion-item__num {
+  font-family: var(--font-serif);
+  font-size: var(--fs-eyebrow);
+  color: var(--accent-500);
+  letter-spacing: 0.08em;
+  padding-top: 0.15em;
+}
+.passion-item__text {
+  margin: 0;
+  font-size: clamp(0.9375rem, 1.4vw, 1.0625rem);
+  line-height: 1.72;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 768px) {
+  .passion-item { grid-template-columns: 3rem 1fr; gap: var(--space-3) var(--space-8); }
+}
+
 /* 소개 — 3가치(정성·신뢰·환자경험) 밸류 그리드 (1:1 영상 + 라벨) */
 .about-values { list-style: none; padding: 0; margin: var(--space-8) 0 0;
   display: grid; gap: var(--space-5); grid-template-columns: 1fr; }
