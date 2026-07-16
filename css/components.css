@@ -173,7 +173,7 @@ html.js [data-reveal].is-visible .section__title {
 /* Doctor card */
 .doctor-card { padding: 0; overflow: hidden; background: var(--paper-50); }
 .doctor-card .placeholder, .doctor-card img, .doctor-card video { border-radius: 0; aspect-ratio: 3/4; width: 100%; height: auto; object-fit: cover; display: block; }
-.doctor-card__photo { background: #e8e2d9; }
+.doctor-card__photo { background: #e8e2d9; transform: scale(1.14); }
 .doctor-card__body { padding: var(--space-5) var(--space-5) var(--space-6); border-top: 3px solid var(--accent-600); }
 .doctor-card__role { font-size: 0.9375rem; font-weight: var(--w-semi);
   letter-spacing: 0.02em; text-transform: none; color: var(--ink-700); margin-bottom: var(--space-2); }
@@ -492,6 +492,7 @@ html.js [data-reveal].is-visible .section__title {
 .doctor-card:hover, .exp-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); }
 .doctor-card .placeholder, .doctor-card img, .doctor-card video { transition: transform var(--dur-xslow) var(--ease-out); }
 .doctor-card:hover .placeholder, .doctor-card:hover img, .doctor-card:hover video { transform: scale(1.06); }
+.doctor-card:hover .doctor-card__photo { transform: scale(1.21); }
 .service-card:hover { background-color: var(--paper-50); }
 .btn:active { transform: translateY(0) scale(.98); transition-duration: 90ms; }
 .btn--solid:active { box-shadow: var(--hairline-top), 0 4px 10px -8px rgba(10,10,12,.4); }
