@@ -56,7 +56,8 @@ window.YIDO_I18N.en = {
   "d2.role": "Park Ji-hyun · Chief Dentist", "d2.name": "Park Ji-hyun", "d2.field": "Aesthetics Center Chief · Prosthodontics Specialist",
   "d2.quote": "\u201CWe recommend only the treatment that is truly needed, carefully.\u201D",
   "d3.role": "Won So-yun · Senior Dentist", "d3.name": "Won So-yun", "d3.field": "Aesthetics Center · Resin build-up & Laminate",
-  "d3.quote": "\u201CWe attend to differences down to a millimeter.\u201D",
+  "d3.quote": "\u201CWe attend to differences down to a millimeter.\u201D",
+
 
   "d4.role": "Han I-yeon · Orthodontics Director",
   "d4.name": "Han I-yeon",
@@ -64,9 +65,9 @@ window.YIDO_I18N.en = {
   "d4.quote": "“No discomfort, however small, goes unnoticed.”",
 
   "d1.career": "Seoul National University, Grad. School of Dentistry",
+  "d3.career": "Seoul National University, Grad. School of Dentistry",
+  "d4.career": "Seoul National University, Grad. School of Dentistry · Orthodontics Specialist",
   "d2.career": "Seoul National University, Grad. School of Dentistry · Prosthodontics Specialist",
-  "d3.career": "Seoul National University,
-  "d4.career": "Seoul National University, Grad. School of Dentistry · Orthodontics Specialist", Grad. School of Dentistry",
 
   "care.eyebrow": "PATIENT EXPERIENCE",
   "care.title": "Every moment of your visit,<br class=\"lb\">as an experience",
