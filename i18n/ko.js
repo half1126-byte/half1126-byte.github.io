@@ -33,7 +33,7 @@ window.YIDO_I18N.ko = {
   "nav.results": "변화",
 
   /* --- hero --- */
-  "hero.eyebrow": "THE RIGHT WAY TO PERFECTION",
+  "hero.eyebrow": "서울 공덕 · THE RIGHT WAY TO PERFECTION",
   "hero.title": "바른 길을 걷다,<br><span class=\"accent\">완벽에 닿다.</span>",
   "hero.lead": "원칙을 지키는 진료, 처음부터 끝까지. 치료의 기본을 지키고 기준을 만드는 치과, 서울이도치과의원입니다.",
   "hero.primary": "상담·예약 안내",

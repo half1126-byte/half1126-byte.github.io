@@ -21,7 +21,7 @@ window.YIDO_I18N.zh = {
   "nav.lab": "院内技工所", "nav.hygiene": "卫生·消毒", "nav.intl": "外籍患者", "nav.contact": "交通指引", "nav.faq": "常见问题",
   "nav.menu": "打开菜单", "nav.consult": "咨询·预约", "nav.results": "改变",
 
-  "hero.eyebrow": "THE RIGHT WAY TO PERFECTION",
+  "hero.eyebrow": "SEOUL · GONDEOK · THE RIGHT WAY TO PERFECTION",
   "hero.title": "走正确的路，<br><span class=\"accent\">臻于完美。</span>",
   "hero.lead": "坚守诊疗原则，从始至终。守护治疗根本、创立标准的齿科，首尔以道齿科医院。",
   "hero.primary": "咨询·预约",

@@ -21,7 +21,7 @@ window.YIDO_I18N.en = {
   "nav.lab": "Lab", "nav.hygiene": "Hygiene", "nav.intl": "Global", "nav.contact": "Visit", "nav.faq": "FAQ",
   "nav.menu": "Open menu", "nav.consult": "Booking", "nav.results": "Results",
 
-  "hero.eyebrow": "THE RIGHT WAY TO PERFECTION",
+  "hero.eyebrow": "SEOUL · GONDEOK · THE RIGHT WAY TO PERFECTION",
   "hero.title": "Walk the right path,<br><span class=\"accent\">reach perfection.</span>",
   "hero.lead": "Principled dentistry, from the very first step to the last. Seoul Yido Dental Office — upholding the fundamentals and setting the standard.",
   "hero.primary": "Booking & enquiry",
