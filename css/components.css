@@ -627,6 +627,34 @@ html.js [data-reveal].is-visible .section__title {
   .passion-item { grid-template-columns: 3rem 1fr; gap: var(--space-3) var(--space-8); }
 }
 
+/* ============================================================
+   Principal message (원장 인사말 · 다크 섹션)
+   ============================================================ */
+.msg-block { max-width: 680px; }
+.msg-eyebrow {
+  font-size: var(--fs-eyebrow); font-weight: var(--w-semi);
+  letter-spacing: var(--tracking-eyebrow); text-transform: uppercase;
+  color: var(--on-dark-dim); margin: 0 0 var(--space-7);
+}
+.msg-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.82;
+  font-size: clamp(1rem, 1.5vw, 1.0625rem);
+  margin: 0 0 var(--space-5);
+}
+.msg-content p:last-child { margin-bottom: 0; }
+.msg-sig {
+  margin-top: var(--space-8);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--on-dark-line);
+}
+.msg-sig__name {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.8vw, 1.1875rem);
+  color: var(--white);
+  line-height: 1.4;
+}
+
 /* 소개 — 3가치(정성·신뢰·환자경험) 밸류 그리드 (1:1 영상 + 라벨) */
 .about-values { list-style: none; padding: 0; margin: var(--space-8) 0 0;
   display: grid; gap: var(--space-5); grid-template-columns: 1fr; }

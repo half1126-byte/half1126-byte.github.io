@@ -223,6 +223,15 @@ window.YIDO_I18N.en = {
   "passion.5": "Not one-size-fits-all — care designed 1:1 around your situation.",
   "passion.6": "Even demanding, complex re-treatment, resolved with a careful hand.",
   "passion.7": "Holding to a right standard for Korean dentistry, and care anyone can trust.",
+
+  /* --- principal message --- */
+  "msg.eyebrow": "FROM THE PRINCIPAL",
+  "msg.p1": "Thank you for visiting Seoul Yido Dental Office.",
+  "msg.p2": "A good dental practice is not one that is fast, but one that is right — that belief became Yido (履道). 履 means to tread, 道 means the way: a name that carries a commitment to walk the path of principled care.",
+  "msg.p3": "Care begins with listening well. We explain examination findings in terms you can understand, then propose only what is truly needed — and we keep to that order.",
+  "msg.p4": "Every dentist on our team shares this commitment. Whether you visit for the first time or the fiftieth, we prepare to meet you with the same standard of care.",
+  "msg.p5": "We hope the time we spend on this path becomes the trust you place in Seoul Yido Dental Office. We will continue to uphold this standard and work to be the dental practice you deserve.",
+  "msg.sig": "Principal Dentist, Koh Sung-min",
   "trust.eyebrow": "WHY YIDO",
   "trust.1": "All 4 dentists trained at SNU Graduate School of Dentistry",
   "trust.2": "Two certified specialists — Prosthodontics · Orthodontics",
